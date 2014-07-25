@@ -1,0 +1,90 @@
+%primaryHeading {
+  font-size: 2em;
+  line-height: 1.1;
+  text-shadow: 1px 1px 0 darken($baseColor, 10%);
+  -webkit-font-smoothing: antialiased;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+%obiLeft {
+  margin-left: -100%;
+  padding: 1em .5em 1em 100%;
+  background: $baseColor;
+  color: $bodyBgColor;
+  a {
+    color: $bodyBgColor;
+  }
+}
+
+%obiRight {
+  margin-left: 20%;
+  padding: .5em 1em 1.5em;
+  background: $baseColor;
+  color: $bodyBgColor;
+  a {
+    color: $bodyBgColor;
+  }
+  @media screen and (max-width:$bodyMaxWidth) {
+    margin-left: 10%;
+  }
+}
+
+%buttonSimple {
+  display: inline-block;
+  padding: 0 5px 2px;
+  border: 1px solid darken($baseColor, 7%);
+  border-radius: 2px;
+  color: darken($baseColor, 4%);
+  line-height: 1.3;
+  transition: all .1s ease;
+  &:hover {
+    border-color: $baseColor;
+    background: $baseColor;
+    color: $bodyBgColor;
+    text-decoration: none;
+  }
+}
+
+.articleInfo {
+  text-align: right;
+  dt,dd {
+    display: inline;
+  }
+  dt {
+    margin-left: 1em;
+    font-size: .875em;
+  }
+  dt:after {
+    content: ":";
+    margin-left: .15em;
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+    span {
+      @extend %tag;
+    }
+  }
+}
+
+%tag {
+  position: relative;
+  margin-right: .5em;
+  padding: 0px 15px 2px 6px;
+  border-radius: 2px 0 0 2px;
+  background: darken($bodyBgColor, 10%);
+  color: $bodyTextColor;
+  font-size: .875em;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -1px;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: .65rem solid transparent;
+    border-right-color: #fcfcfc;
+  }
+}
