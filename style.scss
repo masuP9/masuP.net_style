@@ -204,6 +204,28 @@ body.article {
       overflow: hidden;
     }
 
+    table {
+      max-width: 100%;
+      min-width: 50%;
+      margin: 1em auto 1.75em;
+      border: 1px solid darken($bodyBgColor, 10%);
+    }
+
+    caption {
+      margin-bottom: .25em;
+    }
+
+    td, th {
+      padding: .5em;
+      border: 1px solid darken($bodyBgColor, 10%);
+    }
+    th {
+        background: #0a8;
+        border-color: #0a8;
+        color: #fafafa;
+        font-weight: normal;
+    }
+
     code {
       font-family: "Source Code Pro", monospace;
     }

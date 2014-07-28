@@ -646,6 +646,25 @@ ul.recentArticle li:first-child p {
 body.article .content p {
   overflow: hidden;
 }
+body.article .content table {
+  max-width: 100%;
+  min-width: 50%;
+  margin: 1em auto 1.75em;
+  border: 1px solid #e3e3e3;
+}
+body.article .content caption {
+  margin-bottom: .25em;
+}
+body.article .content td, body.article .content th {
+  padding: .5em;
+  border: 1px solid #e3e3e3;
+}
+body.article .content th {
+  background: #0a8;
+  border-color: #0a8;
+  color: #fafafa;
+  font-weight: normal;
+}
 body.article .content code {
   font-family: "Source Code Pro", monospace;
 }
