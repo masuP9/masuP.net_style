@@ -646,6 +646,10 @@ ul.recentArticle li:first-child p {
 body.article .content p {
   margin: 1.25em 0;
 }
+body.article .content hr {
+  margin: 1.75em 3em;
+  border: 0;
+  border-top: .2em solid #ddd;
 }
 body.article .content table {
   max-width: 100%;
