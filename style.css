@@ -667,6 +667,9 @@ body.article .content th {
 }
 body.article .content code {
   font-family: "Source Code Pro", monospace;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  font-feature-settings: normal;
 }
 body.article .content p code {
   margin: 0 2px;

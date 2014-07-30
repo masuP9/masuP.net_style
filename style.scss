@@ -228,6 +228,9 @@ body.article {
 
     code {
       font-family: "Source Code Pro", monospace;
+      -webkit-font-feature-settings: normal;
+      -moz-font-feature-settings: normal;
+      font-feature-settings: normal;
     }
 
     p code {
@@ -245,7 +248,7 @@ body.article {
       border: none;
       background: darken($bodyBgColor, 3%);
       font-size: .875em;
-      line-height: 1.4;
+      line-height: 1.6;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
