@@ -644,7 +644,8 @@ ul.recentArticle li:first-child p {
 
 /* -- article -- */
 body.article .content p {
-  overflow: hidden;
+  margin: 1.25em 0;
+}
 }
 body.article .content table {
   max-width: 100%;
