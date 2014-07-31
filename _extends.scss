@@ -8,24 +8,24 @@
   }
 }
 
-%obiLeft {
-  margin-left: -100%;
-  padding: 1em .5em 1em 100%;
+%obi {
   background: $baseColor;
   color: $bodyBgColor;
-  a {
+  a, a:visited {
     color: $bodyBgColor;
   }
 }
 
+%obiLeft {
+  margin-left: -100%;
+  padding: 1em .5em 1em 100%;
+  @extend %obi;
+}
+
 %obiRight {
-  margin-left: 20%;
+  margin-left: 23%;
   padding: .5em 1em 1.5em;
-  background: $baseColor;
-  color: $bodyBgColor;
-  a {
-    color: $bodyBgColor;
-  }
+  @extend %obi;
   @media screen and (max-width:$bodyMaxWidth) {
     margin-left: 10%;
   }
