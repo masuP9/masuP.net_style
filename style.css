@@ -393,6 +393,81 @@ th {
   padding: 0;
 }
 
+body {
+  background: #fcfcfc;
+  color: #333333;
+  font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+}
+
+a {
+  color: #00aa88;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+a:visited {
+  color: #00775f;
+}
+
+/* -- layout & common -- */
+.globalHeader {
+  width: 80%;
+  max-width: 42em;
+  min-width: 18em;
+  margin: 0 auto 1em;
+  padding: 0 1em;
+}
+.globalHeader h1 {
+  -webkit-font-smoothing: antialiased;
+}
+.globalHeader a {
+  color: #333333;
+}
+
+.main {
+  width: 80%;
+  max-width: 42em;
+  min-width: 18em;
+  margin: 0 auto;
+  padding: 0 1em;
+  margin: 1em auto 2em;
+}
+
+.content a {
+  text-decoration: underline;
+  transition: color .15s ease;
+}
+.content a:hover {
+  color: #00cea5;
+}
+
+/* -- footer -- */
+.globalFooter {
+  margin-top: 2em;
+  text-align: left;
+}
+.globalFooter ul {
+  padding: 0;
+  list-style: none;
+}
+.globalFooter ul li {
+  display: inline;
+  margin-right: 3%;
+  text-transform: uppercase;
+}
+
 body.index .globalHeader .siteName, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1 {
   font-size: 2em;
   line-height: 1.1;
@@ -479,81 +554,6 @@ ul.recentArticle li:first-child p a:hover {
   top: 0;
   border: .65rem solid transparent;
   border-right-color: #fcfcfc;
-}
-
-body {
-  background: #fcfcfc;
-  color: #333333;
-  font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  -webkit-font-feature-settings: "kern" 1, "liga" 1;
-  -moz-font-feature-settings: "kern" 1, "liga" 1;
-  font-feature-settings: "kern" 1, "liga" 1;
-  line-height: 1.6;
-}
-
-a {
-  color: #00aa88;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  position: relative;
-  top: 1px;
-}
-
-a:visited {
-  color: #00775f;
-}
-
-/* -- layout & common -- */
-.globalHeader {
-  width: 80%;
-  max-width: 42em;
-  min-width: 18em;
-  margin: 0 auto 1em;
-  padding: 0 1em;
-}
-.globalHeader h1 {
-  -webkit-font-smoothing: antialiased;
-}
-.globalHeader a {
-  color: #333333;
-}
-
-.main {
-  width: 80%;
-  max-width: 42em;
-  min-width: 18em;
-  margin: 0 auto;
-  padding: 0 1em;
-  margin: 1em auto 2em;
-}
-
-.content a {
-  text-decoration: underline;
-  transition: color .15s ease;
-}
-.content a:hover {
-  color: #00cea5;
-}
-
-/* -- footer -- */
-.globalFooter {
-  margin-top: 2em;
-  text-align: left;
-}
-.globalFooter ul {
-  padding: 0;
-  list-style: none;
-}
-.globalFooter ul li {
-  display: inline;
-  margin-right: 3%;
-  text-transform: uppercase;
 }
 
 /* -- siteName --*/
