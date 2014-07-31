@@ -1,0 +1,70 @@
+body {
+  background: $bodyBgColor;
+  color: $bodyTextColor;
+  font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings: "kern" 1, "liga" 1;
+  line-height: 1.6;
+}
+a {
+  color: $baseColor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  position: relative;
+  top: 1px;
+}
+a:visited {
+  color: darken($baseColor, 10%);
+}
+
+/* -- layout & common -- */
+.globalHeader {
+  width: 80%;
+  max-width: $bodyMaxWidth;
+  min-width: $bodyMinWidth;
+  margin: 0 auto 1em;
+  padding: 0 1em;
+  h1 {
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: $bodyTextColor;
+  }
+}
+.main {
+  width: 80%;
+  max-width: $bodyMaxWidth;
+  min-width: $bodyMinWidth;
+  margin: 0 auto;
+  padding: 0 1em;
+  margin: $margin * .5 auto $margin;
+}
+
+.content a {
+  text-decoration: underline;
+  transition: color .15s ease;
+  &:hover {
+    color: lighten($baseColor, 7%);
+  }
+}
+
+/* -- footer -- */
+.globalFooter {
+  @extend %obiRight;
+  margin-top: $margin;
+  text-align: left;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline;
+      margin-right: 3%;
+      text-transform: uppercase;
+    }
+  }
+}
