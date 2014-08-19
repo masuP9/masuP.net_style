@@ -1,3 +1,7 @@
+/* _extends.scss
+  ========================================================================== */
+
+/* -- %primaryHeading -- */
 %primaryHeading {
   font-size: 2em;
   line-height: 1.1;
@@ -8,6 +12,7 @@
   }
 }
 
+/* -- %obi -- */
 %obi {
   background: $baseColor;
   color: $bodyBgColor;
@@ -16,12 +21,14 @@
   }
 }
 
+/* -- %obiLeft -- */
 %obiLeft {
   margin-left: -100%;
   padding: 1em .5em 1em 100%;
   @extend %obi;
 }
 
+/* -- %obiRight -- */
 %obiRight {
   margin-left: 23%;
   padding: .5em 1em 1.5em;
@@ -31,6 +38,7 @@
   }
 }
 
+/* -- %buttonSimple -- */
 %buttonSimple {
   display: inline-block;
   padding: 0 5px 2px;
@@ -47,6 +55,7 @@
   }
 }
 
+/* -- .articleInfo -- */
 .articleInfo {
   text-align: right;
   dt,dd {
@@ -69,6 +78,7 @@
   }
 }
 
+/* -- %tag -- */
 %tag {
   position: relative;
   margin-right: .5em;

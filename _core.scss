@@ -1,3 +1,6 @@
+/* _core.scss
+   ========================================================================== */
+
 body {
   background: $bodyBgColor;
   color: $bodyTextColor;
@@ -26,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
   clear: both;
 }
 
-/* -- layout & common -- */
+/* -- Layout & Common -- */
 .globalHeader {
   width: 80%;
   max-width: $bodyMaxWidth;
@@ -57,7 +60,6 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-/* -- footer -- */
 .globalFooter {
   @extend %obiRight;
   margin-top: $margin;

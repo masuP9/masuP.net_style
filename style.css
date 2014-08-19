@@ -393,6 +393,8 @@ th {
   padding: 0;
 }
 
+/* _core.scss
+   ========================================================================== */
 body {
   background: #fcfcfc;
   color: #333333;
@@ -425,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* -- layout & common -- */
+/* -- Layout & Common -- */
 .globalHeader {
   width: 80%;
   max-width: 42em;
@@ -457,7 +459,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #00cea5;
 }
 
-/* -- footer -- */
 .globalFooter {
   margin-top: 2em;
   text-align: left;
@@ -473,6 +474,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body.index .globalHeader .siteName, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1 {
+/* _extends.scss
+  ========================================================================== */
+/* -- %primaryHeading -- */
   font-size: 2em;
   line-height: 1.1;
   text-shadow: 1px 1px 0 #00775f;
@@ -483,6 +487,7 @@ body.index .globalHeader .siteName a:hover, body.page .pageSectionHeader h1 a:ho
 }
 
 body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1, .globalFooter {
+/* -- %obi -- */
   background: #00aa88;
   color: #fcfcfc;
 }
@@ -491,10 +496,12 @@ body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription 
 }
 
 body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1 {
+/* -- %obiLeft -- */
   margin-left: -100%;
   padding: 1em .5em 1em 100%;
 }
 
+/* -- %obiRight -- */
 .globalFooter {
   margin-left: 23%;
   padding: .5em 1em 1.5em;
@@ -506,6 +513,7 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
 }
 
 ul.recentArticle li:first-child p a {
+/* -- %buttonSimple -- */
   display: inline-block;
   padding: 0 5px 2px;
   border: 1px solid #00866b;
@@ -521,6 +529,7 @@ ul.recentArticle li:first-child p a:hover {
   text-decoration: none;
 }
 
+/* -- .articleInfo -- */
 .articleInfo {
   text-align: right;
 }
@@ -540,6 +549,7 @@ ul.recentArticle li:first-child p a:hover {
   margin-left: 0;
 }
 
+/* -- %tag -- */
 .articleInfo dd span {
   position: relative;
   margin-right: .5em;
@@ -560,7 +570,7 @@ ul.recentArticle li:first-child p a:hover {
   border-right-color: #fcfcfc;
 }
 
-/* -- siteName --*/
+/* -- SiteName --*/
 .siteName span {
   letter-spacing: -.1em;
   -webkit-font-feature-settings: "kern" 0;
@@ -568,7 +578,9 @@ ul.recentArticle li:first-child p a:hover {
   font-feature-settings: "kern" 0;
 }
 
-/* -- index --*/
+/* style.scss
+   ========================================================================== */
+/* -- Index --*/
 body.index .globalHeader {
   margin-bottom: 3em;
 }
@@ -647,8 +659,8 @@ ul.recentArticle li:first-child p {
 }
 
 /* -- Page -- */
-/* -- about --*/
 .about .profilePhoto {
+/* -- Page About --*/
   width: 25%;
   height: auto;
   max-width: 6em;
@@ -670,8 +682,8 @@ ul.recentArticle li:first-child p {
   margin-right: 1.5em;
 }
 
-/* -- article -- */
 body.article .content p {
+/* -- Article -- */
   margin: 1.25em 0;
 }
 body.article .content hr {

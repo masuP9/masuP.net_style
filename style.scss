@@ -13,8 +13,10 @@
    font-feature-settings: "kern" 0;
   }
 }
+/* style.scss
+   ========================================================================== */
 
-/* -- index --*/
+/* -- Index --*/
 body.index {
   .globalHeader {
     margin-bottom: 3em;
@@ -114,8 +116,8 @@ body.page {
   }
 }
 
-/* -- about --*/
 .about {
+/* -- Page About --*/
   .profilePhoto {
   width: 25%;
   height: auto;
