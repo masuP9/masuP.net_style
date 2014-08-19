@@ -511,6 +511,11 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
     margin-left: 10%;
   }
 }
+@media screen and (max-width: 500px) {
+  .globalFooter {
+    margin-left: 5%;
+  }
+}
 
 ul.recentArticle li:first-child p a {
 /* -- %buttonSimple -- */

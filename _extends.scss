@@ -36,6 +36,9 @@
   @media screen and (max-width:$bodyMaxWidth) {
     margin-left: 10%;
   }
+  @media screen and (max-width:500px) {
+    margin-left: 5%;
+  }
 }
 
 /* -- %buttonSimple -- */
