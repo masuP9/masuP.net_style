@@ -225,17 +225,6 @@ code {
   font-feature-settings: normal;
 }
 
-.prettyprint {
-  margin-top: 0;
-  padding: 1em;
-  border: none;
-  background: darken($bodyBgColor, 3%);
-  font-size: .875em;
-  line-height: 1.6;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
 .code {
   dt {
     font-size: 1.25em;
@@ -243,6 +232,16 @@ code {
   }
   dd {
     margin: 0;
+  }
+  .prettyprint {
+    margin-top: 0;
+    padding: 1em;
+    border: none;
+    background: darken($bodyBgColor, 3%);
+    font-size: .875em;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

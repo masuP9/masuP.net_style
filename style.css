@@ -769,7 +769,14 @@ code {
   font-feature-settings: normal;
 }
 
-.prettyprint {
+.code dt {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.code dd {
+  margin: 0;
+}
+.code .prettyprint {
   margin-top: 0;
   padding: 1em;
   border: none;
@@ -778,14 +785,6 @@ code {
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.code dt {
-  font-size: 1.25em;
-  font-weight: bold;
-}
-.code dd {
-  margin: 0;
 }
 
 /* -- Archive --*/
