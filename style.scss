@@ -62,6 +62,7 @@ body.index {
       font-size: 1em;
       line-height: 1.2;
       text-align: justify;
+      text-justify: inter-ideograph;
     }
 
     span {
@@ -121,7 +122,6 @@ ul.SNS {
   padding-left: 0;
   overflow: hidden;
   list-style: none;
-
   li {
     float: left;
     margin-right: 1.5em;

@@ -634,6 +634,7 @@ body.index .main .siteDescription {
   font-size: 1em;
   line-height: 1.2;
   text-align: justify;
+  text-justify: inter-ideograph;
 }
 .recentArticle li span {
   text-align: right;
