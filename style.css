@@ -607,7 +607,7 @@ ul.recentArticle li {
   box-sizing: border-box;
   float: left;
   width: 50%;
-  min-height: 5em;
+  height: 5em;
   margin-bottom: 2em;
   padding-right: 5%;
 }
@@ -616,6 +616,7 @@ ul.recentArticle li h2 {
   padding: .2em 0 .3em;
   font-size: 1em;
   line-height: 1.2;
+  text-align: justify;
 }
 ul.recentArticle li span {
   text-align: right;
@@ -626,15 +627,17 @@ ul.recentArticle li a {
 @media screen and (max-width: 500px) {
   ul.recentArticle li {
     width: auto;
-    min-height: 3em;
+    height: auto;
+    margin-bottom: 1.25em;
   }
 }
 ul.recentArticle li:first-child {
   width: 100%;
+  height: auto;
   max-width: 42em;
   float: none;
   margin-left: 0;
-  padding-right: 0;
+  margin-bottom: 2em;
 }
 ul.recentArticle li:first-child h2 {
   font-size: 1.5em;
