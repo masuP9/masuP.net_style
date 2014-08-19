@@ -473,30 +473,30 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-body.index .globalHeader .siteName, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1 {
 /* _extends.scss
   ========================================================================== */
 /* -- %primaryHeading -- */
+body.index .globalHeader .siteName, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1 {
   font-size: 2em;
   line-height: 1.1;
   text-shadow: 1px 1px 0 #00775f;
   -webkit-font-smoothing: antialiased;
 }
-body.index .globalHeader .siteName a:hover, body.page .pageSectionHeader h1 a:hover, body.article .articleHeader h1 a:hover, body.archive .archiveHeader h1 a:hover {
+body.index .globalHeader .siteName a:hover, .pageSectionHeader h1 a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover {
   text-decoration: none;
 }
 
-body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1, .globalFooter {
 /* -- %obi -- */
+body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1, .globalFooter {
   background: #00aa88;
   color: #fcfcfc;
 }
-body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription a, body.index .main .siteDescription a, body.page .pageSectionHeader h1 a, body.article .articleHeader h1 a, body.archive .archiveHeader h1 a, .globalFooter a, body.index .globalHeader .siteName a:visited, body.index .globalHeader .siteDescription a:visited, body.index .main .siteDescription a:visited, body.page .pageSectionHeader h1 a:visited, body.article .articleHeader h1 a:visited, body.archive .archiveHeader h1 a:visited, .globalFooter a:visited {
+body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription a, body.index .main .siteDescription a, .pageSectionHeader h1 a, .articleHeader h1 a, .archiveHeader h1 a, .globalFooter a, body.index .globalHeader .siteName a:visited, body.index .globalHeader .siteDescription a:visited, body.index .main .siteDescription a:visited, .pageSectionHeader h1 a:visited, .articleHeader h1 a:visited, .archiveHeader h1 a:visited, .globalFooter a:visited {
   color: #fcfcfc;
 }
 
-body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, body.page .pageSectionHeader h1, body.article .articleHeader h1, body.archive .archiveHeader h1 {
 /* -- %obiLeft -- */
+body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1 {
   margin-left: -100%;
   padding: 1em .5em 1em 100%;
 }
@@ -517,8 +517,8 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
   }
 }
 
-ul.recentArticle li:first-child p a {
 /* -- %buttonSimple -- */
+.recentArticle li:first-child p a {
   display: inline-block;
   padding: 0 5px 2px;
   border: 1px solid #00866b;
@@ -527,7 +527,7 @@ ul.recentArticle li:first-child p a {
   line-height: 1.3;
   transition: all .1s ease;
 }
-ul.recentArticle li:first-child p a:hover {
+.recentArticle li:first-child p a:hover {
   border-color: #00aa88;
   background: #00aa88;
   color: #fcfcfc;
@@ -614,13 +614,13 @@ body.index .main .siteDescription {
   font-size: 1.25em;
 }
 
-ul.recentArticle {
+.recentArticle {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
-ul.recentArticle li {
+.recentArticle li {
   box-sizing: border-box;
   float: left;
   width: 50%;
@@ -628,27 +628,27 @@ ul.recentArticle li {
   margin-bottom: 2em;
   padding-right: 5%;
 }
-ul.recentArticle li h2 {
+.recentArticle li h2 {
   margin: 0;
   padding: .2em 0 .3em;
   font-size: 1em;
   line-height: 1.2;
   text-align: justify;
 }
-ul.recentArticle li span {
+.recentArticle li span {
   text-align: right;
 }
-ul.recentArticle li a {
+.recentArticle li a {
   text-decoration: none;
 }
 @media screen and (max-width: 500px) {
-  ul.recentArticle li {
+  .recentArticle li {
     width: auto;
     height: auto;
     margin-bottom: 1.25em;
   }
 }
-ul.recentArticle li:first-child {
+.recentArticle li:first-child {
   width: 100%;
   height: auto;
   max-width: 42em;
@@ -656,16 +656,16 @@ ul.recentArticle li:first-child {
   margin-left: 0;
   margin-bottom: 2em;
 }
-ul.recentArticle li:first-child h2 {
+.recentArticle li:first-child h2 {
   font-size: 1.5em;
 }
-ul.recentArticle li:first-child p {
+.recentArticle li:first-child p {
   margin: 0;
 }
 
 /* -- Page -- */
-.about .profilePhoto {
 /* -- Page About --*/
+.profilePhoto {
   width: 25%;
   height: auto;
   max-width: 6em;
@@ -677,51 +677,45 @@ ul.recentArticle li:first-child p {
 .about h1 {
   clear: both;
 }
-.about ul.SNS {
+
+ul.SNS {
   padding-left: 0;
   overflow: hidden;
 }
-.about ul.SNS li {
+ul.SNS li {
   float: left;
   display: inline;
   margin-right: 1.5em;
 }
 
-body.article .content p {
 /* -- Article -- */
+.articleFooter span {
+  font-size: 1.3em;
+  line-height: 1.3;
+  vertical-align: bottom;
+}
+
+.articleNavTimeSeries {
+  margin: 2em 0;
+}
+.articleNavTimeSeries dt {
+  margin-top: 1em;
+}
+.articleNavTimeSeries dd {
+  margin-left: 1em;
+}
+.articleNavTimeSeries dd:before {
+  content: "»";
+  padding-right: .15em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* -- Content -- */
+.content p {
   margin: 1.25em 0;
 }
-body.article .content hr {
-  margin: 1.75em 3em;
-  border: 0;
-  border-top: .2em solid #ddd;
-}
-body.article .content table {
-  max-width: 100%;
-  min-width: 50%;
-  margin: 1em auto 1.75em;
-  border: 1px solid #e3e3e3;
-}
-body.article .content caption {
-  margin-bottom: .25em;
-}
-body.article .content td, body.article .content th {
-  padding: .5em;
-  border: 1px solid #e3e3e3;
-}
-body.article .content th {
-  background: #0a8;
-  border-color: #0a8;
-  color: #fafafa;
-  font-weight: normal;
-}
-body.article .content code {
-  font-family: "Source Code Pro", monospace;
-  -webkit-font-feature-settings: normal;
-  -moz-font-feature-settings: normal;
-  font-feature-settings: normal;
-}
-body.article .content p code {
+.content p code {
   margin: 0 2px;
   padding: 0 3px 2px;
   border-radius: 3px;
@@ -729,7 +723,56 @@ body.article .content p code {
   font-size: .875em;
   vertical-align: top;
 }
-body.article .content pre.prettyprint {
+.content hr {
+  margin: 1.75em 3em;
+  border: 0;
+  border-top: .2em solid #ddd;
+}
+.content table {
+  max-width: 100%;
+  min-width: 50%;
+  margin: 1em auto 1.75em;
+  border: 1px solid #e3e3e3;
+}
+.content caption {
+  margin-bottom: .25em;
+}
+.content td, .content th {
+  padding: .5em;
+  border: 1px solid #e3e3e3;
+}
+.content th {
+  background: #0a8;
+  border-color: #0a8;
+  color: #fafafa;
+  font-weight: normal;
+}
+.content img[class^="mt-image"] {
+  height: auto;
+}
+.content .mt-image-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.content .mt-image-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.content .mt-image-center {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto .5em;
+}
+
+/* -- Source Code -- */
+code {
+  font-family: "Source Code Pro", monospace;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  font-feature-settings: normal;
+}
+
+.prettyprint {
   margin-top: 0;
   padding: 1em;
   border: none;
@@ -739,48 +782,13 @@ body.article .content pre.prettyprint {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-body.article .content .code dt {
+
+.code dt {
   font-size: 1.25em;
   font-weight: bold;
 }
-body.article .content .code dd {
+.code dd {
   margin: 0;
-}
-body.article .content img[class^="mt-image"] {
-  height: auto;
-}
-body.article .content .mt-image-left {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-body.article .content .mt-image-right {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-body.article .content .mt-image-center {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto .5em;
-}
-body.article .articleFooter span {
-  font-size: 1.3em;
-  line-height: 1.3;
-  vertical-align: bottom;
-}
-body.article .articleNavTimeSeries {
-  margin: 2em 0;
-}
-body.article .articleNavTimeSeries dt {
-  margin-top: 1em;
-}
-body.article .articleNavTimeSeries dd {
-  margin-left: 1em;
-}
-body.article .articleNavTimeSeries dd:before {
-  content: "»";
-  padding-right: .15em;
-  font-size: 1.5em;
-  line-height: 1;
 }
 
 /* -- Archive --*/
