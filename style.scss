@@ -108,13 +108,13 @@ body.index {
 
 /* -- Page About --*/
   .profilePhoto {
+  float: left;
   width: 25%;
   height: auto;
   max-width: 6em;
   max-height: 6em;
+  margin-right: 1em;
   border-radius: 50%;
-  float: left;
-  margin: 0 1em 0 0;
   }
 
   h1 {
