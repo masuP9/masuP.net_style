@@ -678,10 +678,10 @@ body.index .main .siteDescription {
 ul.SNS {
   padding-left: 0;
   overflow: hidden;
+  list-style: none;
 }
 ul.SNS li {
   float: left;
-  display: inline;
   margin-right: 1.5em;
 }
 

@@ -99,15 +99,15 @@ body.index {
 }
 
 /* -- Page -- */
-  .pageSectionHeader {
-    h1 {
-      @extend %obiLeft;
-      @extend %primaryHeading;
-    }
+.pageSectionHeader {
+  h1 {
+    @extend %obiLeft;
+    @extend %primaryHeading;
   }
+}
 
 /* -- Page About --*/
-  .profilePhoto {
+.profilePhoto {
   float: left;
   width: 25%;
   height: auto;
@@ -115,26 +115,26 @@ body.index {
   max-height: 6em;
   margin-right: 1em;
   border-radius: 50%;
-  }
+}
 
-  ul.SNS {
-    padding-left: 0;
-    overflow: hidden;
+ul.SNS {
+  padding-left: 0;
+  overflow: hidden;
+  list-style: none;
 
-    li {
-      float: left;
-      display: inline;
-      margin-right: 1.5em;
-    }
+  li {
+    float: left;
+    margin-right: 1.5em;
   }
+}
 
 /* -- Article -- */
-  .articleHeader {
-    h1 {
-      @extend %obiLeft;
-      @extend %primaryHeading;
-    }
+.articleHeader {
+  h1 {
+    @extend %obiLeft;
+    @extend %primaryHeading;
   }
+}
 .articleFooter {
   span {
     font-size: 1.3em;
@@ -160,9 +160,9 @@ body.index {
 }
 
 /* -- Content -- */
-  .content {
-    p {
-      margin: 1.25em 0;
+.content {
+  p {
+    margin: 1.25em 0;
     code {
       margin: 0 2px;
       padding: 0 3px 2px;
@@ -171,51 +171,51 @@ body.index {
       font-size: .875em;
       vertical-align: top;
     }
-    }
-
-    hr {
-      margin: 1.75em 3em;
-      border: 0;
-      border-top: .2em solid #ddd;
-    }
-
-    table {
-      max-width: 100%;
-      min-width: 50%;
-      margin: 1em auto 1.75em;
-      border: 1px solid darken($bodyBgColor, 10%);
-    }
-    caption {
-      margin-bottom: .25em;
-    }
-    td, th {
-      padding: .5em;
-      border: 1px solid darken($bodyBgColor, 10%);
-    }
-    th {
-        background: #0a8;
-        border-color: #0a8;
-        color: #fafafa;
-        font-weight: normal;
-    }
-
-    img[class^="mt-image"] {
-      height: auto;
-    }
-    .mt-image-left {
-      float: left;
-      margin: 0 1em 1em 0;
-    }
-    .mt-image-right {
-      float: right;
-      margin: 0 0 1em 1em;
-    }
-    .mt-image-center {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto .5em;
-    }
   }
+
+  hr {
+    margin: 1.75em 3em;
+    border: 0;
+    border-top: .2em solid #ddd;
+  }
+
+  table {
+    max-width: 100%;
+    min-width: 50%;
+    margin: 1em auto 1.75em;
+    border: 1px solid darken($bodyBgColor, 10%);
+  }
+  caption {
+    margin-bottom: .25em;
+  }
+  td, th {
+    padding: .5em;
+    border: 1px solid darken($bodyBgColor, 10%);
+  }
+  th {
+      background: #0a8;
+      border-color: #0a8;
+      color: #fafafa;
+      font-weight: normal;
+  }
+
+  img[class^="mt-image"] {
+    height: auto;
+  }
+  .mt-image-left {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  .mt-image-right {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  .mt-image-center {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto .5em;
+  }
+}
 
 /* -- Source Code -- */
 code {
@@ -223,7 +223,7 @@ code {
   -webkit-font-feature-settings: normal;
   -moz-font-feature-settings: normal;
   font-feature-settings: normal;
-    }
+}
 
 .prettyprint {
   margin-top: 0;
@@ -234,25 +234,25 @@ code {
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  }
+}
 
 .code {
-    dt {
+  dt {
     font-size: 1.25em;
     font-weight: bold;
-    }
-    dd {
+  }
+  dd {
     margin: 0;
   }
 }
 
 /* -- Archive --*/
-  .archiveHeader {
-    h1 {
-      @extend %obiLeft;
-      @extend %primaryHeading;
-    }
+.archiveHeader {
+  h1 {
+    @extend %obiLeft;
+    @extend %primaryHeading;
   }
+}
 
 ul.archive {
   padding-left: 0;
