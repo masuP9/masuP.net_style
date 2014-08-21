@@ -427,6 +427,27 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/* -- Hide alt text for Font Awesome -- */
+.fa span {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* -- Font Awesome Icon Logo Color -- */
+.fa-twitter:before {
+  color: #55ACEE;
+}
+
+.fa-facebook-square:before {
+  color: #3B5998;
+}
+
+.fa-github:before {
+  color: #111111;
+}
+
 /* -- Layout & Common -- */
 .globalHeader {
   width: 80%;
@@ -670,20 +691,33 @@ body.index .main .siteDescription {
   float: left;
   width: 25%;
   height: auto;
-  max-width: 6em;
-  max-height: 6em;
+  max-width: 9em;
   margin-right: 1em;
+  margin-bottom: 1em;
   border-radius: 50%;
 }
 
-ul.SNS {
+.SNS {
   padding-left: 0;
   overflow: hidden;
   list-style: none;
 }
-ul.SNS li {
+.SNS li {
   float: left;
   margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+.SNS li a {
+  text-decoration: none;
+}
+.SNS i {
+  margin-right: .15em;
+}
+.SNS .fa-twitter {
+  margin-right: .05em;
+}
+.SNS .fa-facebook-square {
+  margin-right: .2em;
 }
 
 /* -- Article -- */
@@ -786,6 +820,35 @@ code {
   line-height: 1.6;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+/* -- Quote --*/
+.quote {
+  padding: .5em 1em .5em 2em;
+  background: #f4f4f4;
+}
+.quote dd {
+  margin-left: 0;
+}
+.quote blockquote {
+  position: relative;
+  margin: 0;
+}
+.quote blockquote:before {
+  content: "\f10d";
+  position: absolute;
+  left: -1.1875em;
+  top: -.46875em;
+  color: #d6d6d6;
+  font-family: 'FontAwesome';
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-shadow: 3px -3px 0px #fcfcfc;
+}
+.quote .cite {
+  text-align: right;
 }
 
 /* -- Archive --*/

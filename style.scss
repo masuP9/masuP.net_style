@@ -112,19 +112,32 @@ body.index {
   float: left;
   width: 25%;
   height: auto;
-  max-width: 6em;
-  max-height: 6em;
+  max-width: 9em;
   margin-right: 1em;
+  margin-bottom: 1em;
   border-radius: 50%;
 }
 
-ul.SNS {
+.SNS {
   padding-left: 0;
   overflow: hidden;
   list-style: none;
   li {
     float: left;
     margin-right: 1.5em;
+    margin-bottom: 1em;
+    a {
+      text-decoration: none;
+    }
+  }
+  i {
+    margin-right: .15em;
+  }
+  .fa-twitter {
+      margin-right: .05em;
+  }
+  .fa-facebook-square {
+      margin-right: .2em;
   }
 }
 
@@ -242,6 +255,35 @@ code {
     line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
+  }
+}
+
+/* -- Quote --*/
+.quote {
+  padding: .5em 1em .5em 2em;
+  background: darken($bodyBgColor, 3%);
+  dd {
+    margin-left: 0;
+  }
+  blockquote {
+    position: relative;
+    margin: 0;
+  }
+  blockquote:before {
+    content: "\f10d";
+    position: absolute;
+    left: -1.1875em;
+    top: -.46875em;
+    color: darken($bodyBgColor, 15%);
+    font-family: 'FontAwesome';
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-shadow: 3px -3px 0px $bodyBgColor;
+  }
+  .cite {
+    text-align: right;
   }
 }
 
