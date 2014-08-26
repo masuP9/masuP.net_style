@@ -237,23 +237,26 @@ code {
 
 .code {
   dt {
-    font-size: 1.25em;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.15em;
     font-weight: bold;
   }
   dd {
     margin: 0;
   }
-  .prettyprint {
-    margin-top: 0;
-    padding: 1em;
-    border: none;
-    background: darken($bodyBgColor, 3%);
-    font-size: .875em;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
 }
+
+.main .prettyprint {
+  margin-top: 0;
+  padding: 1em;
+  border-color: darken($bodyBgColor, 5%);
+  background: darken($bodyBgColor, 3%);
+  font-size: .875em;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 
 /* -- Quote --*/
 .quote {

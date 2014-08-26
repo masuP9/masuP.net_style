@@ -803,16 +803,18 @@ code {
 }
 
 .code dt {
-  font-size: 1.25em;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.15em;
   font-weight: bold;
 }
 .code dd {
   margin: 0;
 }
-.code .prettyprint {
+
+.main .prettyprint {
   margin-top: 0;
   padding: 1em;
-  border: none;
+  border-color: #efefef;
   background: #f4f4f4;
   font-size: .875em;
   line-height: 1.6;
