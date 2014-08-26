@@ -652,7 +652,8 @@ body.index .main .siteDescription {
 .recentArticle li h2 {
   margin: 0;
   padding: .2em 0 .3em;
-  font-size: 1em;
+  font-size: 1.15em;
+  font-weight: normal;
   line-height: 1.2;
   text-align: justify;
   text-justify: inter-ideograph;
@@ -679,7 +680,7 @@ body.index .main .siteDescription {
   margin-bottom: 2em;
 }
 .recentArticle li:first-child h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 .recentArticle li:first-child p {
   margin: 0;
@@ -864,8 +865,9 @@ ul.archive li .articleInfo dt:first-child {
   margin-left: 0;
 }
 ul.archive li h2 {
-  margin: 0 0 2em;
-  font-size: 1.5em;
+  margin: 0 0 1.5em;
+  font-size: 1.15em;
+  font-weight: normal;
 }
 ul.archive li h2 a {
   text-decoration: none;
