@@ -658,9 +658,6 @@ body.index .main .siteDescription {
   text-align: justify;
   text-justify: inter-ideograph;
 }
-.recentArticle li span {
-  text-align: right;
-}
 .recentArticle li a {
   text-decoration: none;
 }
