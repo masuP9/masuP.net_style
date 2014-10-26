@@ -260,7 +260,8 @@ code {
 
 /* -- Quote --*/
 .quote {
-  padding: .5em 1em .5em 2em;
+  position: relative;
+  padding: .5em 1em 2.5em 2em;
   background: darken($bodyBgColor, 3%);
   dd {
     margin-left: 0;
@@ -283,6 +284,9 @@ code {
     text-shadow: 3px -3px 0px $bodyBgColor;
   }
   .cite {
+    position: absolute;
+    bottom: .5em;
+    width: 93%;
     text-align: right;
   }
 }
