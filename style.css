@@ -427,6 +427,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/* -- Source Code -- */
+code {
+  font-family: "Source Code Pro", monospace;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  font-feature-settings: normal;
+}
+
 /* -- Hide alt text for Font Awesome -- */
 .fa span {
   display: block;
@@ -741,7 +749,10 @@ body.index .main .siteDescription {
   line-height: 1;
 }
 
-/* -- Content -- */
+/*
+ _content.scss
+ 本文エリア
+ */
 .content p {
   margin: 1.25em 0;
 }
@@ -792,14 +803,6 @@ body.index .main .siteDescription {
   display: block;
   max-width: 100%;
   margin: 0 auto .5em;
-}
-
-/* -- Source Code -- */
-code {
-  font-family: "Source Code Pro", monospace;
-  -webkit-font-feature-settings: normal;
-  -moz-font-feature-settings: normal;
-  font-feature-settings: normal;
 }
 
 .code dt {
