@@ -186,7 +186,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -327,8 +326,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -482,7 +479,8 @@ code {
 
 .content a {
   text-decoration: underline;
-  transition: color .15s ease;
+  -webkit-transition: color .15s ease;
+          transition: color .15s ease;
 }
 .content a:hover {
   color: #00cea5;
@@ -554,7 +552,8 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
   border-radius: 2px;
   color: #009678;
   line-height: 1.3;
-  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+          transition: all .1s ease;
 }
 .recentArticle li:first-child p a:hover {
   border-color: #00aa88;
