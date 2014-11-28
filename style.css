@@ -787,6 +787,9 @@ body.index .main .siteDescription {
   color: #fafafa;
   font-weight: normal;
 }
+.content img {
+  max-width: 100%;
+}
 .content img[class^="mt-image"] {
   height: auto;
 }

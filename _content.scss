@@ -41,7 +41,9 @@
       color: #fafafa;
       font-weight: normal;
   }
-
+  img {
+    max-width: 100%;
+  }
   img[class^="mt-image"] {
     height: auto;
   }
