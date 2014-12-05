@@ -21,7 +21,7 @@ ul.archive {
     }
     h2 {
       margin: 0 0 1.5em;
-      font-size: 1.15em;
+      @include fz(16);
       font-weight: normal;
       a {
         text-decoration: none;
