@@ -396,9 +396,6 @@ body {
   background: #fcfcfc;
   color: #333333;
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  -webkit-font-feature-settings: "kern" 1, "liga" 1;
-  -moz-font-feature-settings: "kern" 1, "liga" 1;
-  font-feature-settings: "kern" 1, "liga" 1;
   line-height: 1.6;
 }
 
@@ -422,14 +419,15 @@ a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
+     -moz-font-feature-settings: "kern" 1, "liga" 1;
+          font-feature-settings: "kern" 1, "liga" 1;
+  font-variant: proportional-width;
 }
 
 /* -- Source Code -- */
 code {
   font-family: "Source Code Pro", monospace;
-  -webkit-font-feature-settings: normal;
-  -moz-font-feature-settings: normal;
-  font-feature-settings: normal;
 }
 
 /* -- Hide alt text for Font Awesome -- */
@@ -606,9 +604,6 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
 /* -- SiteName --*/
 .siteName span {
   letter-spacing: -.1em;
-  -webkit-font-feature-settings: "kern" 0;
-  -moz-font-feature-settings: "kern" 0;
-  font-feature-settings: "kern" 0;
 }
 
 /* style.scss
