@@ -171,32 +171,5 @@ body.index {
 
 @import "_content";
 
-/* -- Archive --*/
-.archiveHeader {
-  h1 {
-    @extend %obiLeft;
-    @extend %primaryHeading;
-  }
-}
-
-ul.archive {
-  padding-left: 0;
-  list-style: none;
-  li {
-    .articleInfo {
-      margin-bottom: 0;
-      text-align: left;
-      dt:first-child {
-        margin-left: 0;
-      }
-    }
-    h2 {
-      margin: 0 0 1.5em;
-      font-size: 1.15em;
-      font-weight: normal;
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-}
+// archive ページ
+@import "_archive";
