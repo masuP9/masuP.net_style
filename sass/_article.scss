@@ -1,8 +1,46 @@
 /*
- _content.scss
- 本文エリア
- */
+ _article.scss
+ 記事ページのスタイル
+*/
 
+/* -- Article -- */
+.articleHeader {
+  h1 {
+    @extend %obiLeft;
+    @extend %primaryHeading;
+  }
+}
+
+/* -- .articleInfo -- */
+.article-info {
+  text-align: right;
+}
+
+.article-info-label,
+.article-info-prop {
+  display: inline;
+}
+
+.article-info-label {
+  margin-left: 1em;
+  @include fz(14);
+
+  &:after {
+    content: ":";
+    margin-left: .15em;
+    font-weight: bold;
+  }
+}
+
+.article-info-prop {
+  margin-left: 0;
+}
+
+.article-tag {
+  @extend %tag;
+}
+
+/* -- 本文エリア -- */
 .content {
   p {
     margin: em(20) 0;
@@ -117,4 +155,29 @@
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
   margin: 0 0 .25em;
+}
+
+.articleFooter {
+  span {
+    @include fz(21);
+    line-height: 1.3;
+    vertical-align: bottom;
+  }
+}
+
+.articleNavTimeSeries {
+  margin: $margin 0;
+  dt {
+    margin-top: $margin / 2;
+  }
+
+  dd {
+    margin-left: 1em;
+    &:before {
+    content: "»";
+    padding-right: .15em;
+    @include fz(24);
+    line-height: 1;
+    }
+  }
 }

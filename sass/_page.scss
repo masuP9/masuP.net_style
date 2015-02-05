@@ -1,0 +1,46 @@
+/*
+ _page.scss
+ ウェブページのスタイル
+*/
+
+/* -- Page -- */
+.pageSectionHeader {
+  h1 {
+    @extend %obiLeft;
+    @extend %primaryHeading;
+  }
+}
+
+/* -- Page About --*/
+.profilePhoto {
+  float: left;
+  width: 25%;
+  height: auto;
+  max-width: 9em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.SNS {
+  padding-left: 0;
+  overflow: hidden;
+  list-style: none;
+  li {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    a {
+      text-decoration: none;
+    }
+  }
+  i {
+    margin-right: .15em;
+  }
+  .fa-twitter {
+      margin-right: .05em;
+  }
+  .fa-facebook-square {
+      margin-right: .2em;
+  }
+}

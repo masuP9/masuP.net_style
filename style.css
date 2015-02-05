@@ -506,32 +506,32 @@ code {
 /* _extends.scss
   ========================================================================== */
 /* -- %primaryHeading -- */
-body.index .globalHeader .siteName, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1 {
+body.index .globalHeader .siteName, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
   font-size: 2em;
   line-height: 1.1;
   text-shadow: 1px 1px 0 #00775f;
   -webkit-font-smoothing: antialiased;
 }
-body.index .globalHeader .siteName a:hover, .pageSectionHeader h1 a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover {
+body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover, .pageSectionHeader h1 a:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 500px) {
-  body.index .globalHeader .siteName, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1 {
+  body.index .globalHeader .siteName, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
     font-size: 1.5em;
   }
 }
 
 /* -- %obi -- */
-body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1, .globalFooter {
+body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1, .globalFooter {
   background: #00aa88;
   color: #fcfcfc;
 }
-body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription a, body.index .main .siteDescription a, .pageSectionHeader h1 a, .articleHeader h1 a, .archiveHeader h1 a, .globalFooter a, body.index .globalHeader .siteName a:visited, body.index .globalHeader .siteDescription a:visited, body.index .main .siteDescription a:visited, .pageSectionHeader h1 a:visited, .articleHeader h1 a:visited, .archiveHeader h1 a:visited, .globalFooter a:visited {
+body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription a, body.index .main .siteDescription a, .articleHeader h1 a, .archiveHeader h1 a, .pageSectionHeader h1 a, .globalFooter a, body.index .globalHeader .siteName a:visited, body.index .globalHeader .siteDescription a:visited, body.index .main .siteDescription a:visited, .articleHeader h1 a:visited, .archiveHeader h1 a:visited, .pageSectionHeader h1 a:visited, .globalFooter a:visited {
   color: #fcfcfc;
 }
 
 /* -- %obiLeft -- */
-body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .pageSectionHeader h1, .articleHeader h1, .archiveHeader h1 {
+body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
   margin-left: -100%;
   padding: 1em .5em 1em 100%;
 }
@@ -570,28 +570,8 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
   text-decoration: none;
 }
 
-/* -- .articleInfo -- */
-.articleInfo {
-  text-align: right;
-}
-.articleInfo dt, .articleInfo dd {
-  display: inline;
-}
-.articleInfo dt {
-  margin-left: 1em;
-  font-size: 0.875em;
-}
-.articleInfo dt:after {
-  content: ":";
-  margin-left: .15em;
-  font-weight: bold;
-}
-.articleInfo dd {
-  margin-left: 0;
-}
-
 /* -- %tag -- */
-.articleInfo dd span {
+.article-tag {
   position: relative;
   margin-right: .5em;
   padding: 0px 15px 2px 6px;
@@ -602,7 +582,7 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
   font-family: "Source Code Pro", monospace;
   letter-spacing: -1px;
 }
-.articleInfo dd span:after {
+.article-tag:after {
   content: "";
   position: absolute;
   right: 0;
@@ -696,68 +676,36 @@ body.index .main .siteDescription {
   margin: 0;
 }
 
-/* -- Page -- */
-/* -- Page About --*/
-.profilePhoto {
-  float: left;
-  width: 25%;
-  height: auto;
-  max-width: 9em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 50%;
-}
-
-.SNS {
-  padding-left: 0;
-  overflow: hidden;
-  list-style: none;
-}
-.SNS li {
-  float: left;
-  margin-right: 1.5em;
-  margin-bottom: 1em;
-}
-.SNS li a {
-  text-decoration: none;
-}
-.SNS i {
-  margin-right: .15em;
-}
-.SNS .fa-twitter {
-  margin-right: .05em;
-}
-.SNS .fa-facebook-square {
-  margin-right: .2em;
-}
-
-/* -- Article -- */
-.articleFooter span {
-  font-size: 1.3125em;
-  line-height: 1.3;
-  vertical-align: bottom;
-}
-
-.articleNavTimeSeries {
-  margin: 2em 0;
-}
-.articleNavTimeSeries dt {
-  margin-top: 1em;
-}
-.articleNavTimeSeries dd {
-  margin-left: 1em;
-}
-.articleNavTimeSeries dd:before {
-  content: "»";
-  padding-right: .15em;
-  font-size: 1.5em;
-  line-height: 1;
-}
-
 /*
- _content.scss
- 本文エリア
- */
+ _article.scss
+ 記事ページのスタイル
+*/
+/* -- Article -- */
+/* -- .articleInfo -- */
+.article-info {
+  text-align: right;
+}
+
+.article-info-label,
+.article-info-prop {
+  display: inline;
+}
+
+.article-info-label {
+  margin-left: 1em;
+  font-size: 0.875em;
+}
+.article-info-label:after {
+  content: ":";
+  margin-left: .15em;
+  font-weight: bold;
+}
+
+.article-info-prop {
+  margin-left: 0;
+}
+
+/* -- 本文エリア -- */
 .content p {
   margin: 1.25em 0;
 }
@@ -868,6 +816,28 @@ body.index .main .siteDescription {
   margin: 0 0 .25em;
 }
 
+.articleFooter span {
+  font-size: 1.3125em;
+  line-height: 1.3;
+  vertical-align: bottom;
+}
+
+.articleNavTimeSeries {
+  margin: 2em 0;
+}
+.articleNavTimeSeries dt {
+  margin-top: 1em;
+}
+.articleNavTimeSeries dd {
+  margin-left: 1em;
+}
+.articleNavTimeSeries dd:before {
+  content: "»";
+  padding-right: .15em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
 /* _archive.scss
   ========================================================================== */
 ul.archive {
@@ -888,4 +858,43 @@ ul.archive li h2 {
 }
 ul.archive li h2 a {
   text-decoration: none;
+}
+
+/*
+ _page.scss
+ ウェブページのスタイル
+*/
+/* -- Page -- */
+/* -- Page About --*/
+.profilePhoto {
+  float: left;
+  width: 25%;
+  height: auto;
+  max-width: 9em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.SNS {
+  padding-left: 0;
+  overflow: hidden;
+  list-style: none;
+}
+.SNS li {
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+.SNS li a {
+  text-decoration: none;
+}
+.SNS i {
+  margin-right: .15em;
+}
+.SNS .fa-twitter {
+  margin-right: .05em;
+}
+.SNS .fa-facebook-square {
+  margin-right: .2em;
 }

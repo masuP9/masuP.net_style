@@ -61,29 +61,6 @@
   }
 }
 
-/* -- .articleInfo -- */
-.articleInfo {
-  text-align: right;
-  dt,dd {
-    display: inline;
-  }
-  dt {
-    margin-left: 1em;
-    @include fz(14);
-  }
-  dt:after {
-    content: ":";
-    margin-left: .15em;
-    font-weight: bold;
-  }
-  dd {
-    margin-left: 0;
-    span {
-      @extend %tag;
-    }
-  }
-}
-
 /* -- %tag -- */
 %tag {
   position: relative;

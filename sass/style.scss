@@ -1,87 +1,19 @@
 @charset "UTF-8";
-@import "variable";
-@import "normalize";
-@import "mixin";
-@import "core";
-@import "extends";
 
-@import "index";
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// foundation
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+@import "variable";  // 変数
+@import "normalize"; // normalize
+@import "mixin";     // mixin
+@import "core";      // reset & base
+@import "extends";   // placeholder
 
-/* -- Page -- */
-.pageSectionHeader {
-  h1 {
-    @extend %obiLeft;
-    @extend %primaryHeading;
-  }
-}
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// thema
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-/* -- Page About --*/
-.profilePhoto {
-  float: left;
-  width: 25%;
-  height: auto;
-  max-width: 9em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 50%;
-}
-
-.SNS {
-  padding-left: 0;
-  overflow: hidden;
-  list-style: none;
-  li {
-    float: left;
-    margin-right: 1.5em;
-    margin-bottom: 1em;
-    a {
-      text-decoration: none;
-    }
-  }
-  i {
-    margin-right: .15em;
-  }
-  .fa-twitter {
-      margin-right: .05em;
-  }
-  .fa-facebook-square {
-      margin-right: .2em;
-  }
-}
-
-/* -- Article -- */
-.articleHeader {
-  h1 {
-    @extend %obiLeft;
-    @extend %primaryHeading;
-  }
-}
-.articleFooter {
-  span {
-    @include fz(21);
-    line-height: 1.3;
-    vertical-align: bottom;
-  }
-}
-.articleNavTimeSeries {
-  margin: $margin 0;
-  dt {
-    margin-top: $margin / 2;
-  }
-
-  dd {
-    margin-left: 1em;
-    &:before {
-    content: "»";
-    padding-right: .15em;
-    @include fz(24);
-    line-height: 1;
-    }
-  }
-}
-
-// 記事のスタイル
-@import "_content";
-
-// archive ページ
-@import "_archive";
+@import "index";   // TOPページ
+@import "article"; // 記事ページ
+@import "archive"; // archive ページ
+@import "page";    // 個別ページ
