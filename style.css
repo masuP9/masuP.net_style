@@ -648,8 +648,6 @@ body.index .main .siteDescription {
   font-size: 1.125em;
   font-weight: normal;
   line-height: 1.2;
-  text-align: justify;
-  text-justify: inter-ideograph;
 }
 .recentArticle li a {
   text-decoration: none;
