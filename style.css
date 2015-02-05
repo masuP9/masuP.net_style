@@ -612,9 +612,10 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
   letter-spacing: -.1em;
 }
 
-/* style.scss
-   ========================================================================== */
-/* -- Index --*/
+/*
+ _index.scss
+ TOPページ関連
+ */
 body.index .globalHeader {
   margin-bottom: 3em;
 }
