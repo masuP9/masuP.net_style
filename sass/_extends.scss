@@ -5,7 +5,7 @@
 %primaryHeading {
   @include fz(32);
   line-height: 1.1;
-  text-shadow: 1px 1px 0 darken($baseColor, 10%);
+  @extend %long-shadow;
   -webkit-font-smoothing: antialiased;
   a:hover {
     text-decoration: none;
@@ -13,6 +13,18 @@
   @media screen and (max-width:500px) {
     @include fz(24);
   }
+}
+
+@function longshadow($color, $dis) {
+  $val: 0px 0px $color;
+  @for $i from 1 through $dis {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+%long-shadow {
+  text-shadow: longshadow(darken($baseColor, 10%),2);
 }
 
 /* -- %obi -- */

@@ -509,7 +509,6 @@ code {
 body.index .globalHeader .siteName, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
   font-size: 2em;
   line-height: 1.1;
-  text-shadow: 1px 1px 0 #00775f;
   -webkit-font-smoothing: antialiased;
 }
 body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover, .pageSectionHeader h1 a:hover {
@@ -519,6 +518,10 @@ body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveH
   body.index .globalHeader .siteName, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
     font-size: 1.5em;
   }
+}
+
+body.index .globalHeader .siteName, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1 {
+  text-shadow: 0px 0px #00775f, 1px 1px #00775f, 2px 2px #00775f;
 }
 
 /* -- %obi -- */
