@@ -727,6 +727,18 @@ body.index .main .siteDescription {
   font-size: 0.875em;
   vertical-align: top;
 }
+.content ul, .content ol {
+  padding-left: 1em;
+}
+.content dt {
+  font-weight: bold;
+}
+.content dd {
+  margin-left: 0;
+}
+.content dd + dt {
+  margin-top: .5em;
+}
 .content hr {
   margin: 1.75em 3em;
   border: 0;

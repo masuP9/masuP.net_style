@@ -62,6 +62,22 @@
     }
   }
 
+  ul,ol {
+    padding-left: 1em;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  dd + dt {
+    margin-top: .5em;
+  }
+
   hr {
     margin: 1.75em 3em;
     border: 0;
