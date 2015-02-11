@@ -397,7 +397,7 @@ html {
   color: #333333;
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.625;
 }
 
 a {
@@ -707,8 +707,17 @@ body.index .main .siteDescription {
 }
 
 /* -- 本文エリア -- */
+.content h2 {
+  margin-top: 2em;
+}
+@media screen and (max-width: 500px) {
+  .content h2 {
+    line-height: 1.25;
+    font-size: 1.25em;
+  }
+}
 .content p {
-  margin: 1.25em 0;
+  margin: 1.5em 0;
 }
 .content p code {
   margin: 0 2px;

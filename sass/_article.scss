@@ -42,8 +42,16 @@
 
 /* -- 本文エリア -- */
 .content {
+  h2 {
+    margin-top: $margin;
+    @media screen and (max-width:500px) {
+      line-height: (20 / $font-size-base);
+      @include fz(20);
+    }
+  }
+
   p {
-    margin: em(20) 0;
+    margin: em(24) 0;
     code {
       margin: 0 2px;
       padding: 0 3px 2px;
