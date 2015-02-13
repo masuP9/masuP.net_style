@@ -639,7 +639,7 @@ body.index .main .siteDescription {
   margin-bottom: 2em;
   padding-right: 5%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .recent-article-item {
     width: auto;
     height: auto;
@@ -647,6 +647,7 @@ body.index .main .siteDescription {
   }
 }
 .recent-article-item > a {
+  display: block;
   text-decoration: none;
 }
 
@@ -676,7 +677,7 @@ body.index .main .siteDescription {
   font-size: 1.75em;
   font-weight: bold;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .recent-article-item:first-child .recent-article-item-title {
     font-size: 1.375em;
   }
