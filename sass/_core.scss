@@ -2,20 +2,20 @@
    ========================================================================== */
 
 html {
-  background: $bodyBgColor;
-  color: $bodyTextColor;
+  background: $color-body-bg;
+  color: $color-body-text;
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: ($font-size-base / 16) + em;
   line-height: (26 / $font-size-base);
 }
 
 a {
-  color: $baseColor;
-  text-decoration: none;
+  color: $color-link;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -24,7 +24,7 @@ a:active {
 }
 
 a:visited {
-  color: darken($baseColor, 10%);
+  color: darken($color-link, 10%);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -72,7 +72,8 @@ code {
     -webkit-font-smoothing: antialiased;
   }
   a {
-    color: $bodyTextColor;
+    color: $color-body-text;
+    text-decoration: none;
   }
 }
 .main {
@@ -88,7 +89,7 @@ code {
   text-decoration: underline;
   transition: color .15s ease;
   &:hover {
-    color: lighten($baseColor, 7%);
+    color: lighten($color-base, 7%);
   }
 }
 
@@ -105,4 +106,8 @@ code {
       text-transform: uppercase;
     }
   }
+}
+
+.siteName {
+  font-family: "Viga", sans-serif;
 }

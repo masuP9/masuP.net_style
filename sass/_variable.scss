@@ -1,9 +1,24 @@
 // -- Variable --
 
 // Color
-$bodyBgColor: #fcfcfc;
-$bodyTextColor: #333;
-$baseColor: #0a8;
+
+//Base Color
+$color-base-black:    #2A2B2E;
+$color-base-blue:     #114B5F;
+$color-base-offwhite: #EFFFC8;
+$color-base-green:    #00AA88;
+$color-base-lime:     #85CB33;
+$color-base-gray:     #eaeaea;
+$color-base-orange:   #E4572E;
+
+$color-base-white: lighten($color-base-offwhite, 9.5%);
+
+$color-base:      $color-base-blue;
+$color-body-bg:   $color-base-white;
+$color-body-text: $color-base-black;
+$color-accent:    $color-base-orange;
+
+$color-link: $color-base-blue;
 
 // Layout
 $bodyMaxWidth: 42em;

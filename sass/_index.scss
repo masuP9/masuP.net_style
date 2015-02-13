@@ -13,6 +13,11 @@ body.index {
       margin-bottom: 0;
       padding-bottom: 0;
       @include fz(48);
+
+      a {
+        text-decoration: none;
+        transition: text-shadow .4s ease;
+      }
     }
     .siteDescription {
       @extend %obiLeft;
@@ -37,54 +42,68 @@ body.index {
   @include fz(20);
 }
 
-.recentArticle {
+.recent-article {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
+}
 
-  li {
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-    height: 5em;
-    margin-bottom: 2em;
-    padding-right: 5%;
+.recent-article-item {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 5em;
+  margin-bottom: 2em;
+  padding-right: 5%;
 
-    h2 {
-      margin: 0;
-      padding: .2em 0 .3em;
-      @include fz(18);
-      font-weight: normal;
-      line-height: 1.2;
-    }
+  @media screen and (max-width:500px) {
+   width: auto;
+   height: auto;
+   margin-bottom: 1.25em;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  & > a {
+    text-decoration: none;
+  }
+}
+
+.recent-article-item-published-time {
+  font-family: "Viga", sans-serif;
+  color: $color-body-text;
+}
+
+.recent-article-item-title {
+  margin: 0;
+  padding: .2em 0 .3em;
+  @include fz(18);
+  font-weight: normal;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.recent-article-item:first-child {
+  width: 100%;
+  height: auto;
+  max-width: $bodyMaxWidth;
+  float: none;
+  margin-left: 0;
+  margin-bottom: 2em;
+
+  .recent-article-item-title {
+    @include fz(28);
+    font-weight: bold;
 
     @media screen and (max-width:500px) {
-     width: auto;
-     height: auto;
-     margin-bottom: 1.25em;
+      @include fz(22);
     }
   }
 
-  li:first-child {
-    width: 100%;
-    height: auto;
-    max-width: $bodyMaxWidth;
-    float: none;
-    margin-left: 0;
-    margin-bottom: 2em;
-    h2 {
-      @include fz(28);
-    }
-    p {
-      margin: 0;
-    }
-    p a {
-      @extend %buttonSimple;
-    }
+  .recent-article-item-title > a {
+    text-decoration: none;
+  }
+  .recent-article-item-description {
+    margin: 0;
+    color: $color-body-text;
   }
 }

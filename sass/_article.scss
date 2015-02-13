@@ -37,11 +37,11 @@
 }
 
 .article-tag {
-  @extend %tag;
+  @extend .c-tag;
 }
 
 /* -- 本文エリア -- */
-.content {
+.article-body {
   h2 {
     margin-top: $margin;
     @media screen and (max-width:500px) {
@@ -56,7 +56,7 @@
       margin: 0 2px;
       padding: 0 3px 2px;
       border-radius: 3px;
-      background: darken($bodyBgColor, 7%);
+      background: $color-base-gray;
       @include fz(14);
       vertical-align: top;
     }
@@ -81,42 +81,62 @@
   hr {
     margin: 1.75em 3em;
     border: 0;
-    border-top: .2em solid #ddd;
+    border-top: .2em solid $color-base-gray;
   }
 
   table {
     max-width: 100%;
     min-width: 50%;
     margin: 1em auto 1.75em;
-    border: 1px solid darken($bodyBgColor, 10%);
+    @media screen and (max-width: 500px) {
+      @include fz(14);
+    }
   }
+
   caption {
     margin-bottom: .25em;
   }
+
   td, th {
-    padding: .5em;
-    border: 1px solid darken($bodyBgColor, 10%);
+    padding: 1em;
+    @media screen and (max-width: 500px) {
+      padding: .25em;
+    }
   }
+
   th {
-      background: #0a8;
-      border-color: #0a8;
-      color: #fafafa;
-      font-weight: normal;
+    padding-bottom: .5em;
+    border-bottom: 2px solid $color-base;
   }
+
+  td {
+    border-bottom: 1px solid $color-base-lime;
+  }
+
   img {
     max-width: 100%;
   }
+
   img[class^="mt-image"] {
     height: auto;
   }
+
   .mt-image-left {
     float: left;
-    margin: 0 1em 1em 0;
+    margin: 0 $margin $margin 0;
+    @media screen and (max-width: 500px) {
+      margin: 0 $margin / 2 $margin / 2 0;
+    }
   }
+
   .mt-image-right {
     float: right;
-    margin: 0 0 1em 1em;
+    margin: 0 0 $margin $margin;
+    @media screen and (max-width: 500px) {
+      margin: 0 0 $margin / 2 $margin / 2;
+    }
   }
+
   .mt-image-center {
     display: block;
     max-width: 100%;
@@ -126,8 +146,7 @@
 
 .code {
   dt {
-    font-family: "Source Code Pro", monospace;
-    font-weight: bold;
+    @extend %font-viga;
   }
   dd {
     margin: 0;
@@ -137,9 +156,10 @@
 .main .prettyprint {
   margin-top: 0;
   padding: 1em;
-  border-color: darken($bodyBgColor, 5%);
-  background: darken($bodyBgColor, 3%);
+  border-color: darken($color-base-gray, 5%);
+  background: $color-base-gray;
   @include fz(14);
+  line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -148,7 +168,7 @@
 .quote {
   position: relative;
   padding: .5em 1em 2.5em 2em;
-  background: darken($bodyBgColor, 3%);
+  background: $color-base-gray;
   dd {
     margin-left: 0;
   }
@@ -161,13 +181,13 @@
     position: absolute;
     left: -1.1875em;
     top: -.46875em;
-    color: darken($bodyBgColor, 15%);
+    color: darken($color-base-gray, 15%);
     font-family: 'FontAwesome';
     @include fz(32);
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-    text-shadow: 3px -3px 0px $bodyBgColor;
+    text-shadow: 3px -3px 0px $color-base-gray;
   }
   .cite {
     position: absolute;
