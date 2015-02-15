@@ -860,6 +860,7 @@ body.index .main .siteDescription {
   position: absolute;
   right: .5em;
   bottom: .5em;
+  text-align: right;
 }
 
 /* -- 参考にしたWebページ -- */
