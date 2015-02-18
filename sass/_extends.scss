@@ -36,7 +36,8 @@
 %long-shadow {
   $shadow-color: $color-base-lime;
   transition: text-shadow .4s ease;
-  &:hover {
+  &:hover,
+  &:focus {
     text-shadow: longshadow($shadow-color,10);
   }
 }

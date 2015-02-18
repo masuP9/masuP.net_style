@@ -527,7 +527,7 @@ body.index .globalHeader .siteName a, .articleHeader h1 a, .archiveHeader h1 a, 
   -webkit-transition: text-shadow .4s ease;
           transition: text-shadow .4s ease;
 }
-body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover, .pageSectionHeader h1 a:hover {
+body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover, .pageSectionHeader h1 a:hover, body.index .globalHeader .siteName a:focus, .articleHeader h1 a:focus, .archiveHeader h1 a:focus, .pageSectionHeader h1 a:focus {
   text-shadow: 0 0 #85cb33, 1px 1px #85cb33, 2px 2px #85cb33, 3px 3px #85cb33, 4px 4px #85cb33, 5px 5px #85cb33, 6px 6px #85cb33, 7px 7px #85cb33, 8px 8px #85cb33, 9px 9px #85cb33, 10px 10px #85cb33;
 }
 
