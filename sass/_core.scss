@@ -12,9 +12,11 @@ html {
 a {
   color: $color-link;
   text-decoration: underline;
+  transition: color .15s ease;
 }
 
 a:hover {
+  color: lighten($color-link, 10%);
   text-decoration: none;
 }
 
@@ -27,7 +29,7 @@ a:visited {
   color: darken($color-link, 10%);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-feature-settings: "kern" 1, "liga" 1;
   font-variant: proportional-width;
@@ -68,14 +70,8 @@ code {
   min-width: $bodyMinWidth;
   margin: 0 auto 1em;
   padding: 0 1em;
-  h1 {
-    -webkit-font-smoothing: antialiased;
-  }
-  a {
-    color: $color-body-text;
-    text-decoration: none;
-  }
 }
+
 .main {
   width: 80%;
   max-width: $bodyMaxWidth;
@@ -84,29 +80,37 @@ code {
   margin: $margin * .5 auto $margin;
 }
 
-.content a {
-  text-decoration: underline;
-  transition: color .15s ease;
-  &:hover {
-    color: lighten($color-base, 7%);
-  }
-}
-
 .globalFooter {
   @extend %obiRight;
   margin-top: $margin;
   text-align: left;
-  ul {
-    padding: 0;
-    list-style: none;
-    li {
-      display: inline;
-      margin-right: 3%;
-      text-transform: uppercase;
-    }
+}
+
+.site-nav {
+  padding: 0;
+  list-style: none;
+  & > li {
+    display: inline;
+    margin-right: 3%;
+    text-transform: uppercase;
+  }
+
+  & > li > a {
+    text-decoration: none;
+  }
+
+  & > li > a:hover {
+    text-decoration: underline;
   }
 }
 
+
 .siteName {
   font-family: "Viga", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  a {
+    color: $color-body-text;
+    text-decoration: none;
+  }
 }

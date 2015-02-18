@@ -403,9 +403,12 @@ html {
 a {
   color: #114b5f;
   text-decoration: underline;
+  -webkit-transition: color .15s ease;
+          transition: color .15s ease;
 }
 
 a:hover {
+  color: #196d8a;
   text-decoration: none;
 }
 
@@ -464,13 +467,6 @@ code {
   margin: 0 auto 1em;
   padding: 0 1em;
 }
-.globalHeader h1 {
-  -webkit-font-smoothing: antialiased;
-}
-.globalHeader a {
-  color: #2a2b2e;
-  text-decoration: none;
-}
 
 .main {
   width: 80%;
@@ -480,31 +476,34 @@ code {
   margin: 1em auto 2em;
 }
 
-.content a {
-  text-decoration: underline;
-  -webkit-transition: color .15s ease;
-          transition: color .15s ease;
-}
-.content a:hover {
-  color: #16637d;
-}
-
 .globalFooter {
   margin-top: 2em;
   text-align: left;
 }
-.globalFooter ul {
+
+.site-nav {
   padding: 0;
   list-style: none;
 }
-.globalFooter ul li {
+.site-nav > li {
   display: inline;
   margin-right: 3%;
   text-transform: uppercase;
 }
+.site-nav > li > a {
+  text-decoration: none;
+}
+.site-nav > li > a:hover {
+  text-decoration: underline;
+}
 
 .siteName {
   font-family: "Viga", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.siteName a {
+  color: #2a2b2e;
+  text-decoration: none;
 }
 
 .code dt {
