@@ -3,17 +3,17 @@
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // foundation
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-@import "variable";  // 変数
-@import "normalize"; // normalize
-@import "mixin";     // mixin
-@import "core";      // reset & base
-@import "extends";   // placeholder
+@import "foundation/_variable";  // 変数
+@import "foundation/_normalize"; // normalize
+@import "foundation/_mixin";     // mixin
+@import "foundation/_core";      // reset & base
+@import "foundation/_extends";   // placeholder
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // thema
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-@import "index";   // TOPページ
-@import "article"; // 記事ページ
-@import "archive"; // archive ページ
-@import "page";    // 個別ページ
+@import "object/project/_index";   // TOPページ
+@import "object/project/_article"; // 記事ページ
+@import "object/project/_archive"; // archive ページ
+@import "object/project/_page";    // 個別ページ

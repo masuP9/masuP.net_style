@@ -394,14 +394,14 @@ th {
    ========================================================================== */
 html {
   background: #fdfff8;
-  color: #2a2b2e;
+  color: #2A2B2E;
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: 1em;
   line-height: 1.625;
 }
 
 a {
-  color: #114b5f;
+  color: #114B5F;
   text-decoration: underline;
   -webkit-transition: color .15s ease;
           transition: color .15s ease;
@@ -502,7 +502,7 @@ code {
   -webkit-font-smoothing: antialiased;
 }
 .siteName a {
-  color: #2a2b2e;
+  color: #2A2B2E;
   text-decoration: none;
 }
 
@@ -527,12 +527,12 @@ body.index .globalHeader .siteName a, .articleHeader h1 a, .archiveHeader h1 a, 
           transition: text-shadow .4s ease;
 }
 body.index .globalHeader .siteName a:hover, .articleHeader h1 a:hover, .archiveHeader h1 a:hover, .pageSectionHeader h1 a:hover, body.index .globalHeader .siteName a:focus, .articleHeader h1 a:focus, .archiveHeader h1 a:focus, .pageSectionHeader h1 a:focus {
-  text-shadow: 0 0 #85cb33, 1px 1px #85cb33, 2px 2px #85cb33, 3px 3px #85cb33, 4px 4px #85cb33, 5px 5px #85cb33, 6px 6px #85cb33, 7px 7px #85cb33, 8px 8px #85cb33, 9px 9px #85cb33, 10px 10px #85cb33;
+  text-shadow: 0 0 #85CB33, 1px 1px #85CB33, 2px 2px #85CB33, 3px 3px #85CB33, 4px 4px #85CB33, 5px 5px #85CB33, 6px 6px #85CB33, 7px 7px #85CB33, 8px 8px #85CB33, 9px 9px #85CB33, 10px 10px #85CB33;
 }
 
 /* -- %obi -- */
 body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, body.index .main .siteDescription, .articleHeader h1, .archiveHeader h1, .pageSectionHeader h1, .globalFooter {
-  background: #114b5f;
+  background: #114B5F;
   color: #fdfff8;
 }
 body.index .globalHeader .siteName a, body.index .globalHeader .siteDescription a, body.index .main .siteDescription a, .articleHeader h1 a, .archiveHeader h1 a, .pageSectionHeader h1 a, .globalFooter a, body.index .globalHeader .siteName a:visited, body.index .globalHeader .siteDescription a:visited, body.index .main .siteDescription a:visited, .articleHeader h1 a:visited, .archiveHeader h1 a:visited, .pageSectionHeader h1 a:visited, .globalFooter a:visited {
@@ -651,7 +651,7 @@ body.index .main .siteDescription {
 
 .recent-article-item-published-time {
   font-family: "Viga", sans-serif;
-  color: #2a2b2e;
+  color: #2A2B2E;
 }
 
 .recent-article-item-title {
@@ -685,7 +685,7 @@ body.index .main .siteDescription {
 }
 .recent-article-item:first-child .recent-article-item-description {
   margin: 0;
-  color: #2a2b2e;
+  color: #2A2B2E;
 }
 
 /*
@@ -778,10 +778,10 @@ body.index .main .siteDescription {
 }
 .article-body th {
   padding-bottom: .5em;
-  border-bottom: 2px solid #114b5f;
+  border-bottom: 2px solid #114B5F;
 }
 .article-body td {
-  border-bottom: 1px solid #85cb33;
+  border-bottom: 1px solid #85CB33;
 }
 .article-body img {
   max-width: 100%;
