@@ -433,6 +433,14 @@ abbr[title] {
   border-bottom-width: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.875em;
+}
+
 /* -- Source Code -- */
 code {
   font-family: "Source Code Pro", monospace;

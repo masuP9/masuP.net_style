@@ -39,6 +39,14 @@ abbr[title] {
   border-bottom-width: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  @include fz(14);
+}
+
 /* -- Source Code -- */
 code {
   font-family: "Source Code Pro", monospace;
