@@ -861,6 +861,21 @@ body.index .main .siteDescription {
   text-align: right;
 }
 
+.embed-iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.embed-iframe > iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
   margin: 0 0 .25em;
