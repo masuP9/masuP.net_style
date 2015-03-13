@@ -142,6 +142,17 @@
     max-width: 100%;
     margin: 0 auto .5em;
   }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1em;
+    border-left: 3px solid $color-base-gray;
+  }
+
+  cite {
+    text-align: right;
+  }
 }
 
 .code {

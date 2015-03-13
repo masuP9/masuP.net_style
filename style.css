@@ -820,6 +820,15 @@ body.index .main .siteDescription {
   max-width: 100%;
   margin: 0 auto .5em;
 }
+.article-body blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1em;
+  border-left: 3px solid #eaeaea;
+}
+.article-body cite {
+  text-align: right;
+}
 
 .code dd {
   margin: 0;
