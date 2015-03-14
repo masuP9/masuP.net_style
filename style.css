@@ -904,6 +904,10 @@ body.index .main .siteDescription {
   vertical-align: bottom;
 }
 
+.articleAds {
+  margin: 2rem 0;
+}
+
 .articleNavTimeSeries {
   margin: 2em 0;
 }
