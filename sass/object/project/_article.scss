@@ -44,7 +44,7 @@
 .article-body {
   h2 {
     margin-top: $margin;
-    @media screen and (max-width:500px) {
+    @include media(sp) {
       line-height: (20 / $font-size-base);
       @include fz(20);
     }
@@ -88,7 +88,7 @@
     max-width: 100%;
     min-width: 50%;
     margin: 1em auto 1.75em;
-    @media screen and (max-width: 500px) {
+    @include media(sp) {
       @include fz(14);
     }
   }
@@ -99,7 +99,7 @@
 
   td, th {
     padding: 1em;
-    @media screen and (max-width: 500px) {
+    @include media(sp) {
       padding: .25em;
     }
   }
@@ -124,7 +124,7 @@
   .mt-image-left {
     float: left;
     margin: 0 $margin $margin 0;
-    @media screen and (max-width: 500px) {
+    @include media(sp) {
       margin: 0 $margin / 2 $margin / 2 0;
     }
   }
@@ -132,7 +132,7 @@
   .mt-image-right {
     float: right;
     margin: 0 0 $margin $margin;
-    @media screen and (max-width: 500px) {
+    @include media(sp) {
       margin: 0 0 $margin / 2 $margin / 2;
     }
   }

@@ -37,21 +37,8 @@
   @extend %font-size-large-xx;
   line-height: 1.1;
   -webkit-font-smoothing: antialiased;
-  a {
-    @extend %long-shadow;
-  }
-  @media screen and (max-width:500px) {
+  @include media(sp) {
     @include fz(24);
-  }
-}
-
-
-%long-shadow {
-  $shadow-color: $color-base-lime;
-  transition: text-shadow .4s ease;
-  &:hover,
-  &:focus {
-    text-shadow: longshadow($shadow-color,10);
   }
 }
 
@@ -79,7 +66,7 @@
   @media screen and (max-width:$bodyMaxWidth) {
     margin-left: 10%;
   }
-  @media screen and (max-width:500px) {
+  @include media(sp) {
     margin-left: 5%;
   }
 }

@@ -12,6 +12,22 @@
   }
 }
 
+// media query の管理
+@mixin media($bp) {
+  $bp-width: em(640);
+  @if $bp == 'sp' {
+    @media screen and (max-width: $bp-width) {
+      @content;
+    }
+  }
+  @else if $bp == 'pc' {
+    @media screen and (min-width: $bp-width + 1px) {
+      @content;
+    }
+  }
+  @else if $bp == 'large' {
+    @media screen and (min-width: $bp-width * 2) {
+      @content;
     }
   }
 }

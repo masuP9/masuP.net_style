@@ -3,40 +3,48 @@
  TOPページ関連
  */
 
-body.index {
-  .globalHeader {
-    margin-bottom: 3em;
-    .siteName {
-      @extend %obiLeft;
-      @extend %primaryHeading;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      @extend %font-size-large-xxx;
+body.index .siteDescription {
+  @extend %obiLeft;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 3em;
+}
 
-      a {
-        text-decoration: none;
-        transition: text-shadow .4s ease;
-      }
-    }
-    .siteDescription {
-      @extend %obiLeft;
-      margin-top: 0;
-      padding-top: 0;
-      padding-bottom: 3em;
-    }
-  }
-  .main {
+body.index .globalHeader {
+  margin-bottom: 3em;
+
+  .siteName {
+    @extend %obiLeft;
     margin-top: 0;
-    .siteDescription {
-      @extend %obiLeft;
-      margin-top: 0;
-      margin-bottom: $margin;
-      padding-top: 0;
-      padding-bottom: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    @extend %font-size-large-xxx;
+
+    a {
+      $shadow-color: $color-base-lime;
+      text-decoration: none;
+      transition: text-shadow .4s ease;
+
+      &:hover,
+      &:focus {
+        text-shadow: longshadow($shadow-color,10);
+      }
     }
   }
 }
+
+body.index .main {
+  margin-top: 0;
+
+  .siteDescription {
+    @extend %obiLeft;
+    margin-top: 0;
+    margin-bottom: $margin;
+    padding-top: 0;
+    padding-bottom: 2em;
+  }
+}
+
 
 .recentArticleSection h1 {
   @extend %font-size-large-x;
@@ -57,7 +65,7 @@ body.index {
   margin-bottom: 2em;
   padding-right: 5%;
 
-  @media screen and (max-width:640px) {
+  @include media(sp) {
    width: auto;
    height: auto;
    margin-bottom: 1.25em;
@@ -96,7 +104,7 @@ body.index {
     font-weight: bold;
     text-decoration: none;
 
-    @media screen and (max-width:640px) {
+    @include media(sp) {
       @include fz(22);
     }
   }
