@@ -12,18 +12,6 @@
   }
 }
 
-// -- function -- //
-
-// px を em の値に変換
-@function em($px, $base:$font-size-base, $unit:em) {
-  @if $unit == em {
-    @return ($px / $base) * 1em;
-  }@elseif $unit == none {
-    @return ($px / $base);
+    }
   }
-}
-
-// px を rem の値に変換
-@function rem($px) {
-  @return ($px / $font-size-base) * 1rem;
 }

@@ -45,13 +45,6 @@
   }
 }
 
-@function longshadow($color, $dis) {
-  $val: 0 0 $color;
-  @for $i from 1 through $dis {
-    $val: #{$val}, #{$i}px #{$i}px #{$color};
-  }
-  @return $val;
-}
 
 %long-shadow {
   $shadow-color: $color-base-lime;
