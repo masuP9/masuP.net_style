@@ -3,10 +3,10 @@
 
 html {
   background: $color-body-bg;
-  color: $color-body-text;
+  color: $color-text;
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: ($font-size-base / 16) + em;
-  line-height: (26 / $font-size-base);
+  line-height: $line-height-base;
 }
 
 a {
@@ -31,7 +31,7 @@ a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings: "kern" 1;
   font-variant: proportional-width;
 }
 
@@ -44,20 +44,10 @@ figure {
 }
 
 figcaption {
-  @extend %font-size-14px;
+  @extend %font-size-smaller;
 }
 
 /* -- Source Code -- */
 code {
   font-family: "Source Code Pro", monospace;
-}
-
-.siteName {
-  font-family: "Viga", sans-serif;
-  -webkit-font-smoothing: antialiased;
-
-  a {
-    color: $color-body-text;
-    text-decoration: none;
-  }
 }

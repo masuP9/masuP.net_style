@@ -1,34 +1,116 @@
 /* _layout.scss
    ========================================================================== */
 
-.globalHeader {
-  width: 80%;
+// Layout
+$bodyMaxWidth: 44rem;
+$bodyMinWidth: 18rem;
+$margin: 2rem;
+
+%content-width {
   max-width: $bodyMaxWidth;
-  min-width: $bodyMinWidth;
-  margin: 0 auto 1em;
-  padding: 0 1em;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media(sp) {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
+.g-header {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .c-sitename {
+    @extend %content-width;
+  }
+
+  .c-sitename > a {
+    text-shadow: 0 0 transparent;
+    transition: text-shadow .4s ease;
+    color: $color-base;
+
+    &:hover {
+      text-shadow: longshadow(#543, 7);
+    }
+  }
+}
+
+.index .g-header {
+  height: 40vh;
+
+  .c-sitename {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 1em;
+    width: 50%;
+    font-size: 8vmin;
+    text-align: center;
+  }
+
+  .sitedescription {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    right: 1rem;
+    left: 1rem;
+  }
+}
+
+
 .main {
-  width: 80%;
-  max-width: $bodyMaxWidth;
-  min-width: $bodyMinWidth;
-  padding: 0 1em;
-  margin: $margin * .5 auto $margin;
+  @extend %content-width;
+  margin-bottom: $margin;
 }
 
 .globalFooter {
-  @extend %obiRight;
+  @extend %content-width;
+  position: relative;
+  padding-top: $margin / 2;
+  padding-bottom: $margin / 2;
   margin-top: $margin;
-  text-align: left;
+
+  .sns-list {
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    margin: 0;
+    text-align: right;
+
+    & > li {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.back2top {
+  text-align: center;
+
+  & > a {
+    display: inline-block;
+    height: 1em * $line-height-base;
+    width: 1em * $line-height-base;
+    @extend %font-size-large-x;
+    border: 1px solid $color-base;
+    border-radius: 51%;
+    text-decoration: none;
+    vertical-align: middle;
+  }
 }
 
 .site-nav {
+  margin: 1rem 0;
   padding: 0;
   list-style: none;
+  @extend .c-flat-list;
+
   & > li {
-    display: inline;
-    margin-right: 3%;
     text-transform: uppercase;
   }
 
@@ -38,5 +120,15 @@
 
   & > li > a:hover {
     text-decoration: underline;
+  }
+}
+
+.copyright {
+  margin: .5em 0;
+
+  a,
+  a:visited {
+    color: $color-text;
+    text-decoration: none;
   }
 }

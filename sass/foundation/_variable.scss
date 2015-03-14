@@ -13,17 +13,15 @@ $color-base-orange:   #E4572E;
 
 $color-base-white: lighten($color-base-offwhite, 9.5%);
 
-$color-base:      $color-base-blue;
+$color-base:      $color-base-orange;
+$color-base-light: lighten($color-base, 10%);
+$color-base-dark: darken($color-base, 10%);
 $color-body-bg:   $color-base-white;
-$color-body-text: $color-base-black;
+$color-text: $color-base-black;
 $color-accent:    $color-base-orange;
 
-$color-link: $color-base-blue;
-
-// Layout
-$bodyMaxWidth: 42em;
-$bodyMinWidth: 18em;
-$margin: 2em;
+$color-link: $color-base-dark;
 
 // Font
 $font-size-base: 16;
+$line-height-base: 26 / $font-size-base;

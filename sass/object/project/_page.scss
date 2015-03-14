@@ -6,7 +6,6 @@
 /* -- Page -- */
 .pageSectionHeader {
   h1 {
-    @extend %obiLeft;
     @extend %primaryHeading;
   }
 }

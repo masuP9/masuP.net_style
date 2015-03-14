@@ -4,30 +4,28 @@
 */
 
 /* -- Article -- */
-.articleHeader {
-  h1 {
-    @extend %obiLeft;
-    @extend %primaryHeading;
-  }
+.p-article-header {
+  margin: 4rem 0;
+}
+
+.p-article-title {
+  @extend %primaryHeading;
 }
 
 /* -- .articleInfo -- */
 .article-info {
-  text-align: right;
+  @extend %font-size-smaller;
 }
 
-.article-info-label,
-.article-info-prop {
-  display: inline;
+.article-info-label{
+  float: left;
 }
 
 .article-info-label {
-  margin-left: 1em;
-  @extend %font-size-14px;
 
   &:after {
     content: ":";
-    margin-left: .15em;
+    margin: 0 .15rem;
     font-weight: bold;
   }
 }
@@ -43,7 +41,7 @@
 /* -- 本文エリア -- */
 .article-body {
   h2 {
-    margin-top: $margin;
+    margin-top: 3rem;
     @include media(sp) {
       line-height: (20 / $font-size-base);
       @include fz(20);
@@ -57,7 +55,7 @@
       padding: 0 3px 2px;
       border-radius: 3px;
       background: $color-base-gray;
-      @extend %font-size-14px;
+      @extend %font-size-smaller;
       vertical-align: top;
     }
   }
@@ -167,9 +165,8 @@
 .main .prettyprint {
   margin-top: 0;
   padding: 1em;
-  border-color: darken($color-base-gray, 5%);
-  background: $color-base-gray;
-  @extend %font-size-14px;
+  border: 1px solid darken($color-base-gray, 10%);
+  @extend %font-size-smaller;
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -178,7 +175,7 @@
 /* -- Quote --*/
 .quote {
   position: relative;
-  padding: .5em 1em 2.5em 2em;
+  padding: .5em 1rem 3em 1rem;
   background: $color-base-gray;
   dd {
     margin-left: 0;
@@ -186,24 +183,12 @@
   blockquote {
     position: relative;
     margin: 0;
-  }
-  blockquote:before {
-    content: "\f10d";
-    position: absolute;
-    left: -1.1875em;
-    top: -.46875em;
-    color: darken($color-base-gray, 15%);
-    font-family: 'FontAwesome';
-    @include fz(32);
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    text-shadow: 3px -3px 0 $color-base-gray;
+    padding: 0;
   }
   .cite {
     position: absolute;
-    right: .5em;
-    bottom: .5em;
+    right: 1rem;
+    bottom: 1rem;
     text-align: right;
   }
 }
@@ -226,7 +211,7 @@
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 .25em;
+  margin: 0 0 .25rem;
 }
 
 // permalink
@@ -241,7 +226,7 @@
 
 .p-article-permalink-link {
   margin-left: 0;
-  @extend %font-size-14px;
+  @extend %font-size-smaller;
 }
 
 // article bottom ads
@@ -249,18 +234,52 @@
   margin: 2rem 0;
 }
 
+.article-ads-title {
+  @extend %font-size-smaller;
+  border-bottom: 1px solid $color-base-gray;
+}
+
 // pager
 .p-article-pager {
-  margin: $margin 0;
+  position: relative;
+  margin: 4rem auto;
 }
 
 .p-article-pager-label {
+  width: 50%;
   margin-top: $margin / 2;
   font-weight: bold;
 }
 
 .p-article-pager-link {
+  box-sizing: border-box;
+  width: 50%;
   margin-left: 0;
-  @extend %font-size-14px;
+  @extend %font-size-smaller;
+}
+
+.p-article-pager-older {
+  padding-right: 1rem;
+
+  @include media(sp) {
+    padding-right: .5rem;
+  }
+}
+
+.p-article-pager-newer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  padding-left: 1rem;
+  text-align: right;
+
+  @include media(sp) {
+    padding-left: .5rem;
+  }
+}
+
+.p-article-pager-newer.p-article-pager-link {
+  top: 1.5rem;
 }
 

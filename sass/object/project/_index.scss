@@ -3,48 +3,9 @@
  TOPページ関連
  */
 
-body.index .siteDescription {
-  @extend %obiLeft;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 3em;
+.siteDescription {
+  margin: 0;
 }
-
-body.index .globalHeader {
-  margin-bottom: 3em;
-
-  .siteName {
-    @extend %obiLeft;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    @extend %font-size-large-xxx;
-
-    a {
-      $shadow-color: $color-base-lime;
-      text-decoration: none;
-      transition: text-shadow .4s ease;
-
-      &:hover,
-      &:focus {
-        text-shadow: longshadow($shadow-color,10);
-      }
-    }
-  }
-}
-
-body.index .main {
-  margin-top: 0;
-
-  .siteDescription {
-    @extend %obiLeft;
-    margin-top: 0;
-    margin-bottom: $margin;
-    padding-top: 0;
-    padding-bottom: 2em;
-  }
-}
-
 
 .recentArticleSection h1 {
   @extend %font-size-large-x;
@@ -60,31 +21,43 @@ body.index .main {
 .recent-article-item {
   box-sizing: border-box;
   float: left;
-  width: 50%;
-  height: 5em;
-  margin-bottom: 2em;
-  padding-right: 5%;
+  width: 47.5%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+
+  &:nth-child(2n+2) {
+    clear: left;
+    margin-left: 0;
+  }
 
   @include media(sp) {
-   width: auto;
+   width: 100%;
    height: auto;
-   margin-bottom: 1.25em;
+   margin: 0 0 1.5rem 0;
   }
 
   & > a {
     display: block;
     text-decoration: none;
+    padding: 1rem;
+    transition: all .2s ease;
+
+    &:hover {
+      border-radius: em(5);
+      background-color: $color-base-gray;
+    }
   }
+
 }
 
 .recent-article-item-published-time {
   font-family: "Viga", sans-serif;
-  color: $color-body-text;
+  color: $color-text;
 }
 
 .recent-article-item-title {
   margin: 0;
-  padding: .2em 0 .3em;
+  padding: .2rem 0 .3rem;
   @extend %font-size-large;
   font-weight: normal;
   line-height: 1.2;
@@ -97,12 +70,20 @@ body.index .main {
   max-width: $bodyMaxWidth;
   float: none;
   margin-left: 0;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
+
+  @include media(mid) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .recent-article-item-title {
     @extend %font-size-large-xx;
     font-weight: bold;
     text-decoration: none;
+    color: $color-base;
+    text-shadow: longshadow(#fff,3);
+
 
     @include media(sp) {
       @include fz(22);
@@ -114,6 +95,7 @@ body.index .main {
   }
   .recent-article-item-description {
     margin: 0;
-    color: $color-body-text;
+    color: $color-text;
+    @extend %font-size-smaller;
   }
 }
