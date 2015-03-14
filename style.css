@@ -390,6 +390,45 @@ th {
   padding: 0;
 }
 
+/* _layout.scss
+   ========================================================================== */
+.globalHeader {
+  width: 80%;
+  max-width: 42em;
+  min-width: 18em;
+  margin: 0 auto 1em;
+  padding: 0 1em;
+}
+
+.main {
+  width: 80%;
+  max-width: 42em;
+  min-width: 18em;
+  padding: 0 1em;
+  margin: 1em auto 2em;
+}
+
+.globalFooter {
+  margin-top: 2em;
+  text-align: left;
+}
+
+.site-nav {
+  padding: 0;
+  list-style: none;
+}
+.site-nav > li {
+  display: inline;
+  margin-right: 3%;
+  text-transform: uppercase;
+}
+.site-nav > li > a {
+  text-decoration: none;
+}
+.site-nav > li > a:hover {
+  text-decoration: underline;
+}
+
 /* _core.scss
    ========================================================================== */
 html {
@@ -591,6 +630,30 @@ body.index .globalHeader .siteName, body.index .globalHeader .siteDescription, b
 /* -- SiteName --*/
 .siteName span {
   letter-spacing: -.1em;
+}
+
+/* _conponent.scss
+  ========================================================================== */
+.c-icon {
+  display: inline-block;
+}
+
+.c-flat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.c-flat-list > li,
+.c-flat-list > dt,
+.c-flat-list > dd {
+  display: inline-block;
+  margin-right: .5rem;
+  margin-bottom: 1em;
+}
+.c-flat-list > li:last-child,
+.c-flat-list > dt:last-child,
+.c-flat-list > dd:last-child {
+  margin-left: 0;
 }
 
 /*

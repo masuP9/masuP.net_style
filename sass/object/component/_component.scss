@@ -1,0 +1,23 @@
+/* _conponent.scss
+  ========================================================================== */
+
+.c-icon {
+  display: inline-block;
+}
+
+.c-flat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.c-flat-list > li,
+.c-flat-list > dt,
+.c-flat-list > dd {
+  display: inline-block;
+  margin-right: .5rem;
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
