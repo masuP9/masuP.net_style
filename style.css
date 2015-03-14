@@ -485,65 +485,6 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-/* -- Hide alt text for Font Awesome -- */
-.fa span {
-  display: block;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-}
-
-/* -- Font Awesome Icon Logo Color -- */
-.fa-twitter:before {
-  color: #55ACEE;
-}
-
-.fa-facebook-square:before {
-  color: #3B5998;
-}
-
-.fa-github:before {
-  color: #111111;
-}
-
-/* -- Layout & Common -- */
-.globalHeader {
-  width: 80%;
-  max-width: 42em;
-  min-width: 18em;
-  margin: 0 auto 1em;
-  padding: 0 1em;
-}
-
-.main {
-  width: 80%;
-  max-width: 42em;
-  min-width: 18em;
-  padding: 0 1em;
-  margin: 1em auto 2em;
-}
-
-.globalFooter {
-  margin-top: 2em;
-  text-align: left;
-}
-
-.site-nav {
-  padding: 0;
-  list-style: none;
-}
-.site-nav > li {
-  display: inline;
-  margin-right: 3%;
-  text-transform: uppercase;
-}
-.site-nav > li > a {
-  text-decoration: none;
-}
-.site-nav > li > a:hover {
-  text-decoration: underline;
-}
-
 .siteName {
   font-family: "Viga", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1026,27 +967,4 @@ body.index .main .siteDescription {
   margin-right: 1em;
   margin-bottom: 1em;
   border-radius: 50%;
-}
-
-.SNS {
-  padding-left: 0;
-  overflow: hidden;
-  list-style: none;
-}
-.SNS li {
-  float: left;
-  margin-right: 1.5em;
-  margin-bottom: 1em;
-}
-.SNS li a {
-  text-decoration: none;
-}
-.SNS i {
-  margin-right: .15em;
-}
-.SNS .fa-twitter {
-  margin-right: .05em;
-}
-.SNS .fa-facebook-square {
-  margin-right: .2em;
 }
