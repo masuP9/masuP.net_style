@@ -12,7 +12,7 @@ body.index {
       margin-top: 0;
       margin-bottom: 0;
       padding-bottom: 0;
-      @include fz(48);
+      @extend %font-size-large-xxx;
 
       a {
         text-decoration: none;
@@ -39,7 +39,7 @@ body.index {
 }
 
 .recentArticleSection h1 {
-  @include fz(20);
+  @extend %font-size-large-x;
 }
 
 .recent-article {
@@ -77,7 +77,7 @@ body.index {
 .recent-article-item-title {
   margin: 0;
   padding: .2em 0 .3em;
-  @include fz(18);
+  @extend %font-size-large;
   font-weight: normal;
   line-height: 1.2;
   text-decoration: underline;
@@ -92,8 +92,9 @@ body.index {
   margin-bottom: 2em;
 
   .recent-article-item-title {
-    @include fz(28);
+    @extend %font-size-large-xx;
     font-weight: bold;
+    text-decoration: none;
 
     @media screen and (max-width:640px) {
       @include fz(22);

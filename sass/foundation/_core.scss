@@ -44,7 +44,7 @@ figure {
 }
 
 figcaption {
-  @include fz(14);
+  @extend %font-size-14px;
 }
 
 /* -- Source Code -- */

@@ -1,6 +1,6 @@
 // ==========================================================================
 // _extends.scss
-// extend用のplaceholderたち
+// placeholder
 // ==========================================================================
 
 %font-viga {
@@ -13,8 +13,28 @@
   letter-spacing: 0;
 }
 
-%primaryHeading {
+%font-size-14px {
+  @include fz(14);
+}
+
+%font-size-large {
+  @include fz(18);
+}
+
+%font-size-large-x {
+  @include fz(24);
+}
+
+%font-size-large-xx {
   @include fz(32);
+}
+
+%font-size-large-xxx {
+  @include fz(48);
+}
+
+%primaryHeading {
+  @extend %font-size-large-xx;
   line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   a {
@@ -110,7 +130,7 @@
   padding: 0 15px 2px 6px;
   border-radius: 2px 0 0 2px;
   background: $color-base-gray;
-  @include fz(14);
+  @extend %font-size-14px;
   &:after {
     content: "";
     position: absolute;

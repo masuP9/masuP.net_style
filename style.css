@@ -515,10 +515,6 @@ figure {
 	margin: 0;
 }
 
-figcaption {
-	font-size: 0.875em;
-}
-
 /* -- Source Code -- */
 
 code {
@@ -540,11 +536,42 @@ code {
 	letter-spacing: 1px;
 }
 
+figcaption,
+.c-tag,
+.article-tag,
+.article-info-label,
+.article-body p code,
+.main .prettyprint,
+.p-article-permalink-link,
+.p-article-pager-link {
+	font-size: 0.875em;
+}
+
+.recent-article-item-title,
+.archive-list-item-title {
+	font-size: 1.125em;
+}
+
+.recentArticleSection h1 {
+	font-size: 1.5em;
+}
+
+body.index .globalHeader .siteName,
+.articleHeader h1,
+.archiveHeader h1,
+.pageSectionHeader h1,
+.recent-article-item:first-child .recent-article-item-title {
+	font-size: 2em;
+}
+
+body.index .globalHeader .siteName {
+	font-size: 3em;
+}
+
 body.index .globalHeader .siteName,
 .articleHeader h1,
 .archiveHeader h1,
 .pageSectionHeader h1 {
-	font-size: 2em;
 	line-height: 1.1;
 	-webkit-font-smoothing: antialiased;
 }
@@ -628,7 +655,6 @@ body.index .main .siteDescription,
 	padding: 0 15px 2px 6px;
 	border-radius: 2px 0 0 2px;
 	background: #eaeaea;
-	font-size: 0.875em;
 }
 
 .c-tag:after,
@@ -686,7 +712,6 @@ body.index .globalHeader .siteName {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
-	font-size: 3em;
 }
 
 body.index .globalHeader .siteName a {
@@ -710,10 +735,6 @@ body.index .main .siteDescription {
 	margin-bottom: 2em;
 	padding-top: 0;
 	padding-bottom: 2em;
-}
-
-.recentArticleSection h1 {
-	font-size: 1.25em;
 }
 
 .recent-article {
@@ -745,7 +766,6 @@ body.index .main .siteDescription {
 .recent-article-item-title {
 	margin: 0;
 	padding: .2em 0 .3em;
-	font-size: 1.125em;
 	font-weight: normal;
 	line-height: 1.2;
 	text-decoration: underline;
@@ -761,8 +781,8 @@ body.index .main .siteDescription {
 }
 
 .recent-article-item:first-child .recent-article-item-title {
-	font-size: 1.75em;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 .recent-article-item:first-child .recent-article-item-title > a {
@@ -794,7 +814,6 @@ body.index .main .siteDescription {
 
 .article-info-label {
 	margin-left: 1em;
-	font-size: 0.875em;
 }
 
 .article-info-label:after {
@@ -822,7 +841,6 @@ body.index .main .siteDescription {
 	padding: 0 3px 2px;
 	border-radius: 3px;
 	background: #eaeaea;
-	font-size: 0.875em;
 	vertical-align: top;
 }
 
@@ -917,7 +935,6 @@ body.index .main .siteDescription {
 	padding: 1em;
 	border-color: #dddddd;
 	background: #eaeaea;
-	font-size: 0.875em;
 	line-height: 1.4;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -983,32 +1000,34 @@ body.index .main .siteDescription {
 	margin: 0 0 .25em;
 }
 
-.articleFooter span {
-	font-size: 1.3125em;
-	line-height: 1.3;
-	vertical-align: bottom;
+.p-article-permalink {
+	margin: 2em 0;
+}
+
+.p-article-permalink-label {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.p-article-permalink-link {
+	margin-left: 0;
 }
 
 .articleAds {
 	margin: 2rem 0;
 }
 
-.articleNavTimeSeries {
+.p-article-pager {
 	margin: 2em 0;
 }
 
-.articleNavTimeSeries dt {
+.p-article-pager-label {
 	margin-top: 1em;
+	font-weight: bold;
 }
 
-.articleNavTimeSeries dd {
-  margin-left: 1em;
-}
-.articleNavTimeSeries dd:before {
-  content: "»";
-  padding-right: .15em;
-  font-size: 1.5em;
-  line-height: 1;
+.p-article-pager-link {
+	margin-left: 0;
 }
 
 /* _archive.scss
@@ -1030,7 +1049,6 @@ body.index .main .siteDescription {
 
 .archive-list-item-title {
 	margin: 0 0 1.5em;
-	font-size: 1.125em;
 	line-height: 1.3;
 	font-weight: bold;
 }
