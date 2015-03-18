@@ -1,32 +1,31 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-
 html {
-	font-family: sans-serif; /* 1 */
-	-ms-text-size-adjust: 100%; /* 2 */
-	-webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /**
  * Remove default margin.
  */
-
 body {
-	margin: 0;
+  margin: 0;
 }
 
 /* HTML5 display definitions
    ========================================================================== */
-
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-
 article,
 aside,
 details,
@@ -39,227 +38,206 @@ main,
 nav,
 section,
 summary {
-	display: block;
+  display: block;
 }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-
 audio,
 canvas,
 progress,
 video {
-	display: inline-block; /* 1 */
-	vertical-align: baseline; /* 2 */
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-
 audio:not([controls]) {
-	display: none;
-	height: 0;
+  display: none;
+  height: 0;
 }
 
 /**
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-
 [hidden],
 template {
-	display: none;
+  display: none;
 }
 
 /* Links
    ========================================================================== */
-
 /**
  * Remove the gray background color from active links in IE 10.
  */
-
 a {
-	background: transparent;
+  background: transparent;
 }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
 a:active,
 a:hover {
-	outline: 0;
+  outline: 0;
 }
 
 /* Text-level semantics
    ========================================================================== */
-
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-
 abbr[title] {
-	border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-
 b,
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-
 dfn {
-	font-style: italic;
+  font-style: italic;
 }
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /**
  * Address styling not present in IE 8/9.
  */
-
 mark {
-	background: #ff0;
-	color: #000;
+  background: #ff0;
+  color: #000;
 }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-
 small {
-	font-size: 80%;
+  font-size: 80%;
 }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 /* Embedded content
    ========================================================================== */
-
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-
 img {
-	border: 0;
+  border: 0;
 }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-
 svg:not(:root) {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 /* Grouping content
    ========================================================================== */
-
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-
 figure {
-	margin: 1em 40px;
+  margin: 1em 40px;
 }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-
 hr {
-	box-sizing: content-box;
-	height: 0;
+  box-sizing: content-box;
+  height: 0;
 }
 
 /**
  * Contain overflow in all browsers.
  */
-
 pre {
-	overflow: auto;
+  overflow: auto;
 }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-
 code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 /* Forms
    ========================================================================== */
-
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
  * styling of `select`, unless a `border` property is set.
  */
-
 /**
  * 1. Correct color not being inherited.
  *    Known issue: affects color of disabled elements.
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-
 button,
 input,
 optgroup,
 select,
 textarea {
-	color: inherit; /* 1 */
-	font: inherit; /* 2 */
-	margin: 0; /* 3 */
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
 }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10.
  */
-
 button {
-	overflow: visible;
+  overflow: visible;
 }
 
 /**
@@ -268,10 +246,9 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8+, and Opera
  * Correct `select` style inheritance in Firefox.
  */
-
 button,
 select {
-	text-transform: none;
+  text-transform: none;
 }
 
 /**
@@ -281,41 +258,39 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button; /* 2 */
-	cursor: pointer; /* 3 */
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
 }
 
 /**
  * Re-set default cursor for disabled elements.
  */
-
 button[disabled],
 html input[disabled] {
-	cursor: default;
+  cursor: default;
 }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-
 input {
-	line-height: normal;
+  line-height: normal;
 }
 
 /**
@@ -325,11 +300,12 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box; /* 1 */
-	padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -337,10 +313,9 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
+  height: auto;
 }
 
 /**
@@ -348,10 +323,11 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-
 input[type="search"] {
-	-webkit-appearance: textfield; /* 1 */ /* 2 */
-	box-sizing: content-box;
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
 }
 
 /**
@@ -359,809 +335,824 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
  * Define consistent border, margin, and padding.
  */
-
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-
 legend {
-	border: 0; /* 1 */
-	padding: 0; /* 2 */
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
  * Remove default vertical scrollbar in IE 8/9.
  */
-
 textarea {
-	overflow: auto;
+  overflow: auto;
 }
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-
 optgroup {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /* Tables
    ========================================================================== */
-
 /**
  * Remove most spacing between table cells.
  */
-
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
 th {
-	padding: 0;
+  padding: 0;
 }
 
 /* _layout.scss
    ========================================================================== */
-
-.g-header .c-sitename,
-.main,
-.globalFooter {
-	max-width: 44rem;
-	width: 70%;
-	margin-right: auto;
-	margin-left: auto;
+.g-header .c-sitename, .main, .globalFooter {
+  max-width: 44rem;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 48em) {
+  .g-header .c-sitename, .main, .globalFooter {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
 .g-header {
-	position: relative;
-	margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
 }
-
 .g-header .c-sitename > a {
-	text-shadow: 0 0 transparent;
-	-webkit-transition: text-shadow .4s ease;
-	transition: text-shadow .4s ease;
-	color: #E4572E;
+  text-shadow: 0 0 transparent;
+  -webkit-transition: text-shadow .4s ease;
+          transition: text-shadow .4s ease;
+  color: #E4572E;
 }
-
 .g-header .c-sitename > a:hover {
-	text-shadow: 0 0 #543, 1px 1px #543, 2px 2px #543, 3px 3px #543, 4px 4px #543, 5px 5px #543, 6px 6px #543, 7px 7px #543;
+  text-shadow: 0 0 #543, 1px 1px #543, 2px 2px #543, 3px 3px #543, 4px 4px #543, 5px 5px #543, 6px 6px #543, 7px 7px #543;
 }
 
 .index .g-header {
-	height: 40vh;
+  height: 40vh;
 }
-
 .index .g-header .c-sitename {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	height: 1em;
-	width: 50%;
-	font-size: 8vmin;
-	text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 1em;
+  width: 50%;
+  font-size: 8vmin;
+  text-align: center;
 }
-
 .index .g-header .sitedescription {
-	position: absolute;
-	bottom: 1rem;
-	text-align: center;
-	right: 1rem;
-	left: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  right: 1rem;
+  left: 1rem;
 }
 
 .main {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .globalFooter {
-	position: relative;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	margin-top: 2rem;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
 }
-
 .globalFooter .sns-list {
-	position: absolute;
-	bottom: 1rem;
-	right: 0;
-	margin: 0;
-	text-align: right;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  margin: 0;
+  text-align: right;
 }
-
 .globalFooter .sns-list > li {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .back2top {
-	text-align: center;
+  text-align: center;
 }
-
 .back2top > a {
-	display: inline-block;
-	height: 1.625em;
-	width: 1.625em;
-	border: 1px solid #E4572E;
-	border-radius: 51%;
-	text-decoration: none;
-	vertical-align: middle;
+  display: inline-block;
+  height: 1.625em;
+  width: 1.625em;
+  border: 1px solid #E4572E;
+  border-radius: 51%;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 .site-nav {
-	margin: 1rem 0;
-	padding: 0;
-	list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
 }
-
 .site-nav > li {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .site-nav > li > a {
-	text-decoration: none;
+  text-decoration: none;
 }
-
 .site-nav > li > a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .copyright {
-	margin: .5em 0;
+  margin: .5em 0;
 }
-
 .copyright a,
 .copyright a:visited {
-	color: #2A2B2E;
-	text-decoration: none;
+  color: #2A2B2E;
+  text-decoration: none;
 }
 
 /* _core.scss
    ========================================================================== */
-
 html {
-	background: #fdfff8;
-	color: #2A2B2E;
-	font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-	font-size: 1em;
-	line-height: 1.625;
+  background: #fdfff8;
+  color: #2A2B2E;
+  font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 1em;
+  line-height: 1.625;
 }
 
 a {
-	color: #c5401a;
-	text-decoration: underline;
-	-webkit-transition: color .15s ease;
-	transition: color .15s ease;
+  color: #c5401a;
+  text-decoration: underline;
+  -webkit-transition: color .15s ease;
+          transition: color .15s ease;
 }
 
 a:hover {
-	color: #e4572e;
-	text-decoration: none;
+  color: #e4572e;
+  text-decoration: none;
 }
 
 a:active {
-	position: relative;
-	top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 a:visited {
-	color: #983214;
+  color: #983214;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-	-webkit-font-feature-settings: "kern" 1;
-	-moz-font-feature-settings: "kern" 1;
-	font-feature-settings: "kern" 1;
-	font-variant: proportional-width;
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-variant: proportional-width;
 }
 
 abbr[title] {
-	border-bottom-width: 0;
+  border-bottom-width: 0;
 }
 
 figure {
-	margin: 0;
+  margin: 0;
 }
 
 /* -- Source Code -- */
-
 code {
-	font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .code dt {
-	font-family: "Viga", sans-serif;
-	letter-spacing: 1px;
+  font-family: "Viga", sans-serif;
+  letter-spacing: 1px;
 }
 
-figcaption,
-.recent-article-item:first-child .recent-article-item-description,
-.article-info,
-.article-body p code,
-.main .prettyprint,
-.p-article-permalink-link,
-.article-ads-title,
-.p-article-pager-link {
-	font-size: 0.875em;
+figcaption, .recent-article-item:first-child .recent-article-item-description, .article-info, .article-body p code, .code dd, .p-article-permalink-link, .article-ads-title, .p-article-pager-link {
+  font-size: 0.875em;
 }
 
-.recent-article-item-title,
-.archive-list-item-title {
-	font-size: 1.125em;
+.recent-article-item-title, .archive-list-item-title {
+  font-size: 1.125em;
 }
 
-.back2top > a,
-.recentArticleSection h1 {
-	font-size: 1.5em;
+.back2top > a, .recentArticleSection h1 {
+  font-size: 1.5em;
 }
 
-.p-article-title,
-.archive-title,
-.pageSectionHeader h1,
-.recent-article-item:first-child .recent-article-item-title {
-	font-size: 2em;
+.p-article-title, .archive-title, .pageSectionHeader h1, .recent-article-item:first-child .recent-article-item-title {
+  font-size: 2em;
 }
 
-.p-article-title,
-.archive-title,
-.pageSectionHeader h1 {
-	margin-top: 0;
-	line-height: 1.1;
-	-webkit-font-smoothing: antialiased;
+.p-article-title, .archive-title, .pageSectionHeader h1 {
+  margin-top: 0;
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (max-width: 48em) {
+  .p-article-title, .archive-title, .pageSectionHeader h1 {
+    font-size: 1.5em;
+  }
 }
 
 /* -- %buttonSimple -- */
-
 /* _conponent.scss
   ========================================================================== */
-
 .c-sitename {
-	font-family: "Viga", sans-serif;
-	-webkit-font-smoothing: antialiased;
+  font-family: "Viga", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-
 .c-sitename a {
-	color: #2A2B2E;
-	text-decoration: none;
+  color: #2A2B2E;
+  text-decoration: none;
 }
 
 .c-icon {
-	display: inline-block;
+  display: inline-block;
 }
 
-.c-flat-list,
-.site-nav {
-	list-style: none;
-	padding-left: 0;
+.c-flat-list, .site-nav {
+  list-style: none;
+  padding-left: 0;
 }
 
-.c-flat-list > li,
-.site-nav > li,
+.c-flat-list > li, .site-nav > li,
 .c-flat-list > dt,
 .site-nav > dt,
 .c-flat-list > dd,
 .site-nav > dd {
-	display: inline-block;
-	margin-right: .5rem;
+  display: inline-block;
+  margin-right: .5rem;
 }
-
-.c-flat-list > li:last-child,
-.site-nav > li:last-child,
+.c-flat-list > li:last-child, .site-nav > li:last-child,
 .c-flat-list > dt:last-child,
 .site-nav > dt:last-child,
 .c-flat-list > dd:last-child,
 .site-nav > dd:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 /* -- tag -- */
-
-.c-tag,
-.article-tag {
-	position: relative;
-	display: inline-block;
-	margin-right: .5em;
-	padding: 0 1.75em 0 1em;
-	border-radius: 0.1875em 0 0 0.1875em;
-	background: #eaeaea;
+.c-tag, .article-tag {
+  position: relative;
+  display: inline-block;
+  margin-right: .5em;
+  padding: 0 1.75em 0 1em;
+  border-radius: 0.1875em 0 0 0.1875em;
+  background: #eaeaea;
 }
-
-.c-tag:before,
-.article-tag:before {
-	content: " ";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: .4em;
-	bottom: 0;
-	height: 0.25em;
-	width: 0.25em;
-	margin: auto;
-	border-radius: 100%;
-	background-color: #fdfff8;
-	line-height: 1;
+.c-tag:before, .article-tag:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: .4em;
+  bottom: 0;
+  height: 0.25em;
+  width: 0.25em;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #fdfff8;
+  line-height: 1;
 }
-
-.c-tag:after,
-.article-tag:after {
-	content: " ";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	width: 0;
-	height: 0;
-	margin: auto;
-	border: 1em solid transparent;
-	border-right-color: #fdfff8;
+.c-tag:after, .article-tag:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border: 1em solid transparent;
+  border-right-color: #fdfff8;
 }
 
 /* -- SiteName --*/
-
 .siteName span {
-	letter-spacing: -.1em;
+  letter-spacing: -.1em;
 }
 
 /*
  _index.scss
  TOPページ関連
  */
-
 .siteDescription {
-	margin: 0;
+  margin: 0;
 }
 
 .recent-article {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
 }
 
 .recent-article-item {
-	box-sizing: border-box;
-	float: left;
-	width: 47.5%;
-	margin-left: 5%;
-	margin-bottom: 2rem;
+  box-sizing: border-box;
+  float: left;
+  width: 47.5%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
 }
-
 .recent-article-item:nth-child(2n+2) {
-	clear: left;
-	margin-left: 0;
+  clear: left;
+  margin-left: 0;
 }
-
+@media screen and (max-width: 48em) {
+  .recent-article-item {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1.5rem 0;
+  }
+}
 .recent-article-item > a {
-	display: block;
-	text-decoration: none;
-	padding: 1rem;
-	-webkit-transition: all .2s ease;
-	transition: all .2s ease;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
 }
-
 .recent-article-item > a:hover {
-	border-radius: 0.3125em;
-	background-color: #eaeaea;
+  border-radius: 0.3125em;
+  background-color: #eaeaea;
 }
 
 .recent-article-item-published-time {
-	font-family: "Viga", sans-serif;
-	color: #2A2B2E;
+  font-family: "Viga", sans-serif;
+  color: #2A2B2E;
 }
 
 .recent-article-item-title {
-	margin: 0;
-	padding: .2rem 0 .3rem;
-	font-weight: normal;
-	line-height: 1.2;
-	text-decoration: underline;
+  margin: 0;
+  padding: .2rem 0 .3rem;
+  font-weight: normal;
+  line-height: 1.2;
+  text-decoration: underline;
 }
 
 .recent-article-item:first-child {
-	width: 100%;
-	height: auto;
-	max-width: 44rem;
-	float: none;
-	margin-left: 0;
-	margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  max-width: 44rem;
+  float: none;
+  margin-left: 0;
+  margin-bottom: 2rem;
 }
-
+@media screen and (min-width: 980px) {
+  .recent-article-item:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .recent-article-item:first-child .recent-article-item-title {
-	font-weight: bold;
-	text-decoration: none;
-	color: #E4572E;
-	text-shadow: 0 0 #fff, 1px 1px #fff, 2px 2px #fff, 3px 3px #fff;
+  font-weight: bold;
+  text-decoration: none;
+  color: #E4572E;
+  text-shadow: 0 0 #fff, 1px 1px #fff, 2px 2px #fff, 3px 3px #fff;
 }
-
+@media screen and (max-width: 48em) {
+  .recent-article-item:first-child .recent-article-item-title {
+    font-size: 1.375em;
+  }
+}
 .recent-article-item:first-child .recent-article-item-title > a {
-	text-decoration: none;
+  text-decoration: none;
 }
-
 .recent-article-item:first-child .recent-article-item-description {
-	margin: 0;
-	color: #2A2B2E;
+  margin: 0;
+  color: #2A2B2E;
 }
 
 /*
  _article.scss
  記事ページのスタイル
 */
-
 /* -- Article -- */
-
 .p-article-header {
-	margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 /* -- .articleInfo -- */
-
 .article-info-label {
-	float: left;
+  float: left;
 }
 
 .article-info-label:after {
-	content: ":";
-	margin: 0 .15rem;
-	font-weight: bold;
+  content: ":";
+  margin: 0 .15rem;
+  font-weight: bold;
 }
 
 .article-info-prop {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 /* -- 本文エリア -- */
-
 .article-body h2 {
-	margin-top: 3rem;
+  margin-top: 3rem;
 }
-
+@media screen and (max-width: 48em) {
+  .article-body h2 {
+    line-height: 1.25;
+    font-size: 1.25em;
+  }
+}
 .article-body p {
-	margin: 1.5em 0;
+  margin: 1.5em 0;
 }
-
 .article-body p code {
-	margin: 0 2px;
-	padding: 0 3px 2px;
-	border-radius: 3px;
-	background: #eaeaea;
-	vertical-align: top;
+  margin: 0 2px;
+  padding: 0 3px 2px;
+  border-radius: 3px;
+  background: #eaeaea;
+  vertical-align: top;
 }
-
-.article-body ul,
-.article-body ol {
-	padding-left: 1em;
+.article-body ul, .article-body ol {
+  padding-left: 1em;
 }
-
 .article-body dt {
-	font-weight: bold;
+  font-weight: bold;
 }
-
 .article-body dd {
-	margin-left: 0;
+  margin-left: 0;
 }
-
 .article-body dd + dt {
-	margin-top: .5em;
+  margin-top: .5em;
 }
-
 .article-body hr {
-	margin: 1.75em 3em;
-	border: 0;
-	border-top: 0.2em solid #eaeaea;
+  margin: 1.75em 3em;
+  border: 0;
+  border-top: 0.2em solid #eaeaea;
 }
-
 .article-body table {
-	max-width: 100%;
-	min-width: 50%;
-	margin: 1em auto 1.75em;
+  max-width: 100%;
+  min-width: 50%;
+  margin: 1em auto 1.75em;
 }
-
+@media screen and (max-width: 48em) {
+  .article-body table {
+    font-size: 0.875em;
+  }
+}
 .article-body caption {
-	margin-bottom: .25em;
+  margin-bottom: .25em;
 }
-
-.article-body td,
+.article-body td, .article-body th {
+  padding: 1em;
+}
+@media screen and (max-width: 48em) {
+  .article-body td, .article-body th {
+    padding: .25em;
+  }
+}
 .article-body th {
-	padding: 1em;
+  padding-bottom: .5em;
+  border-bottom: 2px solid #E4572E;
 }
-
-.article-body th {
-	padding-bottom: .5em;
-	border-bottom: 2px solid #E4572E;
-}
-
 .article-body td {
-	border-bottom: 1px solid #85CB33;
+  border-bottom: 1px solid #85CB33;
 }
-
 .article-body img {
-	max-width: 100%;
+  max-width: 100%;
 }
-
 .article-body img[class^="mt-image"] {
-	height: auto;
+  height: auto;
 }
-
 .article-body .mt-image-left {
-	float: left;
-	margin: 0 2rem 2rem 0;
+  float: left;
+  margin: 0 2rem 2rem 0;
 }
-
+@media screen and (max-width: 48em) {
+  .article-body .mt-image-left {
+    margin: 0 1rem 1rem 0;
+  }
+}
 .article-body .mt-image-right {
-	float: right;
-	margin: 0 0 2rem 2rem;
+  float: right;
+  margin: 0 0 2rem 2rem;
 }
-
+@media screen and (max-width: 48em) {
+  .article-body .mt-image-right {
+    margin: 0 0 1rem 1rem;
+  }
+}
 .article-body .mt-image-center {
-	display: block;
-	max-width: 100%;
-	margin: 0 auto .5em;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto .5em;
 }
-
 .article-body blockquote {
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 1em;
-	border-left: 3px solid #eaeaea;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1em;
+  border-left: 3px solid #eaeaea;
 }
-
 .article-body cite {
-	text-align: right;
+  text-align: right;
 }
 
 .code dd {
-	margin: 0;
-}
-
-.main .prettyprint {
-	margin-top: 0;
-	padding: 1em;
-	border: 1px solid #d1d1d1;
-	line-height: 1.4;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+  margin: 0;
 }
 
 /* -- Quote --*/
-
 .quote {
-	position: relative;
-	padding: .5em 1rem 3em 1rem;
-	background: #eaeaea;
+  position: relative;
+  padding: .5em 1rem 3em 1rem;
+  background: #eaeaea;
 }
-
 .quote dd {
-	margin-left: 0;
+  margin-left: 0;
 }
-
 .quote blockquote {
-	position: relative;
-	margin: 0;
-	padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
-
 .quote .cite {
-	position: absolute;
-	right: 1rem;
-	bottom: 1rem;
-	text-align: right;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  text-align: right;
 }
 
 .embed-iframe {
-	position: relative;
-	width: 100%;
-	padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
-
 .embed-iframe > iframe {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* -- 参考にしたWebページ -- */
-
 .reference-web-page > dd {
-	margin: 0 0 .25rem;
+  margin: 0 0 .25rem;
 }
 
 .p-article-permalink {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .p-article-permalink-label {
-	margin-top: 1rem;
-	font-weight: bold;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 .p-article-permalink-link {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .articleAds {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .article-ads-title {
-	border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .p-article-pager {
-	position: relative;
-	margin: 4rem auto;
+  position: relative;
+  margin: 4rem auto;
 }
 
 .p-article-pager-label {
-	width: 50%;
-	margin-top: 1rem;
-	font-weight: bold;
+  width: 50%;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 .p-article-pager-link {
-	box-sizing: border-box;
-	width: 50%;
-	margin-left: 0;
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: 0;
 }
 
 .p-article-pager-older {
-	padding-right: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 48em) {
+  .p-article-pager-older {
+    padding-right: .5rem;
+  }
 }
 
 .p-article-pager-newer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin-top: 0;
-	padding-left: 1rem;
-	text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  padding-left: 1rem;
+  text-align: right;
+}
+@media screen and (max-width: 48em) {
+  .p-article-pager-newer {
+    padding-left: .5rem;
+  }
 }
 
 .p-article-pager-newer.p-article-pager-link {
-	top: 1.5rem;
+  top: 1.5rem;
 }
 
 /* _archive.scss
   ========================================================================== */
-
 .archive-list {
-	padding-left: 0;
-	list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 .archive-list-item .article-info {
-	width: auto;
-	margin-bottom: .5rem;
-	text-align: left;
+  width: auto;
+  margin-bottom: .5rem;
+  text-align: left;
 }
-
 .archive-list-item .article-info-label:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .archive-list-item-title {
-	margin: 0 0 2rem;
-	line-height: 1.3;
-	font-weight: bold;
+  margin: 0 0 2rem;
+  line-height: 1.3;
+  font-weight: bold;
 }
-
 .archive-list-item-title > a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*
  _page.scss
  ウェブページのスタイル
 */
-
 /* -- Page -- */
-
 /* -- Page About --*/
-
 .profilePhoto {
-	float: left;
-	width: 25%;
-	height: auto;
-	max-width: 9em;
-	margin-right: 1em;
-	margin-bottom: 1em;
-	border-radius: 50%;
+  float: left;
+  width: 25%;
+  height: auto;
+  max-width: 9em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 50%;
 }
 
-@media screen and (min-width: 980px) {
+/*!
 
-.recent-article-item:first-child {
-	margin-left: auto;
-	margin-right: auto;
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
 }
 
+.hljs-comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
 }
 
-@media screen and (max-width: 48em) {
-
-.g-header .c-sitename,
-.main,
-.globalFooter {
-	width: 90%;
-	margin-right: 5%;
-	margin-left: 5%;
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
 }
 
-.p-article-title,
-.archive-title,
-.pageSectionHeader h1 {
-	font-size: 1.5em;
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
 }
 
-.recent-article-item {
-	width: 100%;
-	height: auto;
-	margin: 0 0 1.5rem 0;
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
 }
 
-.recent-article-item:first-child .recent-article-item-title {
-	font-size: 1.375em;
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
 }
 
-.article-body h2 {
-	line-height: 1.25;
-	font-size: 1.25em;
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
 }
 
-.article-body table {
-	font-size: 0.875em;
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
 }
 
-.article-body td,
-.article-body th {
-	padding: .25em;
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
 }
 
-.article-body .mt-image-left {
-	margin: 0 1rem 1rem 0;
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
 }
 
-.article-body .mt-image-right {
-	margin: 0 0 1rem 1rem;
+.hljs-regexp {
+  color: #009926;
 }
 
-.p-article-pager-older {
-	padding-right: .5rem;
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
 }
 
-.p-article-pager-newer {
-	padding-left: .5rem;
+.hljs-built_in {
+  color: #0086b3;
 }
 
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
 }
 
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}

@@ -25,3 +25,9 @@
 @import "object/project/_article"; // 記事ページ
 @import "object/project/_archive"; // archive ページ
 @import "object/project/_page";    // 個別ページ
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// library
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+@import "lib/highlightjs/_github"; //code syntax highlightjs github theme

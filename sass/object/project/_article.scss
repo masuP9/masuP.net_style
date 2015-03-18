@@ -159,17 +159,8 @@
   }
   dd {
     margin: 0;
+    @extend %font-size-smaller;
   }
-}
-
-.main .prettyprint {
-  margin-top: 0;
-  padding: 1em;
-  border: 1px solid darken($color-base-gray, 10%);
-  @extend %font-size-smaller;
-  line-height: 1.4;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 /* -- Quote --*/
