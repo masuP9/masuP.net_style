@@ -430,14 +430,19 @@ th {
   bottom: 0;
   left: 0;
   margin: auto;
-  height: 1em;
+  height: 1.625em;
   width: 50%;
-  font-size: 8vmin;
+  font-size: 10vmin;
   text-align: center;
+}
+@media screen and (max-width: 48em) {
+  .index .g-header .c-sitename {
+    font-size: 12vmin;
+  }
 }
 .index .g-header .sitedescription {
   position: absolute;
-  bottom: 1rem;
+  bottom: .25rem;
   text-align: center;
   right: 1rem;
   left: 1rem;

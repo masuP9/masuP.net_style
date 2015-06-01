@@ -48,15 +48,19 @@ $margin: 2rem;
     bottom: 0;
     left: 0;
     margin: auto;
-    height: 1em;
+    height: $line-height-base * 1em;
     width: 50%;
-    font-size: 8vmin;
+    font-size: 10vmin;
     text-align: center;
+
+    @include media(sp) {
+      font-size: 12vmin;
+    }
   }
 
   .sitedescription {
     position: absolute;
-    bottom: 1rem;
+    bottom: .25rem;
     text-align: center;
     right: 1rem;
     left: 1rem;
