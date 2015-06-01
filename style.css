@@ -431,7 +431,7 @@ th {
   left: 0;
   margin: auto;
   height: 1.625em;
-  width: 50%;
+  width: auto;
   font-size: 10vmin;
   text-align: center;
 }
