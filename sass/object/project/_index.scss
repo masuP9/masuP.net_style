@@ -133,6 +133,9 @@
   .recent-article-item-description {
     margin: 0;
     color: $color-text;
-    @extend %font-size-smaller;
+
+    @include media(sp) {
+      @include fz(14);
+    }
   }
 }
