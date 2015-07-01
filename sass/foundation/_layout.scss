@@ -31,42 +31,13 @@ $margin: 2rem;
     text-shadow: 0 0 transparent;
     transition: text-shadow .4s ease;
     color: $color-base;
+    text-shadow: longshadow(#605040, 5);
 
     &:hover {
-      text-shadow: longshadow(#543, 7);
+      text-shadow: longshadow(#605040, 8);
     }
   }
 }
-
-.index .g-header {
-  height: 40vh;
-
-  .c-sitename {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    height: $line-height-base * 1em;
-    width: 100%;
-    font-size: 10vmin;
-    text-align: center;
-
-    @include media(sp) {
-      font-size: 12vmin;
-    }
-  }
-
-  .sitedescription {
-    position: absolute;
-    bottom: .25rem;
-    text-align: center;
-    right: 1rem;
-    left: 1rem;
-  }
-}
-
 
 .main {
   @extend %content-width;

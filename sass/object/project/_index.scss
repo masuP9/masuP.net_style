@@ -3,6 +3,43 @@
  TOPページ関連
  */
 
+.index .g-header {
+  height: 40vh;
+
+  .c-sitename {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: $line-height-base * 1em;
+    width: 100%;
+    font-size: 10vmin;
+    text-align: center;
+
+    @include media(sp) {
+      font-size: 12vmin;
+    }
+
+    a {
+      text-shadow: longshadow(#605040, 7);
+
+      &:hover {
+        text-shadow: longshadow(#605040, 14);
+      }
+    }
+  }
+
+  .sitedescription {
+    position: absolute;
+    bottom: .25rem;
+    text-align: center;
+    right: 1rem;
+    left: 1rem;
+  }
+}
+
 .siteDescription {
   margin: 0;
 }
