@@ -48,19 +48,16 @@
     }
   }
 
-  p {
-    margin: em(24) 0;
-    code {
-      margin: 0 2px;
-      padding: 0 3px 2px;
-      border-radius: 3px;
-      background: $color-base-gray;
-      @extend %font-size-smaller;
-      vertical-align: top;
-    }
+  h3 {
+    margin-top: 2rem;
   }
 
-  ul,ol {
+  p {
+    margin: em(24) 0;
+  }
+
+  ul,
+  ol {
     padding-left: 1em;
   }
 
@@ -151,6 +148,22 @@
   cite {
     text-align: right;
   }
+
+  code {
+    @extend %font-size-smaller;
+  }
+
+  pre > code {
+    border-bottom: 3px solid #999;
+  }
+
+  p code {
+    margin: 0 2px;
+    padding: 0 3px 2px;
+    border-radius: 3px;
+    background: $color-base-gray;
+    vertical-align: top;
+  }
 }
 
 .code {
@@ -159,7 +172,6 @@
   }
   dd {
     margin: 0;
-    @extend %font-size-smaller;
   }
 }
 
