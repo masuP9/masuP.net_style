@@ -7,6 +7,10 @@ html {
   font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: ($font-size-base / 16) + em;
   line-height: $line-height-base;
+
+  @include media(large) {
+    font-size: 1.125em;
+  }
 }
 
 a {
