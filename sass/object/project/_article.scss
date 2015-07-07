@@ -40,8 +40,10 @@
 
 /* -- 本文エリア -- */
 .article-body {
+  $base-margin: ($line-height-base * 1em);
+
   h2 {
-    margin-top: 3rem;
+    margin-top: ($base-margin * 2);
     @include media(sp) {
       line-height: (20 / $font-size-base);
       @include fz(20);
@@ -49,11 +51,17 @@
   }
 
   h3 {
-    margin-top: 2rem;
+    margin-top: ($base-margin * 1.5);
   }
 
   p {
-    margin: ($line-height-base * 1em) 0;
+    margin: $base-margin 0;
+  }
+
+  h2, h3, h4, h5, h6 {
+    & + p {
+      margin-top: 0;
+    }
   }
 
   ul,
@@ -155,6 +163,10 @@
 
   pre > code {
     border-bottom: 3px solid #999;
+  }
+
+  figure {
+    margin-bottom: $base-margin;
   }
 
   p code {

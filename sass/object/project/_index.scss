@@ -52,7 +52,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .recent-article-item {
@@ -60,7 +65,7 @@
   float: left;
   width: 47.5%;
   margin-left: 5%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.55rem;
 
   &:nth-child(2n+2) {
     clear: left;
@@ -70,16 +75,17 @@
   @include media(sp) {
    width: 100%;
    height: auto;
-   margin: 0 0 1.5rem 0;
+   margin: 0 0 2rem 0;
   }
 
   & > a {
     display: block;
     text-decoration: none;
-    padding: 1rem;
     transition: all .2s ease;
 
     &:hover {
+      margin: -1em;
+      padding: 1em;
       border-radius: em(5);
       background-color: $color-base-gray;
     }
@@ -97,7 +103,7 @@
   padding: .2rem 0 .3rem;
   @extend %font-size-large;
   font-weight: normal;
-  text-decoration: underline;
+  line-height: 1.35;
 }
 
 .recent-article-item:first-child {
@@ -106,8 +112,6 @@
   max-width: $bodyMaxWidth;
   height: auto;
   margin-left: 0;
-  margin-bottom: 2rem;
-  line-height: 1.35;
 
   @include media(mid) {
     margin-left: auto;
