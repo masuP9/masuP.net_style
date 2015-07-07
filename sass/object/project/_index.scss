@@ -97,17 +97,17 @@
   padding: .2rem 0 .3rem;
   @extend %font-size-large;
   font-weight: normal;
-  line-height: 1.2;
   text-decoration: underline;
 }
 
 .recent-article-item:first-child {
-  width: 100%;
-  height: auto;
-  max-width: $bodyMaxWidth;
   float: none;
+  width: 100%;
+  max-width: $bodyMaxWidth;
+  height: auto;
   margin-left: 0;
   margin-bottom: 2rem;
+  line-height: 1.35;
 
   @include media(mid) {
     margin-left: auto;
@@ -115,12 +115,11 @@
   }
 
   .recent-article-item-title {
+    margin-bottom: .25em;
     @extend %font-size-large-xx;
     font-weight: bold;
     text-decoration: none;
     color: $color-base;
-    text-shadow: longshadow(#fff,3);
-
 
     @include media(sp) {
       @include fz(22);

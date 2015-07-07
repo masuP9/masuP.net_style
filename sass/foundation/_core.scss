@@ -15,6 +15,10 @@ a {
   transition: color .15s ease;
 }
 
+a:visited {
+  color: darken($color-link, 10%);
+}
+
 a:hover {
   color: lighten($color-link, 10%);
   text-decoration: none;
@@ -23,10 +27,6 @@ a:hover {
 a:active {
   position: relative;
   top: 1px;
-}
-
-a:visited {
-  color: darken($color-link, 10%);
 }
 
 h1, h2, h3, h4, h5, h6 {

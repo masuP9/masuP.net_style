@@ -40,7 +40,7 @@
 %primaryHeading {
   margin-top: 0;
   @extend %font-size-large-xx;
-  line-height: 1.1;
+  line-height: 1.35;
   -webkit-font-smoothing: antialiased;
   @include media(sp) {
     @include fz(24);
