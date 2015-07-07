@@ -259,6 +259,10 @@
   width: 50%;
   margin-left: 0;
   @extend %font-size-smaller;
+
+  & > a {
+    display: block;
+  }
 }
 
 .p-article-pager-older {
