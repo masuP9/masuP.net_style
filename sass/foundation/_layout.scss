@@ -53,11 +53,10 @@ $margin: 2rem;
   color: $color-base-white;
   text-align: center;
 
-  a {
-    color: $color-base-white;
-  }
-
-  a:hover {
+  a,
+  a:hover,
+  a:visited,
+  a:active {
     color: $color-base-white;
   }
 
@@ -116,6 +115,6 @@ $margin: 2rem;
   margin: 1rem 0 1.7rem;
 
   a {
-   text-decoration: none;
+    text-decoration: none;
   }
 }
