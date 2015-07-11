@@ -14,7 +14,7 @@
 
 // media query の管理
 @mixin media($bp) {
-  $bp-width: em(768);
+  $bp-width: em(767);
   @if $bp == 'sp' {
     @media screen and (max-width: $bp-width) {
       @content;
