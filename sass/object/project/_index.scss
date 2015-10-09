@@ -23,12 +23,12 @@
       font-size: 12vmin;
     }
 
-    a {
-      text-shadow: longshadow(#605040, 7);
+    a:hover {
+      text-shadow: longshadow(#605040, 14);
+    }
 
-      &:hover {
-        text-shadow: longshadow(#605040, 14);
-      }
+    span {
+      letter-spacing: -.15em;
     }
   }
 

@@ -25,13 +25,13 @@ $margin: 2rem;
 
   .c-sitename {
     @extend %content-width;
+    @include fz(40);
   }
 
   .c-sitename > a {
     text-shadow: 0 0 transparent;
     transition: text-shadow .4s ease;
     color: $color-base;
-    text-shadow: longshadow(#605040, 5);
 
     &:hover {
       text-shadow: longshadow(#605040, 8);
