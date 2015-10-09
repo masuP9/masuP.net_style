@@ -13,12 +13,12 @@ $color-base-orange:   #E4572E;
 
 $color-base-white: lighten($color-base-offwhite, 9.5%);
 
-$color-base:      $color-base-orange;
+$color-base:       $color-base-orange;
 $color-base-light: lighten($color-base, 10%);
-$color-base-dark: darken($color-base, 10%);
-$color-body-bg:   $color-base-white;
-$color-text: $color-base-black;
-$color-accent:    $color-base-orange;
+$color-base-dark:  darken($color-base, 10%);
+$color-body-bg:    $color-base-white;
+$color-text:       $color-base-black;
+$color-accent:     $color-base-orange;
 
 $color-link: $color-base-dark;
 
