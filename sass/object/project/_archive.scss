@@ -6,12 +6,33 @@
 }
 
 .archive-list {
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-left: -5%;
   padding-left: 0;
   list-style: none;
+
+  @include media(sp) {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
 }
 
 .archive-list-item {
+  float: left;
+  width: 45%;
+  margin-left: 5%;
   margin-bottom: 1.5rem;
+
+  &:nth-child(2n+3) {
+    clear: left;
+  }
+
+  @include media(sp) {
+    float: none;
+    width: auto;
+    margin: 0 0 1rem;
+  }
 
   .article-info {
     position: relative;
