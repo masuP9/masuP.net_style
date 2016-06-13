@@ -1,6 +1,5 @@
 /* _archive.scss
   ========================================================================== */
-
 .archive-title {
   @extend %primaryHeading;
 }
@@ -11,10 +10,9 @@
   margin-left: -5%;
   padding-left: 0;
   list-style: none;
-
-  @include media(sp) {
-    margin-top: 2rem;
-    margin-left: 0;
+  @include media(sp){
+  margin-top: 2rem;
+  margin-left: 0;
   }
 }
 
@@ -24,14 +22,13 @@
   margin-left: 5%;
   margin-bottom: 1.5rem;
 
-  &:nth-child(2n+3) {
+  &:nth-child(2n + 3) {
     clear: left;
   }
-
-  @include media(sp) {
-    float: none;
-    width: auto;
-    margin: 0 0 1rem;
+  @include media(sp){
+  float: none;
+  width: auto;
+  margin: 0 0 1rem;
   }
 
   .article-info {

@@ -11,11 +11,10 @@ $margin: 2rem;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
-
-  @include media(sp) {
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
+  @include media(sp){
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
   }
 }
 
@@ -111,7 +110,7 @@ $margin: 2rem;
   }
 }
 
-.copyright{
+.copyright {
   margin: 1rem 0 1.7rem;
 
   a {

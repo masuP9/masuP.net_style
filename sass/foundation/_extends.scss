@@ -2,7 +2,6 @@
 // _extends.scss
 // placeholder
 // ==========================================================================
-
 %font-viga {
   font-family: "Viga", sans-serif;
   letter-spacing: 1px;
@@ -42,7 +41,7 @@
   @extend %font-size-large-xx;
   line-height: 1.35;
   -webkit-font-smoothing: antialiased;
-  @include media(sp) {
+  @include media(sp){
     @include fz(24);
   }
 }
