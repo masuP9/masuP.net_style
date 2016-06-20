@@ -188,12 +188,19 @@
     margin-bottom: $base-margin;
   }
 
+  figcaption {
+    font-size: 1rem;
+  }
+
+  figcaption + pre {
+    margin-top: 0;
+  }
+
   p code {
     margin: 0 2px;
     padding: 0 3px 2px;
     border-radius: 3px;
     background: $color-base-gray;
-    vertical-align: top;
   }
 }
 
