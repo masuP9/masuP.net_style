@@ -1,0 +1,29 @@
+{
+  "name": "masup.net.style",
+  "version": "1.0.0",
+  "description": "masuP.net_style ===============",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run css & npm run css:dist -- --watch",
+    "css": "node-sass --output-style expanded --source-map true sass/style.scss build/style.css",
+    "css:dist": "postcss build/style.css --no-map -u autoprefixer -u css-mqpacker -u csswring -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masuP9/masuP.net_style.git"
+  },
+  "author": "masuP9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masuP9/masuP.net_style/issues"
+  },
+  "homepage": "https://github.com/masuP9/masuP.net_style#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "css-mqpacker": "^6.0.1",
+    "csswring": "^6.0.0",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0",
+    "postcss-import": "^10.0.0"
+  }
+}
