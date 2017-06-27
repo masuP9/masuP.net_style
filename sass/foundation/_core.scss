@@ -15,6 +15,7 @@ html {
 a {
   color: $color-link;
   text-decoration: underline;
+  text-decoration-skip: ink;
   transition: color .15s ease;
 }
 
