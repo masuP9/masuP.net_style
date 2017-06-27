@@ -21,9 +21,10 @@ $margin: 2rem;
 .g-header {
   position: relative;
   margin-bottom: 2rem;
+  @extend %content-width;
 
   .c-sitename {
-    @extend %content-width;
+    margin-bottom: 0;
     @include fz(40);
   }
 
@@ -36,6 +37,14 @@ $margin: 2rem;
       text-shadow: longshadow(#605040, 8);
     }
   }
+}
+
+.sitedescription {
+  margin-top: 0;
+}
+
+.sitedescription a {
+  color: inherit;
 }
 
 .main {
