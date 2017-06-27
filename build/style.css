@@ -535,6 +535,7 @@ html {
 a {
   color: #c5401a;
   text-decoration: underline;
+  text-decoration-skip: ink;
   transition: color .15s ease;
 }
 
@@ -818,6 +819,11 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
 
 .article-body p {
   margin: 1.7em 0;
+}
+
+.article-body p a {
+  color: inherit;
+  text-decoration-color: #778899;
 }
 
 .article-body h2 + p,
