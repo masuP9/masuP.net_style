@@ -58,8 +58,9 @@
 
   h2 {
     margin-top: ($base-margin * 2);
-    @include media(sp){
-    line-height: (20 / $font-size-base);
+
+    @include media(sp) {
+      line-height: (20 / $font-size-base);
       @include fz(20);
     }
   }
@@ -70,6 +71,11 @@
 
   p {
     margin: $base-margin 0;
+  }
+
+  p a {
+    color: inherit;
+    text-decoration-color: #778899;
   }
 
   h2,
