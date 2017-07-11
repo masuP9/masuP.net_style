@@ -32,8 +32,8 @@
     float: left;
     margin-left: 0;
     margin-right: 1em;
-    @include media(sp){
-    float: none;
+    @include media(sp) {
+      float: none;
     }
   }
 
@@ -115,7 +115,7 @@
     max-width: 100%;
     min-width: 50%;
     margin: 1em auto 1.75em;
-    @include media(sp){
+    @include media(sp) {
       @include fz(14);
     }
   }
@@ -127,8 +127,8 @@
   td,
   th {
     padding: 1em;
-    @include media(sp){
-    padding: .25em;
+    @include media(sp) {
+      padding: .25em;
     }
   }
 
@@ -152,16 +152,16 @@
   .mt-image-left {
     float: left;
     margin: 0 $margin $margin 0;
-    @include media(sp){
-    margin: 0 $margin / 2 $margin / 2 0;
+    @include media(sp) {
+      margin: 0 $margin / 2 $margin / 2 0;
     }
   }
 
   .mt-image-right {
     float: right;
     margin: 0 0 $margin $margin;
-    @include media(sp){
-    margin: 0 0 $margin / 2 $margin / 2;
+    @include media(sp) {
+      margin: 0 0 $margin / 2 $margin / 2;
     }
   }
 
@@ -311,8 +311,8 @@
 
 .p-article-pager-older {
   padding-right: 1rem;
-  @include media(sp){
-  padding-right: .5rem;
+  @include media(sp) {
+    padding-right: .5rem;
   }
 }
 
@@ -323,8 +323,8 @@
   margin-top: 0;
   padding-left: 1rem;
   text-align: right;
-  @include media(sp){
-  padding-left: .5rem;
+  @include media(sp) {
+    padding-left: .5rem;
   }
 }
 
