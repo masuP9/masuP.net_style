@@ -186,10 +186,6 @@
     @extend %font-size-smaller;
   }
 
-  pre > code {
-    border-bottom: 3px solid #999;
-  }
-
   figure {
     margin-bottom: $base-margin;
   }
