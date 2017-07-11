@@ -956,9 +956,9 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
 
 .article-body p code {
   margin: 0 2px;
-  padding: 0 3px 2px;
+  padding: 2px 3px;
   border-radius: 3px;
-  background: #eaeaea;
+  background-color: #f4f4f4;
 }
 
 .code dd {
