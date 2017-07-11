@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run css & npm run css:dist -- --watch",
     "css": "node-sass --output-style expanded --source-map true sass/style.scss build/style.css",
-    "css:dist": "postcss build/style.css --no-map -u autoprefixer -u css-mqpacker -u csswring -o public/style.css"
+    "css:dist": "postcss build/style.css --no-map -u postcss-import -u autoprefixer -u css-mqpacker -u csswring -o public/style.css"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "postcss-import": "^10.0.0"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0"
   }
 }
