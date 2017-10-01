@@ -4,7 +4,7 @@
   "description": "masuP.net_style ===============",
   "main": "index.js",
   "scripts": {
-    "start": "npm run css & npm run css:dist -- --watch",
+    "start": "npm run css -- --watch & npm run css:dist -- --watch",
     "css": "node-sass --output-style expanded --source-map true sass/style.scss build/style.css",
     "css:dist": "postcss build/style.css --no-map -u postcss-import -u autoprefixer -u css-mqpacker -u csswring -o public/style.css"
   },
