@@ -3,7 +3,7 @@
 html {
   background-color: $color-body-bg;
   color: $color-text;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Hiragino Sans", "Meiryo", sans-serif;
   font-size: ($font-size-base / 16) + em;
   line-height: $line-height-base;
 
@@ -14,19 +14,6 @@ html {
 
 a {
   color: $color-link;
-  text-decoration: underline;
-  text-decoration-skip: ink;
-  transition: color .15s ease;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-feature-settings: "kern" 1;
-  font-variant: proportional-width;
 }
 
 abbr[title] {
@@ -35,10 +22,6 @@ abbr[title] {
 
 figure {
   margin: 0;
-}
-
-figcaption {
-  @extend %font-size-smaller;
 }
 
 /* -- Source Code -- */

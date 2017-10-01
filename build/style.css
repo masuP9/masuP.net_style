@@ -522,7 +522,7 @@ th {
 html {
   background-color: #fdfff8;
   color: #47484B;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Hiragino Sans", "Meiryo", sans-serif;
   font-size: 1em;
   line-height: 1.7;
 }
@@ -535,19 +535,6 @@ html {
 
 a {
   color: #c5401a;
-  text-decoration: underline;
-  text-decoration-skip: ink;
-  transition: color .15s ease;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-feature-settings: "kern" 1;
-  font-variant: proportional-width;
 }
 
 abbr[title] {
@@ -563,12 +550,7 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-.code dt {
-  font-family: "Viga", sans-serif;
-  letter-spacing: 1px;
-}
-
-figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link, .article-ads-title, .p-article-pager-link {
+.c-tag, .article-info, .article-body code, .p-article-permalink-link, .article-ads-title, .p-article-pager-link {
   font-size: 0.875em;
 }
 
@@ -587,7 +569,6 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
 .p-article-title, .archive-title, .pageSectionHeader h1 {
   margin-top: 0;
   line-height: 1.35;
-  -webkit-font-smoothing: antialiased;
 }
 
 @media screen and (max-width: 47.9375em) {
@@ -596,7 +577,6 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
   }
 }
 
-/* -- %buttonSimple -- */
 /* _conponent.scss
   ========================================================================== */
 .c-sitename {
@@ -946,10 +926,6 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
   margin-bottom: 1.7em;
 }
 
-.article-body figcaption {
-  font-size: 1rem;
-}
-
 .article-body figcaption + pre {
   margin-top: 0;
 }
@@ -959,34 +935,6 @@ figcaption, .c-tag, .article-info, .article-body code, .p-article-permalink-link
   padding: 2px 3px;
   border-radius: 3px;
   background-color: #f4f4f4;
-}
-
-.code dd {
-  margin: 0;
-}
-
-/* -- Quote --*/
-.quote {
-  position: relative;
-  padding: .5em 1rem 3em 1rem;
-  background: #eaeaea;
-}
-
-.quote dd {
-  margin-left: 0;
-}
-
-.quote blockquote {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.quote .cite {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  text-align: right;
 }
 
 .embed-iframe {

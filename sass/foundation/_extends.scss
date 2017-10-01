@@ -2,16 +2,6 @@
 // _extends.scss
 // placeholder
 // ==========================================================================
-%font-viga {
-  font-family: "Viga", sans-serif;
-  letter-spacing: 1px;
-}
-
-%font-default {
-  font-family: "Source Sans Pro", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  letter-spacing: 0;
-}
-
 %font-size-smaller {
   @include fz(14);
 }
@@ -40,40 +30,7 @@
   margin-top: 0;
   @extend %font-size-large-xx;
   line-height: 1.35;
-  -webkit-font-smoothing: antialiased;
   @include media(sp){
     @include fz(24);
-  }
-}
-
-/* -- %buttonSimple -- */
-%c-button {
-  display: inline-block;
-  padding: 3px .5em;
-  border-bottom: 3px solid darken($color-accent, 10%);
-  background-color: $color-accent;
-  color: $color-base-white;
-  border-radius: 3px;
-  font-size: em(20);
-  @extend %font-viga;
-  line-height: 1.1;
-  transition: all .1s ease;
-  text-decoration: none;
-}
-
-%buttonSimple {
-  @extend %c-button;
-  @extend %font-default;
-  padding: 1px 5px 2px;
-  border-width: 0 1px 0 1px;
-  border-style: solid;
-  border-radius: 5px;
-  background-color: transparent;
-  color: $color-accent;
-  font-size: em(16);
-
-  &:hover {
-    background: $color-accent;
-    color: $color-base-white;
   }
 }

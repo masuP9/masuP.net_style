@@ -6,7 +6,7 @@
 @function em($px, $base:$font-size-base, $unit:em) {
   @if $unit == em {
     @return ($px / $base) * 1em;
-  }@elseif $unit == none {
+  } @elseif $unit == none {
     @return ($px / $base);
   }
 }
