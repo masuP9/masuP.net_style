@@ -3,13 +3,12 @@
 // Color
 
 //Base Color
-$color-base-black:    #47484B;
-$color-base-blue:     #114B5F;
-$color-base-offwhite: #EFFFC8;
-$color-base-green:    #00AA88;
-$color-base-lime:     #85CB33;
-$color-base-gray:     #eaeaea;
-$color-base-orange:   #E4572E;
+$color-base-black:     #47484B;
+$color-base-blue:      #114B5F;
+$color-base-offwhite:  #EFFFC8;
+$color-base-gray:      #eaeaea;
+$color-base-dark-gray: #999999;
+$color-base-orange:    #D34500;
 
 $color-base-white: lighten($color-base-offwhite, 9.5%);
 
@@ -24,4 +23,4 @@ $color-link: $color-base-dark;
 
 // Font
 $font-size-base: 16;
-$line-height-base: 1.7;
+$line-height-base: 1.5;

@@ -11,7 +11,7 @@
 }
 
 %font-size-large {
-  @include fz(18);
+  @include fz(20);
 }
 
 %font-size-large-x {
@@ -29,6 +29,7 @@
 %primaryHeading {
   margin-top: 0;
   @extend %font-size-large-xx;
+  font-feature-settings: "palt" 1;
   line-height: 1.35;
   @include media(sp){
     @include fz(24);

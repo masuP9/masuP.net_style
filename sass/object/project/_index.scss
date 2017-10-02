@@ -32,10 +32,11 @@
 
 .recent-article-item-title {
   margin: 0;
-  padding-bottom: 0.3em;
+  padding: 0.2em 0 0.3em;
   border-bottom: 1px solid $color-base-gray;
   @extend %font-size-large-xx;
-  line-height: 1.35;
+  font-feature-settings: "palt" 1;
+  line-height: 1.25;
 
   @include media(sp) {
       @include fz(22);

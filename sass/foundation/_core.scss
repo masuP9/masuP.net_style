@@ -6,6 +6,7 @@ html {
   font-family: "Source Sans Pro", "Hiragino Sans", "Meiryo", sans-serif;
   font-size: ($font-size-base / 16) + em;
   line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
 
   @include media(large) {
     font-size: 1.125em;
@@ -17,14 +18,13 @@ a {
 }
 
 abbr[title] {
-  border-bottom-width: 0;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 figure {
   margin: 0;
-}
-
-/* -- Source Code -- */
-code {
-  font-family: "Source Code Pro", monospace;
 }

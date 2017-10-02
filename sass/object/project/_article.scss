@@ -3,9 +3,11 @@
  記事ページのスタイル
 */
 
+$base-margin: ($line-height-base * 1em);
+
 /* -- Article -- */
 .p-article-header {
-  margin: 2rem 0 4rem;
+  margin: $margin 0 $margin * 2;
 }
 
 .p-article-title {
@@ -54,8 +56,6 @@
 
 /* -- 本文エリア -- */
 .article-body {
-  $base-margin: ($line-height-base * 1em);
-
   h2 {
     margin-top: ($base-margin * 2);
 
@@ -102,11 +102,11 @@
   }
 
   dd + dt {
-    margin-top: .5em;
+    margin-top: $base-margin / 2;
   }
 
   hr {
-    margin: 1.75em 3em;
+    margin: $base-margin * 2;
     border: 0;
     border-top: .2em solid $color-base-gray;
   }
@@ -114,19 +114,19 @@
   table {
     max-width: 100%;
     min-width: 50%;
-    margin: 1em auto 1.75em;
+    margin: $base-margin auto;
     @include media(sp) {
       @include fz(14);
     }
   }
 
   caption {
-    margin-bottom: .25em;
+    margin-bottom: $base-margin / 4;
   }
 
   td,
   th {
-    padding: 1em;
+    padding: 1em .25em;
     @include media(sp) {
       padding: .25em;
     }
@@ -135,14 +135,20 @@
   th {
     padding-bottom: .5em;
     border-bottom: 2px solid $color-base;
+    font-feature-settings: "palt" 1;
+  }
+
+  th:only-of-type {
+    text-align: left;
+    padding: 1em 0.5em 1em 0;
+
+    @include media(sp) {
+      padding: .25em;
+    }
   }
 
   td {
-    border-bottom: 1px solid $color-base-lime;
-  }
-
-  img {
-    max-width: 100%;
+    border-bottom: 1px solid $color-base-black;
   }
 
   img[class^="mt-image"] {
@@ -151,17 +157,17 @@
 
   .mt-image-left {
     float: left;
-    margin: 0 $margin $margin 0;
+    margin: 0 $base-margin $base-margin 0;
     @include media(sp) {
-      margin: 0 $margin / 2 $margin / 2 0;
+      margin: 0 $base-margin / 2 $base-margin / 2 0;
     }
   }
 
   .mt-image-right {
     float: right;
-    margin: 0 0 $margin $margin;
+    margin: 0 0 $base-margin $base-margin;
     @include media(sp) {
-      margin: 0 0 $margin / 2 $margin / 2;
+      margin: 0 0 $base-margin / 2 $base-margin / 2;
     }
   }
 
@@ -172,18 +178,13 @@
   }
 
   blockquote {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 $base-margin / 2;
     padding-left: 1em;
     border-left: 3px solid $color-base-gray;
   }
 
-  cite {
-    text-align: right;
-  }
-
-  code {
-    @extend %font-size-smaller;
+  blockquote > *:last-child {
+    margin-bottom: 0;
   }
 
   figure {
@@ -220,16 +221,16 @@
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 .25rem;
+  margin: 0 0 $base-margin / 4;
 }
 
 // permalink
 .p-article-permalink {
-  margin: $margin 0;
+  margin: $base-margin 0;
 }
 
 .p-article-permalink-label {
-  margin-top: $margin / 2;
+  margin-top: $base-margin / 2;
   font-weight: bold;
 }
 
@@ -238,25 +239,19 @@
   @extend %font-size-smaller;
 }
 
-// article bottom ads
-.articleAds {
-  margin: 2rem 0;
+.article-ads {
+  margin: $base-margin * 2 0;
+  text-align: center;
 }
 
-.article-ads-title {
-  @extend %font-size-smaller;
-  border-bottom: 1px solid $color-base-gray;
-}
-
-// pager
 .p-article-pager {
   position: relative;
-  margin: 4rem auto;
+  margin: $base-margin * 2 auto;
 }
 
 .p-article-pager-label {
   width: 50%;
-  margin-top: $margin / 2;
+  margin-top: $base-margin / 2;
   font-weight: bold;
 }
 
