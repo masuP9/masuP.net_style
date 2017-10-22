@@ -17,7 +17,7 @@
 */
 .article-info {
   overflow: hidden;
-  @extend %font-size-smaller;
+  font-size: 0.875rem;
 
   & &--label {
     float: left;
@@ -209,7 +209,7 @@
 
 .p-article-permalink-link {
   margin-left: 0;
-  @extend %font-size-smaller;
+  font-size: 0.875rem;
 }
 
 .article-ads {
@@ -232,7 +232,7 @@
   box-sizing: border-box;
   width: 50%;
   margin-left: 0;
-  @extend %font-size-smaller;
+  font-size: 0.875rem;
 
   & > a {
     display: block;
