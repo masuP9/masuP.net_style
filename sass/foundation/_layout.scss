@@ -37,7 +37,15 @@ $margin: 2rem;
 }
 
 .site-header > .site-name > a:hover {
-  text-shadow: longshadow(#605040, 8);
+  text-shadow: 0 0 #605040,
+               1px 1px #605040,
+               2px 2px #605040,
+               3px 3px #605040,
+               4px 4px #605040,
+               5px 5px #605040,
+               6px 6px #605040,
+               7px 7px #605040,
+               8px 8px #605040
 }
 
 .site-name .p {
