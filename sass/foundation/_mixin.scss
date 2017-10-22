@@ -14,19 +14,18 @@
 
 // media query の管理
 @mixin media($bp) {
-  $bp-width: em(767);
   @if $bp == 'sp' {
-    @media screen and (max-width: $bp-width) {
+    @media (max-width: 767px) {
       @content;
     }
   }
   @else if $bp == 'mid' {
-    @media screen and (min-width: 980px) {
+    @media (min-width: 980px) {
       @content;
     }
   }
   @else if $bp == 'large' {
-    @media screen and (min-width: 1280px) {
+    @media (min-width: 1280px) {
       @content;
     }
   }
