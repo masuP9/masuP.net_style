@@ -3,8 +3,6 @@
  記事ページのスタイル
 */
 
-$base-margin: ($line-height-base * 1em);
-
 /* -- Article -- */
 .p-article-header {
   margin: $margin 0 $margin * 2;
@@ -149,32 +147,6 @@ $base-margin: ($line-height-base * 1em);
 
   td {
     border-bottom: 1px solid $color-base-black;
-  }
-
-  img[class^="mt-image"] {
-    height: auto;
-  }
-
-  .mt-image-left {
-    float: left;
-    margin: 0 $base-margin $base-margin 0;
-    @include media(sp) {
-      margin: 0 $base-margin / 2 $base-margin / 2 0;
-    }
-  }
-
-  .mt-image-right {
-    float: right;
-    margin: 0 0 $base-margin $base-margin;
-    @include media(sp) {
-      margin: 0 0 $base-margin / 2 $base-margin / 2;
-    }
-  }
-
-  .mt-image-center {
-    display: block;
-    max-width: 111%;
-    margin: 0 -5.5% .5em;
   }
 
   blockquote {

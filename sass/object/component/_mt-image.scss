@@ -1,0 +1,33 @@
+/*
+ _image.scss
+ */
+
+[class^="mt-image"] {
+  height: auto;
+}
+
+.mt-image-left {
+  float: left;
+  margin: 0 $base-margin $base-margin 0;
+  @include media(sp) {
+    float: none;
+    width: auto;
+    margin: 0 $base-margin;
+  }
+}
+
+.mt-image-right {
+  float: right;
+  margin: 0 0 $base-margin $base-margin;
+  @include media(sp) {
+    float: none;
+    width: auto;
+    margin: 0 $base-margin;
+  }
+}
+
+.mt-image-center {
+  display: block;
+  max-width: 111%;
+  margin: 0 -5.5% .5em;
+}
