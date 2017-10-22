@@ -195,11 +195,12 @@ $base-margin: ($line-height-base * 1em);
     margin-top: 0;
   }
 
-  p code {
+  :not(pre) > code {
     margin: 0 2px;
     padding: 2px 3px;
     border-radius: 3px;
-    background-color: lighten($color-base-gray, 4%);
+    background-color: $color-base-white;
+    color: $color-base-orange;
   }
 }
 

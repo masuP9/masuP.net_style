@@ -3,7 +3,7 @@
  TOPページ関連
  */
 
-.recent-article {
+.articles-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -15,22 +15,21 @@
   }
 }
 
-.recent-article-item {
-  margin-bottom: 2.55em;
-
-  & > a {
-    display: block;
-    color: $color-text;
-    text-decoration: none;
-  }
+.articles-list-item {
+  padding: 1.275em 0;
 }
 
-.recent-article-item-published-time {
+.articles-list-item > a {
+  display: block;
+  color: $color-text;
+  text-decoration: none;}
+
+.articles-list-item-published-time {
   color: $color-base;
   font-weight: bold;
 }
 
-.recent-article-item-title {
+.articles-list-item-title {
   margin: 0;
   padding: 0.2em 0 0.3em;
   border-bottom: 1px solid $color-base-gray;
@@ -43,7 +42,16 @@
   }
 }
 
-.recent-article-item-description {
+.articles-list-item-info {
+  margin-bottom: 0;
+}
+
+.articles-list-item-category {
+  color: inherit;
+  font-weight: bold;
+}
+
+.articles-list-item-description {
   margin: 0.5em 0 0;
 
   @include media(sp) {

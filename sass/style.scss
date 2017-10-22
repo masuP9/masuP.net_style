@@ -17,13 +17,14 @@
 // component
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-@import "object/component/_component"; // コンポーネント
+@import "object/component/_component";     // コンポーネント
+@import "object/component/_articles-list"; // 記事一覧
+@import "object/component/_more-link";     // もっと読むリンク
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // thema
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-@import "object/project/_index";   // TOPページ
 @import "object/project/_article"; // 記事ページ
 @import "object/project/_archive"; // archive ページ
 @import "object/project/_page";    // 個別ページ

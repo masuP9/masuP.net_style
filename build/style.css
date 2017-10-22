@@ -437,7 +437,7 @@ template {
 
 /* _layout.scss
    ========================================================================== */
-.globalHeader, .main {
+.site-header, .main {
   max-width: 44rem;
   width: 70%;
   margin-right: auto;
@@ -445,38 +445,44 @@ template {
 }
 
 @media screen and (max-width: 47.9375em) {
-  .globalHeader, .main {
+  .site-header, .main {
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
   }
 }
 
-.globalHeader {
+.site-header {
   position: relative;
   margin-bottom: 2rem;
 }
 
-.globalHeader .c-sitename {
+.site-header > .site-name {
   margin-bottom: 0;
   font-size: 2.5em;
 }
 
-.globalHeader .c-sitename > a {
-  text-shadow: 0 0 transparent;
-  transition: text-shadow .4s ease;
+.site-header > .site-name > a {
   color: #D34500;
+  text-shadow: 0 0 transparent;
+  text-decoration: none;
+  transition: text-shadow .3s ease-in;
 }
 
-.globalHeader .c-sitename > a:hover {
+.site-header > .site-name > a:hover {
   text-shadow: 0 0 #605040, 1px 1px #605040, 2px 2px #605040, 3px 3px #605040, 4px 4px #605040, 5px 5px #605040, 6px 6px #605040, 7px 7px #605040, 8px 8px #605040;
 }
 
-.sitedescription {
+.site-name .p {
+  font-weight: inherit;
+  letter-spacing: -.1em;
+}
+
+.site-header .site-description {
   margin-top: 0;
 }
 
-.sitedescription a {
+.site-description a {
   color: inherit;
 }
 
@@ -484,7 +490,7 @@ template {
   margin-bottom: 2rem;
 }
 
-.globalFooter {
+.site-footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 8rem;
@@ -493,43 +499,36 @@ template {
   text-align: center;
 }
 
-.globalFooter a,
-.globalFooter a:hover,
-.globalFooter a:visited,
-.globalFooter a:active {
-  color: #fdfff8;
-}
-
-.globalFooter .sns-list > li {
+.sns-list > li {
   margin-left: 1rem;
 }
 
-.globalFooter .sns-list > li:first-child {
+.sns-list > li:first-child {
   margin-left: 0;
 }
 
-.globalFooter .sns-list > li path {
+.sns-list svg path {
   fill: #fdfff8;
 }
 
-.siteNav {
+.site-nav {
   margin: 1rem 0;
   padding: 0;
   list-style: none;
 }
 
-.siteNav > li {
+.site-nav > li {
   text-transform: uppercase;
 }
 
-.siteNav > li > a {
+.site-nav > li > a {
   display: block;
   padding: .5em;
   color: #fdfff8;
   text-decoration: none;
 }
 
-.siteNav > li > a:hover {
+.site-nav > li > a:hover {
   text-decoration: underline;
 }
 
@@ -538,7 +537,12 @@ template {
 }
 
 .copyright a {
+  color: inherit;
   text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
 }
 
 /* _core.scss
@@ -582,7 +586,7 @@ figure {
   font-size: 1.25em;
 }
 
-.p-article-title, .archive-title, .pageSectionHeader h1, .recent-article-item-title {
+.p-article-title, .archive-title, .pageSectionHeader h1, .articles-list-item-title {
   font-size: 2em;
 }
 
@@ -600,38 +604,25 @@ figure {
 
 /* _conponent.scss
   ========================================================================== */
-.c-sitename {
-  -webkit-font-smoothing: antialiased;
-}
-
-.c-sitename a {
-  color: #47484B;
-  text-decoration: none;
-}
-
-.c-sitename span {
-  letter-spacing: -.125em;
-}
-
 .c-icon {
   display: inline-block;
 }
 
-.c-flat-list, .siteNav {
+.c-flat-list, .site-nav {
   list-style: none;
   padding-left: 0;
 }
 
-.c-flat-list > li, .siteNav > li,
-.c-flat-list > dt, .siteNav > dt,
-.c-flat-list > dd, .siteNav > dd {
+.c-flat-list > li, .site-nav > li,
+.c-flat-list > dt, .site-nav > dt,
+.c-flat-list > dd, .site-nav > dd {
   display: inline-block;
   margin-right: .5rem;
 }
 
-.c-flat-list > li:last-child, .siteNav > li:last-child,
-.c-flat-list > dt:last-child, .siteNav > dt:last-child,
-.c-flat-list > dd:last-child, .siteNav > dd:last-child {
+.c-flat-list > li:last-child, .site-nav > li:last-child,
+.c-flat-list > dt:last-child, .site-nav > dt:last-child,
+.c-flat-list > dd:last-child, .site-nav > dd:last-child {
   margin-right: 0;
 }
 
@@ -679,43 +670,38 @@ figure {
   border-right-color: #fdfff8;
 }
 
-/* -- SiteName --*/
-.siteName span {
-  letter-spacing: -.1em;
-}
-
 /*
  _index.scss
  TOPページ関連
  */
-.recent-article {
+.articles-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.recent-article:after {
+.articles-list:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.recent-article-item {
-  margin-bottom: 2.55em;
+.articles-list-item {
+  padding: 1.275em 0;
 }
 
-.recent-article-item > a {
+.articles-list-item > a {
   display: block;
   color: #47484B;
   text-decoration: none;
 }
 
-.recent-article-item-published-time {
+.articles-list-item-published-time {
   color: #D34500;
   font-weight: bold;
 }
 
-.recent-article-item-title {
+.articles-list-item-title {
   margin: 0;
   padding: 0.2em 0 0.3em;
   border-bottom: 1px solid #eaeaea;
@@ -724,33 +710,50 @@ figure {
 }
 
 @media screen and (max-width: 47.9375em) {
-  .recent-article-item-title {
+  .articles-list-item-title {
     font-size: 1.375em;
   }
 }
 
-.recent-article-item-description {
+.articles-list-item-info {
+  margin-bottom: 0;
+}
+
+.articles-list-item-category {
+  color: inherit;
+  font-weight: bold;
+}
+
+.articles-list-item-description {
   margin: 0.5em 0 0;
 }
 
 @media screen and (max-width: 47.9375em) {
-  .recent-article-item-description {
+  .articles-list-item-description {
     font-size: 0.875em;
   }
 }
 
-.recent-article-item-description img {
+.articles-list-item-description img {
   float: left;
   max-width: 47.5%;
   margin: 0 2rem 2rem 0;
 }
 
 @media screen and (max-width: 47.9375em) {
-  .recent-article-item-description img {
+  .articles-list-item-description img {
     float: none;
     max-width: 100%;
     margin: 0 0 1rem;
   }
+}
+
+/*
+ _more-link.scss
+ */
+.more-link {
+  margin-top: 6rem;
+  text-align: center;
 }
 
 /*
@@ -959,11 +962,12 @@ figure {
   margin-top: 0;
 }
 
-.article-body p code {
+.article-body :not(pre) > code {
   margin: 0 2px;
   padding: 2px 3px;
   border-radius: 3px;
-  background-color: #f4f4f4;
+  background-color: #fdfff8;
+  color: #D34500;
 }
 
 .embed-iframe {
@@ -1100,13 +1104,12 @@ figure {
 /* -- Page -- */
 /* -- Page About --*/
 .profilePhoto {
-  float: left;
-  width: 25%;
-  height: auto;
-  max-width: 9em;
-  margin-right: 1em;
-  margin-bottom: 1em;
   border-radius: 50%;
+}
+
+.hljs {
+  padding: 1em;
+  background-color: #2d2d2d;
 }
 
 /*# sourceMappingURL=style.css.map */

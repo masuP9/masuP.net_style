@@ -1,18 +1,5 @@
 /* _conponent.scss
   ========================================================================== */
-.c-sitename {
-  -webkit-font-smoothing: antialiased;
-
-  a {
-    color: $color-text;
-    text-decoration: none;
-  }
-
-  span {
-    letter-spacing: -.125em;
-  }
-}
-
 .c-icon {
   display: inline-block;
 }
@@ -76,12 +63,5 @@
     height: 0;
     border: 1em solid transparent;
     border-right-color: $color-body-bg;
-  }
-}
-
-/* -- SiteName --*/
-.siteName {
-  span {
-    letter-spacing: -.1em;
   }
 }
