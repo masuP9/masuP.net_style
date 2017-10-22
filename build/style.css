@@ -578,19 +578,6 @@ figure {
   margin: 0;
 }
 
-.p-article-title, .archive-title, .pageSectionHeader h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  font-feature-settings: "palt" 1;
-  line-height: 1.35;
-}
-
-@media (max-width: 767px) {
-  .p-article-title, .archive-title, .pageSectionHeader h1 {
-    font-size: 1.5rem;
-  }
-}
-
 /* _conponent.scss
   ========================================================================== */
 .c-flat-list, .site-nav {
@@ -746,6 +733,19 @@ figure {
 /* -- Article -- */
 .p-article-header {
   margin: 2rem 0 4rem;
+}
+
+.p-article-title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.35;
+}
+
+@media (max-width: 767px) {
+  .p-article-title {
+    font-size: 1.5rem;
+  }
 }
 
 /*
@@ -1015,6 +1015,19 @@ figure {
 
 /* _archive.scss
   ========================================================================== */
+.archive-title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.35;
+}
+
+@media (max-width: 767px) {
+  .archive-title {
+    font-size: 1.5rem;
+  }
+}
+
 .archive-list {
   margin-top: 3rem;
 }
@@ -1057,6 +1070,19 @@ figure {
  ウェブページのスタイル
 */
 /* -- Page -- */
+.pageSectionHeader h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.35;
+}
+
+@media (max-width: 767px) {
+  .pageSectionHeader h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /* -- Page About --*/
 .profilePhoto {
   border-radius: 50%;
