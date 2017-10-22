@@ -14,7 +14,7 @@
 
 // media query の管理
 @mixin media($bp) {
-  @if $bp == 'sp' {
+  @if $bp == 'small' {
     @media (max-width: 767px) {
       @content;
     }

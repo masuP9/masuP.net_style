@@ -7,7 +7,7 @@
 .archive-list {
   margin-top: $margin * 1.5;
 
-  @include media(sp){
+  @include media(small){
     margin-top: $margin;
   }
 }
@@ -15,7 +15,7 @@
 .archive-list-item {
   margin-bottom: $margin;
 
-  @include media(sp){
+  @include media(small){
     margin: 0 0 $margin / 2;
   }
 }

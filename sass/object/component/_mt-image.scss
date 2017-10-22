@@ -9,7 +9,7 @@
 .mt-image-left {
   float: left;
   margin: 0 $base-margin $base-margin 0;
-  @include media(sp) {
+  @include media(small) {
     float: none;
     width: auto;
     margin: 0 $base-margin;
@@ -19,7 +19,7 @@
 .mt-image-right {
   float: right;
   margin: 0 0 $base-margin $base-margin;
-  @include media(sp) {
+  @include media(small) {
     float: none;
     width: auto;
     margin: 0 $base-margin;

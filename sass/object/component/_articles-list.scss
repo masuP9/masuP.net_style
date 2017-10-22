@@ -37,7 +37,7 @@
   font-feature-settings: "palt" 1;
   line-height: 1.25;
 
-  @include media(sp) {
+  @include media(small) {
       @include fz(22);
   }
 }
@@ -54,7 +54,7 @@
 .articles-list-item-description {
   margin: 0.5em 0 0;
 
-  @include media(sp) {
+  @include media(small) {
     @include fz(14);
   }
 
@@ -63,7 +63,7 @@
     max-width: 47.5%;
     margin: 0 2rem 2rem 0;
 
-    @include media(sp) {
+    @include media(small) {
       float: none;
       max-width: 100%;
       margin: 0 0 1rem;
