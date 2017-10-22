@@ -10,9 +10,10 @@
   float: left;
   margin: 0 $base-margin $base-margin 0;
   @include media(small) {
+    display: block;
     float: none;
     width: auto;
-    margin: 0 $base-margin;
+    margin: $base-margin auto;
   }
 }
 
@@ -20,9 +21,10 @@
   float: right;
   margin: 0 0 $base-margin $base-margin;
   @include media(small) {
+    display: block;
     float: none;
     width: auto;
-    margin: 0 $base-margin;
+    margin: $base-margin auto;
   }
 }
 
