@@ -10,7 +10,7 @@
 		"../sass/foundation/_layout.scss",
 		"../sass/foundation/_core.scss",
 		"../sass/foundation/_extends.scss",
-		"../sass/object/component/_component.scss",
+		"../sass/object/component/_flat-list.scss",
 		"../sass/object/component/_articles-list.scss",
 		"../sass/object/component/_mt-image.scss",
 		"../sass/object/component/_more-link.scss",
