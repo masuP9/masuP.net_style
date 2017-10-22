@@ -3,15 +3,6 @@
 // mixin や functionなど
 // ========================================================================== /
 
-
-// font-size をemとremで出力
-@mixin fz($px, $base:$font-size-base) {
-  font-size: em($px, $base);
-  @if $base != $font-size-base {
-    font-size: rem($px);
-  }
-}
-
 // media query の管理
 @mixin media($bp) {
   @if $bp == 'small' {

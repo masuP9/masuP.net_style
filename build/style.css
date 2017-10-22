@@ -459,7 +459,6 @@ template {
 
 .site-header > .site-name {
   margin-bottom: 0;
-  font-size: 2.5em;
 }
 
 .site-header > .site-name > a {
@@ -579,15 +578,19 @@ figure {
 }
 
 .article-info, .p-article-permalink-link, .p-article-pager-link {
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 
 .archive-list-item-title {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .p-article-title, .archive-title, .pageSectionHeader h1, .articles-list-item-title {
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+.site-header > .site-name {
+  font-size: 2.5rem;
 }
 
 .p-article-title, .archive-title, .pageSectionHeader h1 {
@@ -598,7 +601,7 @@ figure {
 
 @media (max-width: 767px) {
   .p-article-title, .archive-title, .pageSectionHeader h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -663,7 +666,7 @@ figure {
 
 @media (max-width: 767px) {
   .articles-list-item-title {
-    font-size: 1.375em;
+    font-size: 1.5rem;
   }
 }
 
@@ -682,7 +685,7 @@ figure {
 
 @media (max-width: 767px) {
   .articles-list-item-description {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 }
 
@@ -806,7 +809,7 @@ figure {
 @media (max-width: 767px) {
   .article-body h2 {
     line-height: 1.25;
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 }
 
@@ -862,7 +865,7 @@ figure {
 
 @media (max-width: 767px) {
   .article-body table {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 }
 

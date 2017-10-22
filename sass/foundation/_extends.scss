@@ -3,27 +3,27 @@
 // placeholder
 // ==========================================================================
 %font-size-smaller {
-  @include fz(14);
+  font-size: 0.875rem;
 }
 
 %font-size-base {
-  @include fz($font-size-base);
+  font-size: 1rem;
 }
 
 %font-size-large {
-  @include fz(20);
+  font-size: 1.25rem;
 }
 
 %font-size-large-x {
-  @include fz(24);
+  font-size: 1.5rem;
 }
 
 %font-size-large-xx {
-  @include fz(32);
+  font-size: 2rem;
 }
 
 %font-size-large-xxx {
-  @include fz(48);
+  font-size: 2.5rem;
 }
 
 %primaryHeading {
@@ -32,6 +32,6 @@
   font-feature-settings: "palt" 1;
   line-height: 1.35;
   @include media(small){
-    @include fz(24);
+    font-size: 1.5rem;
   }
 }

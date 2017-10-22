@@ -59,7 +59,7 @@
 
     @include media(small) {
       line-height: (20 / $font-size-base);
-      @include fz(20);
+      font-size: 1.25rem;
     }
   }
 
@@ -114,7 +114,7 @@
     min-width: 50%;
     margin: $base-margin auto;
     @include media(small) {
-      @include fz(14);
+      font-size: 0.875rem;
     }
   }
 
