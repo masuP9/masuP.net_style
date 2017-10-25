@@ -971,23 +971,6 @@ figure {
   top: 1.5rem;
 }
 
-/*
- _page.scss
- ウェブページのスタイル
-*/
-/* -- Page -- */
-.pageSectionHeader h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  font-feature-settings: "palt" 1;
-  line-height: 1.35;
-}
-
-/* -- Page About --*/
-.profilePhoto {
-  border-radius: 50%;
-}
-
 .hljs {
   padding: 1em;
   background-color: #2d2d2d;
