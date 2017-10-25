@@ -2,20 +2,14 @@
    ========================================================================== */
 
 // Layout
-$bodyMaxWidth: 44rem;
-$bodyMinWidth: 18rem;
 $margin: 2rem;
 
 %content-width {
-  max-width: $bodyMaxWidth;
-  width: 70%;
+  max-width: 40em;
+  min-width: 18em;
+  width: 85%;
   margin-right: auto;
   margin-left: auto;
-  @include media(small){
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
 }
 
 .site-header {

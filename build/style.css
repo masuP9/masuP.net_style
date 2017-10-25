@@ -438,18 +438,11 @@ template {
 /* _layout.scss
    ========================================================================== */
 .site-header, .main {
-  max-width: 44rem;
-  width: 70%;
+  max-width: 40em;
+  min-width: 18em;
+  width: 85%;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (max-width: 767px) {
-  .site-header, .main {
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
 }
 
 .site-header {
