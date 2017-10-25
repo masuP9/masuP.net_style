@@ -10,11 +10,6 @@
       @content;
     }
   }
-  @else if $bp == 'mid' {
-    @media (min-width: 980px) {
-      @content;
-    }
-  }
   @else if $bp == 'large' {
     @media (min-width: 1280px) {
       @content;
