@@ -739,11 +739,11 @@ figure {
  記事ページのスタイル
 */
 /* -- Article -- */
-.p-article-header {
+.article-header {
   margin: 2rem 0 4rem;
 }
 
-.p-article-title {
+.article-title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
@@ -751,7 +751,7 @@ figure {
 }
 
 @media (max-width: 767px) {
-  .p-article-title {
+  .article-title {
     font-size: 1.5rem;
   }
 }
@@ -951,16 +951,16 @@ figure {
   margin: 0 0 0.375em;
 }
 
-.p-article-permalink {
+.article-permalink {
   margin: 1.5em 0;
 }
 
-.p-article-permalink-label {
+.article-permalink-label {
   margin-top: 0.75em;
   font-weight: bold;
 }
 
-.p-article-permalink-link {
+.article-permalink-link {
   margin-left: 0;
   font-size: 0.875rem;
 }
@@ -970,39 +970,39 @@ figure {
   text-align: center;
 }
 
-.p-article-pager {
+.article-pager {
   position: relative;
   margin: 3em auto;
 }
 
-.p-article-pager-label {
+.article-pager-label {
   width: 50%;
   margin-top: 0.75em;
   font-weight: bold;
 }
 
-.p-article-pager-link {
+.article-pager-link {
   box-sizing: border-box;
   width: 50%;
   margin-left: 0;
   font-size: 0.875rem;
 }
 
-.p-article-pager-link > a {
+.article-pager-link > a {
   display: block;
 }
 
-.p-article-pager-older {
+.article-pager-older {
   padding-right: 1rem;
 }
 
 @media (max-width: 767px) {
-  .p-article-pager-older {
+  .article-pager-older {
     padding-right: .5rem;
   }
 }
 
-.p-article-pager-newer {
+.article-pager-newer {
   position: absolute;
   top: 0;
   right: 0;
@@ -1012,12 +1012,12 @@ figure {
 }
 
 @media (max-width: 767px) {
-  .p-article-pager-newer {
+  .article-pager-newer {
     padding-left: .5rem;
   }
 }
 
-.p-article-pager-newer.p-article-pager-link {
+.article-pager-newer.article-pager-link {
   top: 1.5rem;
 }
 

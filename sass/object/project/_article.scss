@@ -4,11 +4,11 @@
 */
 
 /* -- Article -- */
-.p-article-header {
+.article-header {
   margin: $margin 0 $margin * 2;
 }
 
-.p-article-title {
+.article-title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
@@ -205,16 +205,16 @@
 }
 
 // permalink
-.p-article-permalink {
+.article-permalink {
   margin: $base-margin 0;
 }
 
-.p-article-permalink-label {
+.article-permalink-label {
   margin-top: $base-margin / 2;
   font-weight: bold;
 }
 
-.p-article-permalink-link {
+.article-permalink-link {
   margin-left: 0;
   font-size: 0.875rem;
 }
@@ -224,18 +224,18 @@
   text-align: center;
 }
 
-.p-article-pager {
+.article-pager {
   position: relative;
   margin: $base-margin * 2 auto;
 }
 
-.p-article-pager-label {
+.article-pager-label {
   width: 50%;
   margin-top: $base-margin / 2;
   font-weight: bold;
 }
 
-.p-article-pager-link {
+.article-pager-link {
   box-sizing: border-box;
   width: 50%;
   margin-left: 0;
@@ -246,14 +246,14 @@
   }
 }
 
-.p-article-pager-older {
+.article-pager-older {
   padding-right: 1rem;
   @include media(small) {
     padding-right: .5rem;
   }
 }
 
-.p-article-pager-newer {
+.article-pager-newer {
   position: absolute;
   top: 0;
   right: 0;
@@ -265,7 +265,7 @@
   }
 }
 
-.p-article-pager-newer.p-article-pager-link {
+.article-pager-newer.article-pager-link {
   top: 1.5rem;
 }
 
