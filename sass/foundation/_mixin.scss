@@ -10,9 +10,4 @@
       @content;
     }
   }
-  @else if $bp == 'large' {
-    @media (min-width: 1280px) {
-      @content;
-    }
-  }
 }

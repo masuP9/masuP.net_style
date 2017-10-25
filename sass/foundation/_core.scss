@@ -7,8 +7,10 @@ html {
   font-size: ($font-size-base / 16) + em;
   line-height: $line-height-base;
   -webkit-font-smoothing: antialiased;
+}
 
-  @include media(large) {
+@media (min-width: 1280px) {
+  html {
     font-size: 1.125em;
   }
 }
