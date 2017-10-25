@@ -9,9 +9,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 374px) {
+  html {
+    font-size: 0.875em;
+  }
+}
+
 @media (min-width: 1280px) {
   html {
-    font-size: 1.125em;
+    font-size: 1.25em;
   }
 }
 

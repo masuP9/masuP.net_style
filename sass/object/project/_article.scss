@@ -13,10 +13,6 @@
   font-size: 2rem;
   font-feature-settings: "palt" 1;
   line-height: 1.35;
-
-  @include media(small){
-    font-size: 1.5rem;
-  }
 }
 
 /*
@@ -63,11 +59,6 @@
 .article-body {
   h2 {
     margin-top: ($base-margin * 2);
-
-    @include media(small) {
-      line-height: 1.25;
-      font-size: 1.25rem;
-    }
   }
 
   h3 {
@@ -120,9 +111,6 @@
     max-width: 100%;
     min-width: 50%;
     margin: $base-margin auto;
-    @include media(small) {
-      font-size: 0.875rem;
-    }
   }
 
   caption {
@@ -132,9 +120,6 @@
   td,
   th {
     padding: 1em .25em;
-    @include media(small) {
-      padding: .25em;
-    }
   }
 
   th {
@@ -248,9 +233,6 @@
 
 .article-pager-older {
   padding-right: 1rem;
-  @include media(small) {
-    padding-right: .5rem;
-  }
 }
 
 .article-pager-newer {
@@ -260,9 +242,6 @@
   margin-top: 0;
   padding-left: 1rem;
   text-align: right;
-  @include media(small) {
-    padding-left: .5rem;
-  }
 }
 
 .article-pager-newer.article-pager-link {

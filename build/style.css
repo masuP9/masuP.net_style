@@ -549,9 +549,15 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 374px) {
+  html {
+    font-size: 0.875em;
+  }
+}
+
 @media (min-width: 1280px) {
   html {
-    font-size: 1.125em;
+    font-size: 1.25em;
   }
 }
 
@@ -631,12 +637,6 @@ figure {
   line-height: 1.25;
 }
 
-@media (max-width: 767px) {
-  .articles-list-item-title {
-    font-size: 1.5rem;
-  }
-}
-
 .articles-list-item-info {
   margin-bottom: 0;
 }
@@ -648,12 +648,6 @@ figure {
 
 .articles-list-item-description {
   margin: 0.5em 0 0;
-}
-
-@media (max-width: 767px) {
-  .articles-list-item-description {
-    font-size: 0.875rem;
-  }
 }
 
 .articles-list-item-description img {
@@ -719,19 +713,13 @@ figure {
   text-align: center;
 }
 
-/* _page.scss
+/* _main.scss
   ========================================================================== */
 .main-title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
   line-height: 1.35;
-}
-
-@media (max-width: 767px) {
-  .main-title {
-    font-size: 1.5rem;
-  }
 }
 
 /*
@@ -748,12 +736,6 @@ figure {
   font-size: 2rem;
   font-feature-settings: "palt" 1;
   line-height: 1.35;
-}
-
-@media (max-width: 767px) {
-  .article-title {
-    font-size: 1.5rem;
-  }
 }
 
 /*
@@ -802,13 +784,6 @@ figure {
 /* -- 本文エリア -- */
 .article-body h2 {
   margin-top: 3em;
-}
-
-@media (max-width: 767px) {
-  .article-body h2 {
-    line-height: 1.25;
-    font-size: 1.25rem;
-  }
 }
 
 .article-body h3 {
@@ -861,12 +836,6 @@ figure {
   margin: 1.5em auto;
 }
 
-@media (max-width: 767px) {
-  .article-body table {
-    font-size: 0.875rem;
-  }
-}
-
 .article-body caption {
   margin-bottom: 0.375em;
 }
@@ -874,13 +843,6 @@ figure {
 .article-body td,
 .article-body th {
   padding: 1em .25em;
-}
-
-@media (max-width: 767px) {
-  .article-body td,
-  .article-body th {
-    padding: .25em;
-  }
 }
 
 .article-body th {
@@ -996,12 +958,6 @@ figure {
   padding-right: 1rem;
 }
 
-@media (max-width: 767px) {
-  .article-pager-older {
-    padding-right: .5rem;
-  }
-}
-
 .article-pager-newer {
   position: absolute;
   top: 0;
@@ -1009,12 +965,6 @@ figure {
   margin-top: 0;
   padding-left: 1rem;
   text-align: right;
-}
-
-@media (max-width: 767px) {
-  .article-pager-newer {
-    padding-left: .5rem;
-  }
 }
 
 .article-pager-newer.article-pager-link {
@@ -1031,12 +981,6 @@ figure {
   font-size: 2rem;
   font-feature-settings: "palt" 1;
   line-height: 1.35;
-}
-
-@media (max-width: 767px) {
-  .pageSectionHeader h1 {
-    font-size: 1.5rem;
-  }
 }
 
 /* -- Page About --*/

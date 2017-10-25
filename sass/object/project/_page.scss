@@ -10,10 +10,6 @@
     font-size: 2rem;
     font-feature-settings: "palt" 1;
     line-height: 1.35;
-
-    @include media(small) {
-      font-size: 1.5rem;
-    }
   }
 }
 

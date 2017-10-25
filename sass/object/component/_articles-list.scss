@@ -36,10 +36,6 @@
   font-size: 2rem;
   font-feature-settings: "palt" 1;
   line-height: 1.25;
-
-  @include media(small) {
-    font-size: 1.5rem;
-  }
 }
 
 .articles-list-item-info {
@@ -53,10 +49,6 @@
 
 .articles-list-item-description {
   margin: 0.5em 0 0;
-
-  @include media(small) {
-    font-size: 0.875rem;
-  }
 
   img {
     float: left;
