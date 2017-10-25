@@ -65,7 +65,7 @@
     margin-top: ($base-margin * 2);
 
     @include media(small) {
-      line-height: (20 / $font-size-base);
+      line-height: 1.25;
       font-size: 1.25rem;
     }
   }
