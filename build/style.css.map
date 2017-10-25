@@ -12,7 +12,7 @@
 		"../sass/object/component/_articles-list.scss",
 		"../sass/object/component/_mt-image.scss",
 		"../sass/object/component/_more-link.scss",
-		"../sass/object/component/_page.scss",
+		"../sass/object/component/_main.scss",
 		"../sass/object/project/_article.scss",
 		"../sass/object/project/_page.scss",
 		"../sass/lib/highlightjs/_theme.scss"

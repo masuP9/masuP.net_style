@@ -721,7 +721,7 @@ figure {
 
 /* _page.scss
   ========================================================================== */
-.page-title {
+.main-title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
@@ -729,7 +729,7 @@ figure {
 }
 
 @media (max-width: 767px) {
-  .page-title {
+  .main-title {
     font-size: 1.5rem;
   }
 }
