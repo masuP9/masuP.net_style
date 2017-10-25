@@ -15,17 +15,12 @@
 // component
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-@import "object/component/_flat-list";     // フラットリスト
-@import "object/component/_articles-list"; // 記事一覧
-@import "object/component/_mt-image";      // MTが挿入する画像
-@import "object/component/_more-link";     // もっと読むリンク
-@import "object/component/_main";          // main content
-
-// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-// thema
-// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-@import "object/project/_article"; // 記事ページ
+@import "component/_flat-list";     // フラットリスト
+@import "component/_articles-list"; // 記事一覧
+@import "component/_mt-image";      // MTが挿入する画像
+@import "component/_more-link";     // もっと読むリンク
+@import "component/_main";          // main content
+@import "component/_article";       // 記事ページ
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // library
