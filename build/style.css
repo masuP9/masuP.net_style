@@ -437,7 +437,7 @@ template {
 
 /* _layout.scss
    ========================================================================== */
-.site-header, .main {
+.container, .site-header, .main {
   max-width: 40em;
   min-width: 18em;
   width: 85%;
