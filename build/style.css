@@ -719,6 +719,21 @@ figure {
   text-align: center;
 }
 
+/* _page.scss
+  ========================================================================== */
+.page-title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.35;
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
 /*
  _article.scss
  記事ページのスタイル
@@ -1004,21 +1019,6 @@ figure {
 
 .p-article-pager-newer.p-article-pager-link {
   top: 1.5rem;
-}
-
-/* _archive.scss
-  ========================================================================== */
-.archive-title {
-  margin-top: 0;
-  font-size: 2rem;
-  font-feature-settings: "palt" 1;
-  line-height: 1.35;
-}
-
-@media (max-width: 767px) {
-  .archive-title {
-    font-size: 1.5rem;
-  }
 }
 
 /*
