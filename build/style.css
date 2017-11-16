@@ -748,6 +748,10 @@ figure {
 }
 
 /* -- 本文エリア -- */
+.article-body {
+  margin-bottom: 60px;
+}
+
 .article-body h2 {
   margin-top: 3em;
 }
