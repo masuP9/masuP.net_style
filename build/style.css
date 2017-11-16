@@ -441,13 +441,11 @@ template {
   max-width: 40em;
   min-width: 18em;
   width: 85%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 36px auto;
 }
 
 .site-header .site-name {
-  margin-top: 36px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .site-name .p {
@@ -587,8 +585,8 @@ figure {
   padding: 0;
 }
 
-.articles-list-item {
-  padding: 1.275em 0;
+.articles-list-item:not(:first-child) {
+  margin-top: 2.55em;
 }
 
 .articles-list-item > a {
@@ -611,7 +609,7 @@ figure {
 }
 
 .articles-list-item-info {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .articles-list-item-category {
@@ -700,7 +698,7 @@ figure {
 */
 /* -- Article -- */
 .article-header {
-  margin: 2rem 0 4rem;
+  margin: 0 0 4rem;
 }
 
 .article-title {
