@@ -456,7 +456,7 @@ template {
 }
 
 .site-header > .site-name > a {
-  color: #D34500;
+  color: #DC0B0B;
   text-shadow: 0 0 transparent;
   text-decoration: none;
   transition: text-shadow .3s ease-in;
@@ -487,8 +487,8 @@ template {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 8rem;
-  background-color: #47484B;
-  color: #fdfff8;
+  background-color: #222222;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -501,7 +501,7 @@ template {
 }
 
 .sns-list svg path {
-  fill: #fdfff8;
+  fill: #FFFFFF;
 }
 
 .site-nav {
@@ -517,7 +517,7 @@ template {
 .site-nav > li > a {
   display: block;
   padding: .5em;
-  color: #fdfff8;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -541,8 +541,8 @@ template {
 /* _core.scss
    ========================================================================== */
 html {
-  background-color: #fdfff8;
-  color: #47484B;
+  background-color: #FFFFFF;
+  color: #222222;
   font-family: "Source Sans Pro", "Hiragino Sans", "Meiryo", sans-serif;
   font-size: 1em;
   line-height: 1.5;
@@ -562,7 +562,7 @@ html {
 }
 
 a {
-  color: #a03400;
+  color: #ab0909;
 }
 
 abbr[title] {
@@ -619,12 +619,12 @@ figure {
 
 .articles-list-item > a {
   display: block;
-  color: #47484B;
+  color: #222222;
   text-decoration: none;
 }
 
 .articles-list-item-published-time {
-  color: #D34500;
+  color: #DC0B0B;
   font-weight: bold;
 }
 
@@ -778,7 +778,7 @@ figure {
 .article-info .article-info--category {
   margin: 0 .2em;
   text-decoration: underline;
-  color: #47484B;
+  color: #222222;
 }
 
 /* -- 本文エリア -- */
@@ -847,7 +847,7 @@ figure {
 
 .article-body th {
   padding-bottom: .5em;
-  border-bottom: 2px solid #D34500;
+  border-bottom: 2px solid #DC0B0B;
   font-feature-settings: "palt" 1;
 }
 
@@ -863,7 +863,7 @@ figure {
 }
 
 .article-body td {
-  border-bottom: 1px solid #47484B;
+  border-bottom: 1px solid #222222;
 }
 
 .article-body blockquote {
@@ -888,8 +888,8 @@ figure {
   margin: 0 2px;
   padding: 2px 3px;
   border-radius: 3px;
-  background-color: #fdfff8;
-  color: #D34500;
+  background-color: #FFFFFF;
+  color: #DC0B0B;
 }
 
 .embed-iframe {
