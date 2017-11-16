@@ -437,7 +437,7 @@ template {
 
 /* _layout.scss
    ========================================================================== */
-.container, .site-header, .main {
+.site-header {
   max-width: 40em;
   min-width: 18em;
   width: 85%;
@@ -445,25 +445,9 @@ template {
   margin-left: auto;
 }
 
-.site-header {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.site-header > .site-name {
+.site-header .site-name {
+  margin-top: 36px;
   margin-bottom: 0;
-  font-size: 2.5rem;
-}
-
-.site-header > .site-name > a {
-  color: #DC0B0B;
-  text-shadow: 0 0 transparent;
-  text-decoration: none;
-  transition: text-shadow .3s ease-in;
-}
-
-.site-header > .site-name > a:hover {
-  text-shadow: 0 0 #605040, 1px 1px #605040, 2px 2px #605040, 3px 3px #605040, 4px 4px #605040, 5px 5px #605040, 6px 6px #605040, 7px 7px #605040, 8px 8px #605040;
 }
 
 .site-name .p {
@@ -471,15 +455,12 @@ template {
   letter-spacing: -.1em;
 }
 
-.site-header .site-description {
-  margin-top: 0;
-}
-
-.site-description a {
-  color: inherit;
-}
-
 .main {
+  max-width: 40em;
+  min-width: 18em;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 2rem;
 }
 
