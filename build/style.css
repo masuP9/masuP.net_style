@@ -484,13 +484,9 @@ template {
 }
 
 .site-nav {
-  margin: 1rem 0;
+  display: inline-flex;
   padding: 0;
   list-style: none;
-}
-
-.site-nav > li {
-  text-transform: uppercase;
 }
 
 .site-nav > li > a {
@@ -558,21 +554,21 @@ figure {
 
 /* _conponent.scss
   ========================================================================== */
-.c-flat-list, .site-nav {
+.c-flat-list {
   list-style: none;
   padding-left: 0;
 }
 
-.c-flat-list > li, .site-nav > li,
-.c-flat-list > dt, .site-nav > dt,
-.c-flat-list > dd, .site-nav > dd {
+.c-flat-list > li,
+.c-flat-list > dt,
+.c-flat-list > dd {
   display: inline-block;
   margin-right: .5rem;
 }
 
-.c-flat-list > li:last-child, .site-nav > li:last-child,
-.c-flat-list > dt:last-child, .site-nav > dt:last-child,
-.c-flat-list > dd:last-child, .site-nav > dd:last-child {
+.c-flat-list > li:last-child,
+.c-flat-list > dt:last-child,
+.c-flat-list > dd:last-child {
   margin-right: 0;
 }
 

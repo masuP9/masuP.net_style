@@ -51,14 +51,9 @@ $margin: 2rem;
 }
 
 .site-nav {
-  margin: 1rem 0;
+  display: inline-flex;
   padding: 0;
   list-style: none;
-  @extend .c-flat-list;
-}
-
-.site-nav > li {
-  text-transform: uppercase;
 }
 
 .site-nav > li > a {
