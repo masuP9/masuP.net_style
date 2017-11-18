@@ -1,4 +1,4 @@
 masuP.net_style
 ===============
 
-masuP.netのCSS/SCSSファイル
+masuP.netのCSS
