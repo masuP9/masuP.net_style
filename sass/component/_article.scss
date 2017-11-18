@@ -18,41 +18,17 @@
 /*
  .article-info
 */
-.article-info {
-  overflow: hidden;
-  font-size: 0.875rem;
+.article-info__date-published {
+  margin: 0;
+}
 
-  & &--label {
-    float: left;
-  }
+.article-info__categories {
+  display: flex;
+  margin: 0;
+}
 
-  & &--label:after {
-    content: ":";
-    margin: 0 .2em;
-  }
-
-  & &--prop {
-    float: left;
-    margin-left: 0;
-    margin-right: 1em;
-    @include media(small) {
-      float: none;
-    }
-  }
-
-  & > *:last-child {
-    margin-right: 0;
-  }
-
-  & &--prop.is-publish-date {
-    letter-spacing: 1px;
-  }
-
-  & &--category {
-    margin: 0 .2em;
-    text-decoration: underline;
-    color: $color-text;
-  }
+.article-info__category {
+  margin-left: 0.5em;
 }
 
 /* -- 本文エリア -- */
