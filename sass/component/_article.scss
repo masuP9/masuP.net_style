@@ -5,7 +5,7 @@
 
 /* -- Article -- */
 .article-header {
-  margin: 0 0 $margin * 2;
+  margin: 0 0 2rem * 2;
 }
 
 .article-title {
@@ -36,15 +36,15 @@
   margin-bottom: 60px;
 
   h2 {
-    margin-top: ($base-margin * 2);
+    margin-top: (1.5em * 2);
   }
 
   h3 {
-    margin-top: ($base-margin * 1.5);
+    margin-top: (1.5em * 1.5);
   }
 
   p {
-    margin: $base-margin 0;
+    margin: 1.5em 0;
   }
 
   p a {
@@ -76,23 +76,23 @@
   }
 
   dd + dt {
-    margin-top: $base-margin / 2;
+    margin-top: 1.5em / 2;
   }
 
   hr {
-    margin: $base-margin * 2;
+    margin: 1.5em * 2;
     border: 0;
-    border-top: .2em solid $color-base-gray;
+    border-top: .2em solid var(--color-gray);
   }
 
   table {
     max-width: 100%;
     min-width: 50%;
-    margin: $base-margin auto;
+    margin: 1.5em auto;
   }
 
   caption {
-    margin-bottom: $base-margin / 4;
+    margin-bottom: 1.5em / 4;
   }
 
   td,
@@ -102,7 +102,7 @@
 
   th {
     padding-bottom: .5em;
-    border-bottom: 2px solid $color-base;
+    border-bottom: 2px solid var(--color-red);
     font-feature-settings: "palt" 1;
   }
 
@@ -116,13 +116,13 @@
   }
 
   td {
-    border-bottom: 1px solid $color-base-black;
+    border-bottom: 1px solid var(--color-black);
   }
 
   blockquote {
-    margin: 0 0 $base-margin / 2;
+    margin: 0 0 1.5em / 2;
     padding-left: 1em;
-    border-left: 3px solid $color-base-gray;
+    border-left: 3px solid var(--color-gray);
   }
 
   blockquote > *:last-child {
@@ -130,7 +130,7 @@
   }
 
   figure {
-    margin-bottom: $base-margin;
+    margin-bottom: 1.5em;
   }
 
   figcaption + pre {
@@ -146,8 +146,8 @@
     margin: 0 2px;
     padding: 2px 3px;
     border-radius: 3px;
-    background-color: $color-base-white;
-    color: $color-base-orange;
+    background-color: var(--color-white);
+    color: var(--color-red);
   }
 }
 
@@ -169,16 +169,16 @@
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 $base-margin / 4;
+  margin: 0 0 1.5em / 4;
 }
 
 // permalink
 .article-permalink {
-  margin: $base-margin 0;
+  margin: 1.5em 0;
 }
 
 .article-permalink-label {
-  margin-top: $base-margin / 2;
+  margin-top: 1.5em / 2;
   font-weight: bold;
 }
 
@@ -188,18 +188,18 @@
 }
 
 .article-ads {
-  margin: $base-margin * 2 0;
+  margin: 1.5em * 2 0;
   text-align: center;
 }
 
 .article-pager {
   position: relative;
-  margin: $base-margin * 2 auto;
+  margin: 1.5em * 2 auto;
 }
 
 .article-pager-label {
   width: 50%;
-  margin-top: $base-margin / 2;
+  margin-top: 1.5em / 2;
   font-weight: bold;
 }
 

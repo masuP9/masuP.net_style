@@ -1,22 +1,8 @@
-// -- Variable --
+/* -- Variable -- */
 
-// Color
-
-//Base Color
-$color-base-black:     #222222;
-$color-base-blue:      #114B5F;
-$color-base-white:     #FFFFFF;
-$color-base-gray:      #eaeaea;
-$color-base-dark-gray: #999999;
-$color-base-orange:    #DC0B0B;
-
-$color-base:       $color-base-orange;
-$color-base-light: lighten($color-base, 10%);
-$color-base-dark:  darken($color-base, 10%);
-$color-body-bg:    $color-base-white;
-$color-text:       $color-base-black;
-$color-accent:     $color-base-orange;
-
-$color-link: $color-base-dark;
-
-$base-margin: 1.5em;
+:root {
+  --color-black: #222222;
+  --color-white: #FFFFFF;
+  --color-gray: #eaeaea;
+  --color-red: #DC0B0B;
+}

@@ -1,8 +1,6 @@
-/* _layout.scss
-   ========================================================================== */
-
-// Layout
-$margin: 2rem;
+/*
+ * layout
+ */
 
 .site-header {
   max-width: 40em;
@@ -26,15 +24,15 @@ $margin: 2rem;
   width: 85%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: $margin;
+  margin-bottom: 2rem;
 }
 
 .site-footer {
-  padding-top: $margin;
-  padding-bottom: $margin;
-  margin-top: $margin * 4;
-  background-color: $color-base-black;
-  color: $color-base-white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem * 4;
+  background-color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
 }
 
@@ -47,7 +45,7 @@ $margin: 2rem;
 }
 
 .sns-list svg path {
-  fill: $color-base-white;
+  fill: var(--color-white);
 }
 
 .site-nav {
@@ -59,7 +57,7 @@ $margin: 2rem;
 .site-nav > li > a {
   display: block;
   padding: .5em;
-  color: $color-base-white;
+  color: var(--color-white);
   text-decoration: none;
 }
 

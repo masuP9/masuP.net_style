@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /*! style.css https://github.com/masuP9/masuP.net_style */
+/* -- Variable -- */
+@import url(../node_modules/highlight.js/styles/vs2015.css);
+:root {
+  --color-black: #222222;
+  --color-white: #FFFFFF;
+  --color-gray: #eaeaea;
+  --color-red: #DC0B0B;
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -8,7 +17,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url(../node_modules/highlight.js/styles/vs2015.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -435,8 +443,9 @@ template {
   display: none;
 }
 
-/* _layout.scss
-   ========================================================================== */
+/*
+ * layout
+ */
 .site-header {
   max-width: 40em;
   min-width: 18em;
@@ -466,8 +475,8 @@ template {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 8rem;
-  background-color: #222222;
-  color: #FFFFFF;
+  background-color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
 }
 
@@ -480,7 +489,7 @@ template {
 }
 
 .sns-list svg path {
-  fill: #FFFFFF;
+  fill: var(--color-white);
 }
 
 .site-nav {
@@ -492,7 +501,7 @@ template {
 .site-nav > li > a {
   display: block;
   padding: .5em;
-  color: #FFFFFF;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -516,10 +525,8 @@ template {
 /* _core.scss
    ========================================================================== */
 html {
-  background-color: #FFFFFF;
-  color: #222222;
+  color: var(--color-black);
   font-family: "Hiragino Sans", "Meiryo", sans-serif;
-  font-size: 1em;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -537,7 +544,7 @@ html {
 }
 
 a {
-  color: #ab0909;
+  color: var(--color-red);
 }
 
 abbr[title] {
@@ -592,13 +599,13 @@ figure {
 }
 
 .articles-list-item-published-time {
-  color: #DC0B0B;
+  color: var(--color-red);
 }
 
 .articles-list-item-title {
   margin: 0;
   padding: 0.25em 0;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--color-gray);
   font-size: 1.75rem;
   font-feature-settings: "palt" 1;
   line-height: 1.25;
@@ -764,13 +771,13 @@ figure {
 }
 
 .article-body dd + dt {
-  margin-top: 0.75em;
+  margin-top: 1.5em / 2;
 }
 
 .article-body hr {
   margin: 3em;
   border: 0;
-  border-top: 0.2em solid #eaeaea;
+  border-top: 0.2em solid var(--color-gray);
 }
 
 .article-body table {
@@ -780,7 +787,7 @@ figure {
 }
 
 .article-body caption {
-  margin-bottom: 0.375em;
+  margin-bottom: 1.5em / 4;
 }
 
 .article-body td,
@@ -790,7 +797,7 @@ figure {
 
 .article-body th {
   padding-bottom: .5em;
-  border-bottom: 2px solid #DC0B0B;
+  border-bottom: 2px solid var(--color-red);
   font-feature-settings: "palt" 1;
 }
 
@@ -806,13 +813,13 @@ figure {
 }
 
 .article-body td {
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid var(--color-black);
 }
 
 .article-body blockquote {
-  margin: 0 0 0.75em;
+  margin: 0 0 1.5em / 2;
   padding-left: 1em;
-  border-left: 3px solid #eaeaea;
+  border-left: 3px solid var(--color-gray);
 }
 
 .article-body blockquote > *:last-child {
@@ -836,8 +843,8 @@ figure {
   margin: 0 2px;
   padding: 2px 3px;
   border-radius: 3px;
-  background-color: #FFFFFF;
-  color: #DC0B0B;
+  background-color: var(--color-white);
+  color: var(--color-red);
 }
 
 .embed-iframe {
@@ -858,7 +865,7 @@ figure {
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 0.375em;
+  margin: 0 0 1.5em / 4;
 }
 
 .article-permalink {
@@ -866,7 +873,7 @@ figure {
 }
 
 .article-permalink-label {
-  margin-top: 0.75em;
+  margin-top: 1.5em / 2;
   font-weight: bold;
 }
 
@@ -887,7 +894,7 @@ figure {
 
 .article-pager-label {
   width: 50%;
-  margin-top: 0.75em;
+  margin-top: 1.5em / 2;
   font-weight: bold;
 }
 

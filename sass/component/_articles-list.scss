@@ -19,13 +19,13 @@
 }
 
 .articles-list-item-published-time {
-  color: $color-base;
+  color: var(--color-red);
 }
 
 .articles-list-item-title {
   margin: 0;
   padding: 0.25em 0;
-  border-bottom: 1px solid $color-base-gray;
+  border-bottom: 1px solid var(--color-gray);
   font-size: 1.75rem;
   font-feature-settings: "palt" 1;
   line-height: 1.25;

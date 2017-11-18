@@ -8,23 +8,23 @@
 
 .mt-image-left {
   float: left;
-  margin: 0 $base-margin $base-margin 0;
+  margin: 0 1.5em 1.5em 0;
   @include media(small) {
     display: block;
     float: none;
     width: auto;
-    margin: $base-margin auto;
+    margin: 1.5em auto;
   }
 }
 
 .mt-image-right {
   float: right;
-  margin: 0 0 $base-margin $base-margin;
+  margin: 0 0 1.5em 1.5em;
   @include media(small) {
     display: block;
     float: none;
     width: auto;
-    margin: $base-margin auto;
+    margin: 1.5em auto;
   }
 }
 
