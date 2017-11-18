@@ -776,7 +776,7 @@ em {
 }
 
 .article-body dd + dt {
-  margin-top: 1.5em / 2;
+  margin-top: 0.75em;
 }
 
 .article-body hr {
@@ -792,7 +792,7 @@ em {
 }
 
 .article-body caption {
-  margin-bottom: 1.5em / 4;
+  margin-bottom: 0.375em;
 }
 
 .article-body td,
@@ -822,7 +822,7 @@ em {
 }
 
 .article-body blockquote {
-  margin: 0 0 1.5em / 2;
+  margin: 0 0 0.75em;
   padding-left: 1em;
   border-left: 3px solid var(--color-gray);
 }
@@ -872,7 +872,7 @@ em {
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 1.5em / 4;
+  margin: 0 0 0.375em;
 }
 
 .article-permalink {
@@ -880,7 +880,7 @@ em {
 }
 
 .article-permalink-label {
-  margin-top: 1.5em / 2;
+  margin-top: 0.75em;
   font-weight: bold;
 }
 
@@ -901,7 +901,7 @@ em {
 
 .article-pager-label {
   width: 50%;
-  margin-top: 1.5em / 2;
+  margin-top: 0.75em;
   font-weight: bold;
 }
 

@@ -36,11 +36,11 @@
   margin-bottom: 60px;
 
   h2 {
-    margin-top: (1.5em * 2);
+    margin-top: 3em;
   }
 
   h3 {
-    margin-top: (1.5em * 1.5);
+    margin-top: 2.25em;
   }
 
   p {
@@ -76,11 +76,11 @@
   }
 
   dd + dt {
-    margin-top: 1.5em / 2;
+    margin-top: 0.75em;
   }
 
   hr {
-    margin: 1.5em * 2;
+    margin: 3em;
     border: 0;
     border-top: .2em solid var(--color-gray);
   }
@@ -92,7 +92,7 @@
   }
 
   caption {
-    margin-bottom: 1.5em / 4;
+    margin-bottom: 0.375em;
   }
 
   td,
@@ -120,7 +120,7 @@
   }
 
   blockquote {
-    margin: 0 0 1.5em / 2;
+    margin: 0 0 0.75em;
     padding-left: 1em;
     border-left: 3px solid var(--color-gray);
   }
@@ -171,7 +171,7 @@
 
 /* -- 参考にしたWebページ -- */
 .reference-web-page > dd {
-  margin: 0 0 1.5em / 4;
+  margin: 0 0 0.375em;
 }
 
 // permalink
@@ -180,7 +180,7 @@
 }
 
 .article-permalink-label {
-  margin-top: 1.5em / 2;
+  margin-top: 0.75em;
   font-weight: bold;
 }
 
@@ -190,18 +190,18 @@
 }
 
 .article-ads {
-  margin: 1.5em * 2 0;
+  margin: 3em 0;
   text-align: center;
 }
 
 .article-pager {
   position: relative;
-  margin: 1.5em * 2 auto;
+  margin: 3em auto;
 }
 
 .article-pager-label {
   width: 50%;
-  margin-top: 1.5em / 2;
+  margin-top: 0.75em;
   font-weight: bold;
 }
 
