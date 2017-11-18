@@ -564,23 +564,20 @@ em {
   font-weight: bold;
 }
 
-/* _conponent.scss
-  ========================================================================== */
+/*
+ * flat-list
+ */
 .c-flat-list {
   list-style: none;
   padding-left: 0;
 }
 
-.c-flat-list > li,
-.c-flat-list > dt,
-.c-flat-list > dd {
+.c-flat-list > :matches(li, dt, dd) {
   display: inline-block;
-  margin-right: .5rem;
+  margin-right: 0.5em;
 }
 
-.c-flat-list > li:last-child,
-.c-flat-list > dt:last-child,
-.c-flat-list > dd:last-child {
+.c-flat-list > :matches(li, dt, dd):last-child {
   margin-right: 0;
 }
 
