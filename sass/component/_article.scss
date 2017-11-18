@@ -137,6 +137,11 @@
     margin-top: 0;
   }
 
+  pre > code {
+    display: block;
+    overflow-x: scroll;
+  }
+
   :not(pre) > code {
     margin: 0 2px;
     padding: 2px 3px;

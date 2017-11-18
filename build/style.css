@@ -827,6 +827,11 @@ figure {
   margin-top: 0;
 }
 
+.article-body pre > code {
+  display: block;
+  overflow-x: scroll;
+}
+
 .article-body :not(pre) > code {
   margin: 0 2px;
   padding: 2px 3px;
