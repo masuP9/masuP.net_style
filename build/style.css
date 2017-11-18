@@ -701,10 +701,9 @@ em {
 }
 
 /*
- _article.scss
- 記事ページのスタイル
-*/
-/* -- Article -- */
+ * article
+ * 記事ページ
+ */
 .article-header {
   margin: 0 0 4rem;
 }
@@ -716,9 +715,7 @@ em {
   line-height: 1.35;
 }
 
-/*
- .article-info
-*/
+/* article-info */
 .article-info__date-published {
   margin: 0;
 }
@@ -732,7 +729,7 @@ em {
   margin-left: 0.5em;
 }
 
-/* -- 本文エリア -- */
+/* article body */
 .article-body {
   margin-bottom: 60px;
 }
@@ -749,9 +746,8 @@ em {
   margin: 1.5em 0;
 }
 
-.article-body p a {
+.article-body a {
   color: inherit;
-  text-decoration-color: #778899;
 }
 
 .article-body h2 + p,
@@ -857,7 +853,7 @@ em {
 .embed-iframe {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: calc(9 / 16 * 100%);
 }
 
 .embed-iframe > iframe {
