@@ -1,5 +1,7 @@
-/* _core.scss
-   ========================================================================== */
+/*
+ * element style
+ */
+
 html {
   color: var(--color-black);
   font-family: "Hiragino Sans", "Meiryo", sans-serif;

@@ -1,6 +1,5 @@
 /*
- _index.scss
- TOPページ関連
+ * article-list
  */
 
 .articles-list {
@@ -12,7 +11,7 @@
   margin-top: 2.55em;
 }
 
-.articles-list-item > a {
+.articles-list-item>a {
   display: block;
   color: inherit;
   text-decoration: none;

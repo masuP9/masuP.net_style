@@ -1,12 +1,12 @@
 {
   "name": "masup.net.style",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "stylesheet of masuP.net",
   "main": "index.js",
   "scripts": {
     "start": "npm run css -- --watch & npm run css:dist -- --watch",
-    "css": "node-sass --output-style expanded --source-map true sass/style.scss build/style.css",
-    "css:dist": "postcss build/style.css --no-map -u postcss-cssnext -u postcss-import -u css-mqpacker -u csswring -o public/style.css"
+    "css": "postcss src/style.css --map -u postcss-import -o build/style.css",
+    "css:dist": "postcss build/style.css --no-map -u postcss-cssnext -u css-mqpacker -u csswring -o public/style.css"
   },
   "repository": {
     "type": "git",
@@ -19,13 +19,18 @@
   "homepage": "https://github.com/masuP9/masuP.net_style#readme",
   "devDependencies": {
     "css-mqpacker": "^6.0.1",
-    "csswring": "^6.0.0",
-    "node-sass": "^4.5.3",
-    "postcss-cli": "^4.1.0",
+    "csswring": "^6.0.1",
+    "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0"
+    "postcss-import": "^11.0.0"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0"
-  }
+    "highlight.js": "^9.12.0",
+    "normalize.css": "^7.0.0"
+  },
+  "browserslist": [
+    "Last 1 versions",
+    "Android >= 4.4",
+    "IE >= 11"
+  ]
 }
