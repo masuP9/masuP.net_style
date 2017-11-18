@@ -142,13 +142,15 @@
     overflow-x: scroll;
   }
 
-  :not(pre) > code {
+  :not(pre) > code:not(:only-child) {
     margin: 0 2px;
     padding: 2px 3px;
-    border-radius: 3px;
-    background-color: var(--color-white);
     color: var(--color-red);
   }
+}
+
+.article-body strong {
+  color: var(--color-red);
 }
 
 .embed-iframe {
