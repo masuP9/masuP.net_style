@@ -1,0 +1,12 @@
+/*
+ * pager
+ * ページャー
+ */
+
+.pager__link {
+  margin-left: 0;
+}
+
+.pager__older + .pager__newer {
+  margin-top: 1em;
+}
