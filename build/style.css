@@ -635,10 +635,10 @@ em {
  */
 
 .site-header {
-  max-width: 40em;
+  max-width: 36em;
   min-width: 18em;
   width: 85%;
-  margin: 36px auto;
+  margin: 2rem auto;
 }
 
 .site-header .site-name {
@@ -651,7 +651,7 @@ em {
 }
 
 .main {
-  max-width: 40em;
+  max-width: 36em;
   min-width: 18em;
   width: 85%;
   margin-right: auto;
