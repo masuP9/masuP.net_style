@@ -187,8 +187,8 @@
   font-size: 0.875rem;
 }
 
-.article-ads {
-  margin: 3em 0;
+.article__ads {
+  margin: 3em -7.5%;
   text-align: center;
 }
 
