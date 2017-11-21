@@ -645,11 +645,15 @@ em {
   max-width: 36em;
   min-width: 18em;
   width: 85%;
-  margin: 2rem auto;
+  margin: 48px auto 32px;
 }
 
 .site-header .site-name {
   margin: 0;
+}
+
+.site-name svg {
+  display: block;
 }
 
 .site-name .p {
