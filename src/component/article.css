@@ -167,6 +167,7 @@
 .article__permalink-link {
   margin-left: 0;
   font-size: 0.875rem;
+  word-break: break-all;
 }
 
 .article__ads {
