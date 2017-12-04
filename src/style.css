@@ -2,6 +2,10 @@
 
 /*! style.css https://github.com/masuP9/masuP.net_style */
 
+/*
+ * settings
+ */
+@import "setting/variable.css";
 
 /*
  * library
@@ -14,19 +18,18 @@
  * foundation
  */
 
-@import "foundation/variable.css";
 @import "foundation/element.css";
 
 /*
  * component
  */
 
-@import "component/layout.css";
-@import "component/flat-list.css";
-@import "component/articles-list.css";
-@import "component/mt-image.css";
-@import "component/more-link.css";
-@import "component/main.css";
 @import "component/article.css";
-@import "component/pager.css";
+@import "component/articles-list.css";
 @import "component/embed-iframe.css";
+@import "component/flat-list.css";
+@import "component/layout.css";
+@import "component/main.css";
+@import "component/more-link.css";
+@import "component/mt-image.css";
+@import "component/pager.css";

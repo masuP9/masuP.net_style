@@ -19,6 +19,8 @@ CSS of [masuP.net](https://masup.net)
 ## Source Directory
 
 - style.css
+  - /setting
+    - custom properties, custom media queries ...
   - /library
     - import from ../node_modules or other library
   - /foundation
