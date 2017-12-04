@@ -16,12 +16,12 @@
 
 @import "foundation/variable.css";
 @import "foundation/element.css";
-@import "foundation/layout.css";
 
 /*
  * component
  */
 
+@import "component/layout.css";
 @import "component/flat-list.css";
 @import "component/articles-list.css";
 @import "component/mt-image.css";
