@@ -7,8 +7,8 @@
  * library
  */
 
-@import '../node_modules/normalize.css/normalize.css';
-@import '../node_modules/highlight.js/styles/vs2015.css';
+@import 'library/normalize.css';
+@import 'library/vs2015.css';
 
 /*
  * foundation
