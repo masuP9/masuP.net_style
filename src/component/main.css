@@ -1,8 +1,17 @@
 /*
- * main
+ * Main
  */
 
-.main-title {
+.Main {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.Main__title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;

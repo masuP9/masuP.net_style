@@ -915,33 +915,9 @@ em {
  * layout
  */
 
-.site-header {
-  max-width: 36em;
-  min-width: 18em;
-  width: 85%;
-  margin: 48px auto;
-}
-
-.site-header .site-name {
-  margin: 0;
-}
-
-.site-name svg {
-  display: block;
-}
-
 .site-name .p {
   font-weight: inherit;
   letter-spacing: -.1em;
-}
-
-.main {
-  max-width: 36em;
-  min-width: 18em;
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 2rem;
 }
 
 .site-footer {
@@ -996,10 +972,35 @@ em {
 }
 
 /*
- * main
+ * Header
  */
 
-.main-title {
+.Header {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin: 48px auto;
+}
+
+.Header__logo {
+  margin: 0;
+  line-height: 1;
+}
+
+/*
+ * Main
+ */
+
+.Main {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.Main__title {
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
