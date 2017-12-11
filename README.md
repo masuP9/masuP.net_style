@@ -10,8 +10,8 @@ CSS of [masuP.net](https://masup.net)
   property: value;
 }
 
-.Block__Element.-modifier,
-.Block__Element.-state {
+.Block__element.-modifier,
+.Block__otherElement.-state {
   property: value;
 }
 ```
