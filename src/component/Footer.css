@@ -1,0 +1,12 @@
+/*
+ * Footer
+ */
+
+.Footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 8rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
