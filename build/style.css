@@ -837,7 +837,7 @@ cite {
  */
 
 .ArticlesList {
-  margin: 0;
+  margin: 0 0 6rem;
   padding: 0;
 }
 
@@ -994,15 +994,6 @@ cite {
 
 .SiteNav > li > a:hover {
   text-decoration: underline;
-}
-
-/*
- * more-link
- */
-
-.more-link {
-  margin-top: 6rem;
-  text-align: center;
 }
 
 /*
