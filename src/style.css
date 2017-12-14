@@ -25,6 +25,7 @@
  */
 
 @import "component/article.css";
+@import "component/EditArea.css";
 @import "component/ArticlesList.css";
 @import "component/embed-iframe.css";
 @import "component/flat-list.css";
