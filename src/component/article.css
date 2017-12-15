@@ -1,13 +1,13 @@
 /*
- * article
+ * Article
  * 記事ページ
  */
 
-.article__header {
+.Article__header {
   margin: 0 0 4rem;
 }
 
-.article__title {
+.Article__title {
   margin-top: 0;
   font-size: 1.75rem;
   font-feature-settings: "palt" 1;
@@ -16,43 +16,43 @@
 }
 
 @media (min-width: 768px) {
-  .article__title {
+  .Article__title {
     font-size: 2.5rem;
   }
 }
 
-.article__date-published {
+.Article__date-published {
   margin: 0;
 }
 
-.article__categories {
+.Article__categories {
   display: flex;
   margin: 0;
 }
 
-.article__category {
+.Article__category {
   margin-left: 0.5em;
 }
 
-.article__body {
+.Article__body {
   margin-bottom: 60px;
 }
 
-.article__permalink {
+.Article__permalink {
   margin: 1.5em 0;
 }
 
-.article__permalink-link {
+.Article__permalink-link {
   margin-left: 0;
   font-size: 0.875rem;
   word-break: break-all;
 }
 
-.article__ads {
+.Article__ads {
   margin: 3em -7.5%;
   text-align: center;
 }
 
-.article__pager {
+.Article__pager {
   margin: 3em auto;
 }

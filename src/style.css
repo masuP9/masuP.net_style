@@ -24,7 +24,7 @@
  * component
  */
 
-@import "component/article.css";
+@import "component/Article.css";
 @import "component/EditArea.css";
 @import "component/ArticlesList.css";
 @import "component/embed-iframe.css";
