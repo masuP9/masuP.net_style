@@ -694,7 +694,7 @@ cite {
   margin: 1.5em 0;
 }
 
-.Article__permalinkLink {
+.Article__permalink-link {
   margin-left: 0;
   font-size: 0.875rem;
   word-break: break-all;
@@ -905,20 +905,20 @@ cite {
 }
 
 /*
- * flat-list
+ * FlatList
  */
 
-.c-flat-list {
+.FlatList {
   list-style: none;
   padding-left: 0;
 }
 
-.c-flat-list > :matches(li, dt, dd) {
+.FlatList > :matches(li, dt, dd) {
   display: inline-block;
   margin-right: 0.5em;
 }
 
-.c-flat-list > :matches(li, dt, dd):last-child {
+.FlatList > :matches(li, dt, dd):last-child {
   margin-right: 0;
 }
 
