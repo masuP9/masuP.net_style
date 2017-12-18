@@ -1040,16 +1040,20 @@ cite {
 }
 
 /*
- * pager
+ * Pager
  * ページャー
  */
 
-.pager__link {
+.Pager__link {
   margin-left: 0;
 }
 
-.pager__older + .pager__newer {
+.Pager__older + .Pager__newer {
   margin-top: 1em;
+}
+
+.Pager__linkWrapper {
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
