@@ -591,6 +591,15 @@ template {
  */
 
 /*
+ * base style
+ */
+
+*:focus {
+  outline-offset: 2px;
+  transition: outline-offset 0.2s ease;
+}
+
+/*
  * element style
  */
 
