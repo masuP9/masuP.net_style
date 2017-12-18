@@ -1,5 +1,6 @@
 /*
  * mt-image
+ * CMSから出力されるclass名のため、READMEのルール対象外
  */
 
 [class^="mt-image"] {

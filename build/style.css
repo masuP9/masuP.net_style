@@ -1002,7 +1002,25 @@ cite {
 }
 
 /*
+ * Pager
+ * ページャー
+ */
+
+.Pager__link {
+  margin-left: 0;
+}
+
+.Pager__older + .Pager__newer {
+  margin-top: 1em;
+}
+
+.Pager__linkWrapper {
+  margin-left: 0;
+}
+
+/*
  * mt-image
+ * CMSから出力されるclass名のため、READMEのルール対象外
  */
 
 [class^="mt-image"] {
@@ -1037,23 +1055,6 @@ cite {
     max-width: 100vw;
     margin: 0 calc((100vw - 100%) / -2) 1em;
   }
-}
-
-/*
- * Pager
- * ページャー
- */
-
-.Pager__link {
-  margin-left: 0;
-}
-
-.Pager__older + .Pager__newer {
-  margin-top: 1em;
-}
-
-.Pager__linkWrapper {
-  margin-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
