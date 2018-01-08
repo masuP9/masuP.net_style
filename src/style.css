@@ -18,21 +18,22 @@
  * foundation
  */
 
+@import "foundation/base.css";
 @import "foundation/element.css";
 
 /*
  * component
  */
 
-@import "component/article.css";
-@import "component/articles-list.css";
-@import "component/embed-iframe.css";
-@import "component/flat-list.css";
+@import "component/Article.css";
+@import "component/EditArea.css";
+@import "component/ArticlesList.css";
+@import "component/EmbedIframe.css";
+@import "component/FlatList.css";
 @import "component/Header.css";
 @import "component/Main.css";
 @import "component/SiteName.css";
 @import "component/Footer.css";
 @import "component/SiteNav.css";
-@import "component/more-link.css";
+@import "component/Pager.css";
 @import "component/mt-image.css";
-@import "component/pager.css";

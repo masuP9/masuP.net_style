@@ -591,6 +591,15 @@ template {
  */
 
 /*
+ * base style
+ */
+
+*:focus {
+  outline-offset: 2px;
+  transition: outline-offset 0.2s ease;
+}
+
+/*
  * element style
  */
 
@@ -651,15 +660,15 @@ cite {
  */
 
 /*
- * article
+ * Article
  * 記事ページ
  */
 
-.article__header {
+.Article__header {
   margin: 0 0 4rem;
 }
 
-.article__title {
+.Article__title {
   margin-top: 0;
   font-size: 1.75rem;
   font-feature-settings: "palt" 1;
@@ -668,190 +677,195 @@ cite {
 }
 
 @media (min-width: 768px) {
-  .article__title {
+  .Article__title {
     font-size: 2.5rem;
   }
 }
 
-.article__date-published {
+.Article__date-published {
   margin: 0;
 }
 
-.article__categories {
+.Article__categories {
   display: flex;
   margin: 0;
 }
 
-.article__category {
+.Article__category {
   margin-left: 0.5em;
 }
 
-.article__body {
+.Article__body {
   margin-bottom: 60px;
 }
 
-.article__body h2 {
-  margin-top: 3em;
-}
-
-.article__body h3 {
-  margin-top: 2.25em;
-}
-
-.article__body p {
+.Article__permalink {
   margin: 1.5em 0;
 }
 
-.article__body a {
+.Article__permalinkLink {
+  margin-left: 0;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+.Article__ads {
+  margin: 3em -7.5%;
+  text-align: center;
+}
+
+.Article__pager {
+  margin: 3em auto;
+}
+
+/*
+ * EditArea
+ * CMSから入稿する部分
+ */
+
+.EditArea h2 {
+  margin-top: 3em;
+}
+
+.EditArea h3 {
+  margin-top: 2.25em;
+}
+
+.EditArea p {
+  margin: 1.5em 0;
+}
+
+.EditArea a {
   color: inherit;
   word-break: break-all;
 }
 
-.article__body h2 + p,
-.article__body h3 + p,
-.article__body h4 + p,
-.article__body h5 + p,
-.article__body h6 + p {
+.EditArea h2 + p,
+.EditArea h3 + p,
+.EditArea h4 + p,
+.EditArea h5 + p,
+.EditArea h6 + p {
   margin-top: 0;
 }
 
-.article__body ul,
-.article__body ol {
+.EditArea ul,
+.EditArea ol {
   padding-left: 1em;
 }
 
-.article__body dt {
+.EditArea dt {
   font-weight: bold;
 }
 
-.article__body dd {
+.EditArea dd {
   margin-left: 0;
 }
 
-.article__body dd + dt {
+.EditArea dd + dt {
   margin-top: 0.75em;
 }
 
-.article__body hr {
+.EditArea hr {
   margin: 3em;
   border: 0;
   border-top: 0.2em solid var(--color-gray);
 }
 
-.article__body table {
+.EditArea table {
   max-width: 100%;
   min-width: 50%;
   margin: 1.5em auto;
 }
 
-.article__body caption {
+.EditArea caption {
   margin-bottom: 0.375em;
 }
 
-.article__body td,
-.article__body th {
+.EditArea td,
+.EditArea th {
   padding: 1em .25em;
 }
 
-.article__body th {
+.EditArea th {
   padding-bottom: .5em;
   border-bottom: 2px solid var(--color-red);
   font-feature-settings: "palt" 1;
 }
 
-.article__body th:only-of-type {
+.EditArea th:only-of-type {
   text-align: left;
   padding: 1em 0.5em 1em 0;
 }
 
-.article__body td {
+.EditArea td {
   border-bottom: 1px solid var(--color-black);
 }
 
-.article__body blockquote {
+.EditArea blockquote {
   margin: 0 0 0.75em;
   padding-left: 1em;
   border-left: 3px solid var(--color-gray);
 }
 
-.article__body blockquote > *:last-child {
+.EditArea blockquote > *:last-child {
   margin-bottom: 0;
 }
 
-.article__body figure {
+.EditArea figure {
   margin-bottom: 1.5em;
 }
 
-.article__body figcaption + pre {
+.EditArea figcaption + pre {
   margin-top: 0;
 }
 
-.article__body pre > code {
+.EditArea pre > code {
   display: block;
   overflow-x: scroll;
 }
 
-.article__body :not(pre) > code:not(:only-child) {
+.EditArea :not(pre) > code:not(:only-child) {
   margin: 0 2px;
   padding: 2px 3px;
   color: var(--color-red);
 }
 
-.article__body strong {
+.EditArea strong {
   color: var(--color-red);
 }
 
 @media (max-width: 767px) {
-  .article__body th:only-of-type {
+  .EditArea th:only-of-type {
     padding: .25em;
   }
 
-  .article__body pre > code {
+  .EditArea pre > code {
     max-width: 100vw;
     margin: 0 calc(-50vw + 50%) 1em;
     padding: 1em calc(50vw - 50%);
   }
 }
 
-.article__permalink {
-  margin: 1.5em 0;
-}
-
-.article__permalink-link {
-  margin-left: 0;
-  font-size: 0.875rem;
-  word-break: break-all;
-}
-
-.article__ads {
-  margin: 3em -7.5%;
-  text-align: center;
-}
-
-.article__pager {
-  margin: 3em auto;
-}
-
 /*
- * article-list
+ * ArticleList
  */
 
-.articles-list {
-  margin: 0;
+.ArticlesList {
+  margin: 0 0 6rem;
   padding: 0;
 }
 
-.articles-list-item:not(:first-of-type) {
+.ArticlesList__item:not(:first-of-type) {
   margin-top: 2.5rem;
 }
 
-.articles-list-item > a {
+.ArticlesList__item > a {
   display: block;
   color: inherit;
   text-decoration-color: var(--color-red);
 }
 
-.articles-list-item-title {
+.ArticlesList__itemTitle {
   margin: 0 0 0.5em;
   font-size: 1.5rem;
   font-feature-settings: "palt" 1;
@@ -860,36 +874,36 @@ cite {
 }
 
 @media (min-width: 768px) {
-  .articles-list-item-title {
+  .ArticlesList__itemTitle {
     font-size: 1.75rem;
   }
 }
 
-.articles-list-item-info {
+.ArticlesList__itemInfo {
   margin: 0;
 }
 
-.articles-list-item-category {
+.ArticlesList__itemCategory {
   color: inherit;
   text-decoration: none;
 }
 
-.articles-list-item-description {
+.ArticlesList__itemDescription {
   margin: 0.5em 0 0;
 }
 
 /*
- * embed-iframe
+ * EmbedIframe
  * レスポンシブなアイフレーム
  */
 
-.embed-iframe {
+.EmbedIframe {
   position: relative;
   width: 100%;
   padding-bottom: calc(9 / 16 * 100%);
 }
 
-.embed-iframe > iframe {
+.EmbedIframe > iframe {
   position: absolute;
   top: 0;
   right: 0;
@@ -900,20 +914,20 @@ cite {
 }
 
 /*
- * flat-list
+ * FlatList
  */
 
-.c-flat-list {
+.FlatList {
   list-style: none;
   padding-left: 0;
 }
 
-.c-flat-list > :matches(li, dt, dd) {
+.FlatList > :matches(li, dt, dd) {
   display: inline-block;
   margin-right: 0.5em;
 }
 
-.c-flat-list > :matches(li, dt, dd):last-child {
+.FlatList > :matches(li, dt, dd):last-child {
   margin-right: 0;
 }
 
@@ -997,16 +1011,25 @@ cite {
 }
 
 /*
- * more-link
+ * Pager
+ * ページャー
  */
 
-.more-link {
-  margin-top: 6rem;
-  text-align: center;
+.Pager__link {
+  margin-left: 0;
+}
+
+.Pager__older + .Pager__newer {
+  margin-top: 1em;
+}
+
+.Pager__linkWrapper {
+  margin-left: 0;
 }
 
 /*
  * mt-image
+ * CMSから出力されるclass名のため、READMEのルール対象外
  */
 
 [class^="mt-image"] {
@@ -1041,19 +1064,6 @@ cite {
     max-width: 100vw;
     margin: 0 calc((100vw - 100%) / -2) 1em;
   }
-}
-
-/*
- * pager
- * ページャー
- */
-
-.pager__link {
-  margin-left: 0;
-}
-
-.pager__older + .pager__newer {
-  margin-top: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
