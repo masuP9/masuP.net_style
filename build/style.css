@@ -3,6 +3,21 @@
 /*! style.css https://github.com/masuP9/masuP.net_style */
 
 /*
+ * settings
+ */
+
+/*
+ * variable
+ */
+
+:root {
+  --color-black: #222222;
+  --color-white: #FFFFFF;
+  --color-gray: #eaeaea;
+  --color-red: #DC0B0B;
+}
+
+/*
  * library
  */
 
@@ -576,17 +591,6 @@ template {
  */
 
 /*
- * variable
- */
-
-:root {
-  --color-black: #222222;
-  --color-white: #FFFFFF;
-  --color-gray: #eaeaea;
-  --color-red: #DC0B0B;
-}
-
-/*
  * element style
  */
 
@@ -637,215 +641,14 @@ em {
   font-weight: bold;
 }
 
-/*
- * layout
- */
-
-.site-header {
-  max-width: 36em;
-  min-width: 18em;
-  width: 85%;
-  margin: 48px auto;
-}
-
-.site-header .site-name {
-  margin: 0;
-}
-
-.site-name svg {
-  display: block;
-}
-
-.site-name .p {
-  font-weight: inherit;
-  letter-spacing: -.1em;
-}
-
-.main {
-  max-width: 36em;
-  min-width: 18em;
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 2rem;
-}
-
-.site-footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 8rem;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  text-align: center;
-}
-
-.sns-list > li {
-  margin-left: 1rem;
-}
-
-.sns-list > li:first-child {
-  margin-left: 0;
-}
-
-.sns-list svg path {
-  fill: var(--color-white);
-}
-
-.site-nav {
-  display: inline-flex;
-  padding: 0;
-  list-style: none;
-}
-
-.site-nav > li > a {
-  display: block;
-  padding: .5em;
-  color: var(--color-white);
-  text-decoration: none;
-}
-
-.site-nav > li > a:hover {
-  text-decoration: underline;
-}
-
-.copyright {
-  margin: 1rem 0 1.7rem;
-}
-
-.copyright a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.copyright a:hover {
-  text-decoration: underline;
+cite {
+  font-size: smaller;
+  word-break: break-all;
 }
 
 /*
  * component
  */
-
-/*
- * flat-list
- */
-
-.c-flat-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.c-flat-list > :matches(li, dt, dd) {
-  display: inline-block;
-  margin-right: 0.5em;
-}
-
-.c-flat-list > :matches(li, dt, dd):last-child {
-  margin-right: 0;
-}
-
-/*
- * article-list
- */
-
-.articles-list {
-  margin: 0;
-  padding: 0;
-}
-
-.articles-list-item:not(:first-of-type) {
-  margin-top: 2.5rem;
-}
-
-.articles-list-item > a {
-  display: block;
-  color: inherit;
-  text-decoration-color: var(--color-red);
-}
-
-.articles-list-item-title {
-  margin: 0 0 0.5em;
-  font-size: 1.5rem;
-  font-feature-settings: "palt" 1;
-  font-weight: normal;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .articles-list-item-title {
-    font-size: 1.75rem;
-  }
-}
-
-.articles-list-item-info {
-  margin: 0;
-}
-
-.articles-list-item-category {
-  color: inherit;
-  text-decoration: none;
-}
-
-.articles-list-item-description {
-  margin: 0.5em 0 0;
-}
-
-/*
- * mt-image
- */
-
-[class^="mt-image"] {
-  height: auto;
-}
-
-.mt-image-left {
-  float: left;
-  margin: 0 1.5em 1.5em 0;
-}
-
-.mt-image-right {
-  float: right;
-  margin: 0 0 1.5em 1.5em;
-}
-
-.mt-image-center {
-  display: block;
-  max-width: 116.7%;
-  margin: 0 -7.5% 1em;
-}
-
-@media (max-width: 767px) {
-  .mt-image-left,
-  .mt-image-right {
-    display: block;
-    float: none;
-    width: auto;
-    margin: 1.5em auto;
-  }
-  .mt-image-center {
-    max-width: 100vw;
-    margin: 0 calc((100vw - 100%) / -2) 1em;
-  }
-}
-
-/*
- * more-link
- */
-
-.more-link {
-  margin-top: 6rem;
-  text-align: center;
-}
-
-/*
- * main
- */
-
-.main-title {
-  margin-top: 0;
-  font-size: 2rem;
-  font-feature-settings: "palt" 1;
-  line-height: 1.35;
-}
 
 /*
  * article
@@ -901,6 +704,7 @@ em {
 
 .article__body a {
   color: inherit;
+  word-break: break-all;
 }
 
 .article__body h2 + p,
@@ -1029,16 +833,49 @@ em {
 }
 
 /*
- * pager
- * ページャー
+ * article-list
  */
 
-.pager__link {
-  margin-left: 0;
+.articles-list {
+  margin: 0;
+  padding: 0;
 }
 
-.pager__older + .pager__newer {
-  margin-top: 1em;
+.articles-list-item:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
+
+.articles-list-item > a {
+  display: block;
+  color: inherit;
+  text-decoration-color: var(--color-red);
+}
+
+.articles-list-item-title {
+  margin: 0 0 0.5em;
+  font-size: 1.5rem;
+  font-feature-settings: "palt" 1;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .articles-list-item-title {
+    font-size: 1.75rem;
+  }
+}
+
+.articles-list-item-info {
+  margin: 0;
+}
+
+.articles-list-item-category {
+  color: inherit;
+  text-decoration: none;
+}
+
+.articles-list-item-description {
+  margin: 0.5em 0 0;
 }
 
 /*
@@ -1060,6 +897,163 @@ em {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+/*
+ * flat-list
+ */
+
+.c-flat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.c-flat-list > :matches(li, dt, dd) {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.c-flat-list > :matches(li, dt, dd):last-child {
+  margin-right: 0;
+}
+
+/*
+ * Header
+ */
+
+.Header {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin: 48px auto;
+}
+
+.Header__logo {
+  margin: 0;
+  line-height: 1;
+}
+
+/*
+ * Main
+ */
+
+.Main {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.Main__title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-feature-settings: "palt" 1;
+  line-height: 1.35;
+}
+
+/*
+ * SiteName
+ */
+
+.SiteName__p {
+  font-weight: inherit;
+  letter-spacing: -.1em;
+}
+
+/*
+ * Footer
+ */
+
+.Footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 8rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+/*
+ * SiteNav
+ */
+
+.SiteNav {
+  display: inline-flex;
+  padding: 0;
+  list-style: none;
+}
+
+.SiteNav > li > a {
+  display: block;
+  padding: .5em;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.SiteNav > li > a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * more-link
+ */
+
+.more-link {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+/*
+ * mt-image
+ */
+
+[class^="mt-image"] {
+  height: auto;
+}
+
+.mt-image-left {
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+}
+
+.mt-image-right {
+  float: right;
+  margin: 0 0 1.5em 1.5em;
+}
+
+.mt-image-center {
+  display: block;
+  max-width: 116.7%;
+  margin: 0 -7.5% 1em;
+}
+
+@media (max-width: 767px) {
+  .mt-image-left,
+  .mt-image-right {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 1.5em auto;
+  }
+  .mt-image-center {
+    max-width: 100vw;
+    margin: 0 calc((100vw - 100%) / -2) 1em;
+  }
+}
+
+/*
+ * pager
+ * ページャー
+ */
+
+.pager__link {
+  margin-left: 0;
+}
+
+.pager__older + .pager__newer {
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

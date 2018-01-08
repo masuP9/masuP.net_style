@@ -1,0 +1,15 @@
+/*
+ * Header
+ */
+
+.Header {
+  max-width: 36em;
+  min-width: 18em;
+  width: 85%;
+  margin: 48px auto;
+}
+
+.Header__logo {
+  margin: 0;
+  line-height: 1;
+}

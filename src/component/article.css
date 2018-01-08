@@ -52,6 +52,7 @@
 
 .article__body a {
   color: inherit;
+  word-break: break-all;
 }
 
 .article__body h2 + p,
