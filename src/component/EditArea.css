@@ -11,6 +11,10 @@
   margin-top: 2.25em;
 }
 
+.EditArea :matches(h2 + h3, h3 + h4, h4 + h5, h5 + h6) {
+  margin-top: 0;
+}
+
 .EditArea p {
   margin: 1.5em 0;
 }
@@ -20,11 +24,7 @@
   word-break: break-all;
 }
 
-.EditArea h2 + p,
-.EditArea h3 + p,
-.EditArea h4 + p,
-.EditArea h5 + p,
-.EditArea h6 + p {
+.EditArea :matches(h2, h3, h4, h5, h6) + p {
   margin-top: 0;
 }
 
@@ -119,10 +119,9 @@
     padding: .25em;
   }
 
-  .EditArea pre > code {
+  .EditArea :not(table) pre > code {
     max-width: 100vw;
     margin: 0 calc(-50vw + 50%) 1em;
     padding: 1em calc(50vw - 50%);
   }
 }
-
