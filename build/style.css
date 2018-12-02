@@ -136,7 +136,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -604,29 +605,12 @@ template {
  */
 
 html {
+  color: #222222;
   color: var(--color-black);
   font-family: "Hiragino Sans", "Meiryo", sans-serif;
   font-size: 0.875em;
   line-height: 1.625;
   -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: 375px) {
-  html {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 1.125em;
-  }
-}
-
-@media (min-width: 1280px) {
-  html {
-    font-size: 1.375em;
-  }
 }
 
 h1,
@@ -639,6 +623,7 @@ h6 {
 }
 
 a {
+  color: #DC0B0B;
   color: var(--color-red);
 }
 
@@ -680,15 +665,10 @@ cite {
 .Article__title {
   margin-top: 0;
   font-size: 1.75rem;
-  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
   font-weight: normal;
   line-height: 1.33333333;
-}
-
-@media (min-width: 768px) {
-  .Article__title {
-    font-size: 2.5rem;
-  }
 }
 
 .Article__date-published {
@@ -740,7 +720,7 @@ cite {
   margin-top: 2.25em;
 }
 
-.EditArea :matches(h2 + h3, h3 + h4, h4 + h5, h5 + h6) {
+.EditArea h2 + h3, .EditArea h3 + h4, .EditArea h4 + h5, .EditArea h5 + h6 {
   margin-top: 0;
 }
 
@@ -753,7 +733,7 @@ cite {
   word-break: break-all;
 }
 
-.EditArea :matches(h2, h3, h4, h5, h6) + p {
+.EditArea h2 + p, .EditArea h3 + p, .EditArea h4 + p, .EditArea h5 + p, .EditArea h6 + p {
   margin-top: 0;
 }
 
@@ -777,6 +757,7 @@ cite {
 .EditArea hr {
   margin: 3em;
   border: 0;
+  border-top: 0.2em solid #eaeaea;
   border-top: 0.2em solid var(--color-gray);
 }
 
@@ -797,8 +778,10 @@ cite {
 
 .EditArea th {
   padding-bottom: .5em;
+  border-bottom: 2px solid #DC0B0B;
   border-bottom: 2px solid var(--color-red);
-  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
 }
 
 .EditArea th:only-of-type {
@@ -807,12 +790,14 @@ cite {
 }
 
 .EditArea td {
+  border-bottom: 1px solid #222222;
   border-bottom: 1px solid var(--color-black);
 }
 
 .EditArea blockquote {
   margin: 0 0 0.75em;
   padding-left: 1em;
+  border-left: 3px solid #eaeaea;
   border-left: 3px solid var(--color-gray);
 }
 
@@ -837,24 +822,13 @@ cite {
 }
 
 .EditArea :not(pre) > code {
+  color: #DC0B0B;
   color: var(--color-red);
 }
 
 .EditArea strong {
+  color: #DC0B0B;
   color: var(--color-red);
-}
-
-@media (max-width: 767px) {
-  .EditArea th:only-of-type {
-    padding: .25em;
-  }
-
-  .EditArea > pre > code,
-  .EditArea :not(table) pre > code {
-    max-width: 100vw;
-    margin: 0 calc(-50vw + 50%) 1em;
-    padding: 1em calc(50vw - 50%);
-  }
 }
 
 /*
@@ -873,14 +847,16 @@ cite {
 .ArticlesList__itemTitle {
   margin: 0 0 1rem;
   font-size: 1.375rem;
-  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .ArticlesList__itemTitle > a {
   color: inherit;
-  text-decoration-color: #aaa;
+  -webkit-text-decoration-color: #aaa;
+          text-decoration-color: #aaa;
 }
 
 .ArticlesList__itemInfo {
@@ -926,12 +902,12 @@ cite {
   padding-left: 0;
 }
 
-.FlatList > :matches(li, dt, dd) {
+.FlatList > li, .FlatList > dt, .FlatList > dd {
   display: inline-block;
   margin-right: 0.5em;
 }
 
-.FlatList > :matches(li, dt, dd):last-child {
+.FlatList > li:last-child, .FlatList > dt:last-child, .FlatList > dd:last-child {
   margin-right: 0;
 }
 
@@ -967,7 +943,8 @@ cite {
 .Main__title {
   margin-top: 0;
   font-size: 2rem;
-  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
   line-height: 1.35;
 }
 
@@ -988,7 +965,9 @@ cite {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 8rem;
+  background-color: #222222;
   background-color: var(--color-black);
+  color: #FFFFFF;
   color: var(--color-white);
   text-align: center;
 }
@@ -1006,6 +985,7 @@ cite {
 .SiteNav > li > a {
   display: block;
   padding: .5em;
+  color: #FFFFFF;
   color: var(--color-white);
   text-decoration: none;
 }
@@ -1056,7 +1036,38 @@ cite {
   margin: 0 -7.5% 1em;
 }
 
+@media (min-width: 375px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.125em;
+  }
+  .Article__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 1.375em;
+  }
+}
+
 @media (max-width: 767px) {
+  .EditArea th:only-of-type {
+    padding: .25em;
+  }
+
+  .EditArea > pre > code,
+  .EditArea :not(table) pre > code {
+    max-width: 100vw;
+    margin: 0 calc(-50vw + 50%) 1em;
+    padding: 1em calc(50vw - 50%);
+  }
   .mt-image-left,
   .mt-image-right {
     display: block;
