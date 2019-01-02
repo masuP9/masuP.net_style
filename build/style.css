@@ -668,7 +668,7 @@ cite {
   -webkit-font-feature-settings: "palt" 1;
           font-feature-settings: "palt" 1;
   font-weight: normal;
-  line-height: 1.33333333;
+  line-height: 1.333333;
 }
 
 .Article__date-published {
@@ -712,8 +712,12 @@ cite {
  * CMSから入稿する部分
  */
 
+.EditArea h2, .EditArea h3, .EditArea h4, .EditArea h5, .EditArea h6 {
+  line-height: 1.333333;
+}
+
 .EditArea h2 {
-  margin-top: 3em;
+  margin-top: 3.33333em;
 }
 
 .EditArea h3 {
@@ -725,7 +729,7 @@ cite {
 }
 
 .EditArea p {
-  margin: 1.5em 0;
+  margin: 2em 0;
 }
 
 .EditArea a {

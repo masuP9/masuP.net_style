@@ -2,9 +2,12 @@
  * EditArea
  * CMSから入稿する部分
  */
+.EditArea :matches(h2, h3, h4, h5, h6) {
+  line-height: 1.333333;
+}
 
 .EditArea h2 {
-  margin-top: 3em;
+  margin-top: 3.33333em;
 }
 
 .EditArea h3 {
@@ -16,7 +19,7 @@
 }
 
 .EditArea p {
-  margin: 1.5em 0;
+  margin: 2em 0;
 }
 
 .EditArea a {
