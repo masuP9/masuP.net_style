@@ -894,24 +894,6 @@ cite {
 }
 
 /*
- * FlatList
- */
-
-.FlatList {
-  list-style: none;
-  padding-left: 0;
-}
-
-.FlatList > li, .FlatList > dt, .FlatList > dd {
-  display: inline-block;
-  margin-right: 0.5em;
-}
-
-.FlatList > li:last-child, .FlatList > dt:last-child, .FlatList > dd:last-child {
-  margin-right: 0;
-}
-
-/*
  * Header
  */
 
