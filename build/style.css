@@ -981,23 +981,6 @@ cite {
 }
 
 /*
- * Pager
- * ページャー
- */
-
-.Pager__link {
-  margin-left: 0;
-}
-
-.Pager__older + .Pager__newer {
-  margin-top: 1em;
-}
-
-.Pager__linkWrapper {
-  margin-left: 0;
-}
-
-/*
  * mt-image
  * CMSから出力されるclass名のため、READMEのルール対象外
  */
