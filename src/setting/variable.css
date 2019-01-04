@@ -5,6 +5,7 @@
 :root {
   --color-black: #222222;
   --color-white: #FFFFFF;
-  --color-gray: #eaeaea;
+  --color-gray: #999999;
+  --color-light-gray: #e0e0e0;
   --color-red: #DC0B0B;
 }
