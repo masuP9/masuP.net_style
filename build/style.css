@@ -664,8 +664,8 @@ cite {
 .EditArea hr {
   margin: 3em;
   border: 0;
-  border-top: 0.2em solid #e0e0e0;
-  border-top: 0.2em solid var(--color-light-gray);
+  border-top: 0.2em double #DC0B0B;
+  border-top: 0.2em double var(--color-red);
 }
 
 .EditArea table {
