@@ -114,6 +114,15 @@
   color: var(--color-red);
 }
 
+/*
+ * HACK: レンダリング途中の <twitter-widgets> が .Article__body の
+ * margin に影響を受けてはみ出してしまうため、位置を強制リセット。
+ * 最終的に position: static になるため、影響しない。
+ */
+.EditArea .twitter-tweet-rendered {
+  left: 0;
+}
+
 @media (max-width: 767px) {
   .EditArea th:only-of-type {
     padding: .25em;
