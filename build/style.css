@@ -13,7 +13,8 @@
 :root {
   --color-black: #222222;
   --color-white: #FFFFFF;
-  --color-gray: #eaeaea;
+  --color-gray: #999999;
+  --color-light-gray: #e0e0e0;
   --color-red: #DC0B0B;
 }
 
@@ -607,7 +608,7 @@ template {
 html {
   color: #222222;
   color: var(--color-black);
-  font-family: "Hiragino Sans", "Meiryo", sans-serif;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   font-size: 0.875em;
   line-height: 1.625;
   -webkit-font-smoothing: antialiased;
@@ -761,8 +762,8 @@ cite {
 .EditArea hr {
   margin: 3em;
   border: 0;
-  border-top: 0.2em solid #eaeaea;
-  border-top: 0.2em solid var(--color-gray);
+  border-top: 0.2em solid #e0e0e0;
+  border-top: 0.2em solid var(--color-light-gray);
 }
 
 .EditArea table {
@@ -801,8 +802,8 @@ cite {
 .EditArea blockquote {
   margin: 0 0 0.75em;
   padding-left: 1em;
-  border-left: 3px solid #eaeaea;
-  border-left: 3px solid var(--color-gray);
+  border-left: 3px solid #e0e0e0;
+  border-left: 3px solid var(--color-light-gray);
 }
 
 .EditArea blockquote > *:last-child {
@@ -854,13 +855,13 @@ cite {
   -webkit-font-feature-settings: "palt" 1;
           font-feature-settings: "palt" 1;
   font-weight: 300;
-  line-height: 1.2;
 }
 
 .ArticlesList__itemTitle > a {
   color: inherit;
-  -webkit-text-decoration-color: #aaa;
-          text-decoration-color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .ArticlesList__itemInfo {

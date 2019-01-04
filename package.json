@@ -18,15 +18,15 @@
   },
   "homepage": "https://github.com/masuP9/masuP.net_style#readme",
   "devDependencies": {
-    "css-mqpacker": "^7.0.0",
-    "csswring": "^7.0.0",
-    "postcss-cli": "^6.0.1",
-    "postcss-preset-env": "^6.4.0",
-    "postcss-easy-import": "^3.0.0"
+    "css-mqpacker": "7.0.0",
+    "csswring": "7.0.0",
+    "postcss-cli": "6.1.0",
+    "postcss-preset-env": "6.4.0",
+    "postcss-easy-import": "3.0.0"
   },
   "dependencies": {
     "highlight.js": "^9.12.0",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.0"
   },
   "browserslist": [
     "Last 1 versions",

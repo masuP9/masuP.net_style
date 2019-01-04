@@ -51,7 +51,7 @@
 .EditArea hr {
   margin: 3em;
   border: 0;
-  border-top: 0.2em solid var(--color-gray);
+  border-top: 0.2em solid var(--color-light-gray);
 }
 
 .EditArea table {
@@ -87,7 +87,7 @@
 .EditArea blockquote {
   margin: 0 0 0.75em;
   padding-left: 1em;
-  border-left: 3px solid var(--color-gray);
+  border-left: 3px solid var(--color-light-gray);
 }
 
 .EditArea blockquote > *:last-child {
