@@ -40,10 +40,6 @@
   font-weight: bold;
 }
 
-.EditArea dd {
-  margin-left: 0;
-}
-
 .EditArea dd + dt {
   margin-top: 0.75em;
 }
