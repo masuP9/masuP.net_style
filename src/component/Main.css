@@ -15,5 +15,5 @@
   margin-top: 0;
   font-size: 2rem;
   font-feature-settings: "palt" 1;
-  line-height: 1.35;
+  line-height: var(--line-height__heading);
 }

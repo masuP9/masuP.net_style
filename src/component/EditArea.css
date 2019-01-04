@@ -2,8 +2,8 @@
  * EditArea
  * CMSから入稿する部分
  */
-.EditArea :matches(h2, h3, h4, h5, h6) {
-  line-height: 1.333333;
+.EditArea :matches(h1, h2, h3, h4, h5, h6) {
+  line-height: var(--line-height__heading);
 }
 
 .EditArea h2 {
@@ -47,7 +47,7 @@
 .EditArea hr {
   margin: 3em;
   border: 0;
-  border-top: 0.2em double var(--color-red);
+  border-top: 0.2em double var(--color-gray);
 }
 
 .EditArea table {

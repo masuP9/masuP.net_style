@@ -5,17 +5,11 @@
 html {
   color: var(--color-black);
   font-family: "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", "Meiryo", sans-serif;
-  font-size: 0.875em;
-  line-height: 1.625;
+  font-size: 1em;
+  line-height: var(--line-height);
 }
 
 @media (min-width: 375px) {
-  html {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 768px) {
   html {
     font-size: 1.125em;
   }
@@ -29,6 +23,7 @@ html {
 
 a {
   color: var(--color-red);
+  text-underline-position: under;
 }
 
 abbr[title] {
