@@ -19,9 +19,10 @@
 }
 
 .ArticlesList__itemTitle > a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-gray);
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-gray);
 }
 
 .ArticlesList__itemInfo {
