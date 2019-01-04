@@ -552,6 +552,10 @@ cite {
   word-break: break-all;
 }
 
+:focus {
+  outline-color: currentColor;
+}
+
 /*
  * component
  */
@@ -867,7 +871,7 @@ cite {
   list-style: none;
 }
 
-.SiteNav > li > a {
+.SiteNav a {
   display: block;
   padding: .5em;
   color: #FFFFFF;
@@ -875,7 +879,7 @@ cite {
   text-decoration: none;
 }
 
-.SiteNav > li > a:hover {
+.SiteNav a:hover {
   text-decoration: underline;
 }
 

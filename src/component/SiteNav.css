@@ -8,13 +8,13 @@
   list-style: none;
 }
 
-.SiteNav > li > a {
+.SiteNav a {
   display: block;
   padding: .5em;
   color: var(--color-white);
   text-decoration: none;
 }
 
-.SiteNav > li > a:hover {
+.SiteNav a:hover {
   text-decoration: underline;
 }

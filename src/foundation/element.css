@@ -62,3 +62,7 @@ cite {
   font-size: smaller;
   word-break: break-all;
 }
+
+:focus {
+  outline-color: currentColor;
+}
