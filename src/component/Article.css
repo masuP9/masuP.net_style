@@ -25,12 +25,16 @@
   margin-right: 0.25em;
 }
 
-.Article__infoList dd {
-  margin: 0 0.25em 0 0;
+.Article__infoList dd + dt {
+  margin-left: 1em;
 }
 
-.Article__infoList dd:last-child {
-  margin-right: 0;
+.Article__infoList dd {
+  margin: 0;
+}
+
+.Article__infoList dd + dd {
+  margin-left: 0.25em;
 }
 
 .Article__body {
