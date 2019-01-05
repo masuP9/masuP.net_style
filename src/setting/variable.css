@@ -18,5 +18,6 @@
   --font-size__5: calc(28 / 18 * 1rem);
   --font-size__6: calc(40 / 18 * 1rem);
   --line-height: 1.625;
-  --line-height__heading: 1.333333;
+  --line-height__narrow: 1.333333;
+  --line-height__heading: var(--line-height__narrow);
 }

@@ -7,11 +7,11 @@
 }
 
 .EditArea h2 {
-  margin-top: 3.33333em;
+  margin-top: 4em;
 }
 
 .EditArea h3 {
-  margin-top: 2.25em;
+  margin-top: 2.5em;
 }
 
 .EditArea :matches(h2 + h3, h3 + h4, h4 + h5, h5 + h6) {
@@ -81,7 +81,7 @@
 }
 
 .EditArea blockquote {
-  margin: 0 0 0.75em;
+  margin: 0 0 1em;
   padding-left: 1em;
   border-left: 3px solid var(--color-light-gray);
 }
@@ -91,19 +91,26 @@
 }
 
 .EditArea figure {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
+}
+
+.EditArea figcaption {
+  font-size: var(--font-size__2);
+  line-height: var(--line-height__narrow);
 }
 
 .EditArea figcaption + pre {
   margin-top: 0;
 }
 
-.EditArea pre > code {
-  display: block;
-  overflow-x: scroll;
-  padding: 1em;
+.EditArea pre {
   font-size: var(--font-size__2);
-  line-height: calc(30 / 16);
+}
+
+.EditArea > pre > code,
+.EditArea :not(table) pre > code {
+  margin: 0 -2em 1em;
+  padding: 0.5em 2em;
 }
 
 .EditArea :not(pre) > code {
@@ -121,17 +128,4 @@
  */
 .EditArea .twitter-tweet-rendered {
   left: 0;
-}
-
-@media (max-width: 767px) {
-  .EditArea th:only-of-type {
-    padding: .25em;
-  }
-
-  .EditArea > pre > code,
-  .EditArea :not(table) pre > code {
-    max-width: 100vw;
-    margin: 0 calc(-50vw + 50%) 1em;
-    padding: 1em calc(50vw - 50%);
-  }
 }

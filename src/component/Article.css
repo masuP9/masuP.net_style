@@ -9,29 +9,20 @@
 
 .Article__title {
   margin-top: 0;
-  font-size: var(--font-size__5);
+  font-size: var(--font-size__6);
   font-feature-settings: "palt" 1;
   font-weight: normal;
   line-height: var(--line-height__heading);
 }
 
-@media (min-width: 768px) {
-  .Article__title {
-    font-size: var(--font-size__6);
-  }
-}
-
-.Article__date-published {
-  margin: 0;
-}
-
-.Article__categories {
+.Article__infoList {
   display: flex;
   margin: 0;
+  font-size: var(--font-size__2);
 }
 
-.Article__category {
-  margin-left: 0.5em;
+.Article__infoList dd {
+  margin: 0 0.75em 0 0.25em;
 }
 
 .Article__body {
