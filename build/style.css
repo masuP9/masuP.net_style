@@ -588,8 +588,16 @@ cite {
   font-size: var(--font-size__2);
 }
 
+.Article__infoList dt {
+  margin-right: 0.25em;
+}
+
 .Article__infoList dd {
-  margin: 0 0.75em 0 0.25em;
+  margin: 0 0.25em 0 0;
+}
+
+.Article__infoList dd:last-child {
+  margin-right: 0;
 }
 
 .Article__body {
