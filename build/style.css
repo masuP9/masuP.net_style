@@ -510,9 +510,8 @@ template {
  * base style
  */
 
-*:focus {
-  outline-offset: 2px;
-  transition: outline-offset 0.2s ease;
+:focus {
+  outline: currentColor double 0.25em;
 }
 
 /*
@@ -556,10 +555,6 @@ cite {
   font-size: calc(14 / 18 * 1rem);
   font-size: var(--font-size__1);
   word-break: break-all;
-}
-
-:focus {
-  outline: currentColor double 0.25em;
 }
 
 /*

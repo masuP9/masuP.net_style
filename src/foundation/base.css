@@ -2,7 +2,6 @@
  * base style
  */
 
-*:focus {
-  outline-offset: 2px;
-  transition: outline-offset 0.2s ease;
+:focus {
+  outline: currentColor double 0.25em;
 }
