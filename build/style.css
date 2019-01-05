@@ -831,16 +831,17 @@ cite {
   max-width: 36em;
   width: 85%;
   margin-right: auto;
-  margin-left: auto;
   margin-bottom: 2rem;
+  margin-left: auto;
 }
 
 .Main__title {
-  margin-top: 0;
+  margin: 0 0 4rem;
   font-size: calc(40 / 18 * 1rem);
   font-size: var(--font-size__6);
   -webkit-font-feature-settings: "palt" 1;
           font-feature-settings: "palt" 1;
+  font-weight: normal;
   line-height: 1.333333;
   line-height: var(--line-height__heading);
 }
