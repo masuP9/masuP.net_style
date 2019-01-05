@@ -606,6 +606,41 @@ cite {
   margin: 3em auto;
 }
 
+.Article__author {
+  text-align: center;
+}
+
+.Article__authorClickableWrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.Article__authorDescription {
+  text-align: left;
+}
+
+.Article__authorPhoto {
+  border-radius: 50%;
+}
+
+.Article__authorLink {
+  color: inherit;
+}
+
+.Article__authorLink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Article__authorSNS {
+  padding-left: 1em;
+}
+
 /*
  * EditArea
  * CMSから入稿する部分
