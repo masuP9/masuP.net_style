@@ -10,6 +10,13 @@
   --color-light-gray: #e0e0e0;
   --color-red: #DC0B0B;
   /* typography */
+  --font-size__root: 1.125em; /* 18 */
+  --font-size__1: calc(14 / 18 * 1rem);
+  --font-size__2: calc(16 / 18 * 1rem);
+  --font-size__3: 1rem; /* 18 */
+  --font-size__4: calc(22 / 18 * 1rem);
+  --font-size__5: calc(28 / 18 * 1rem);
+  --font-size__6: calc(40 / 18 * 1rem);
   --line-height: 1.625;
   --line-height__heading: 1.333333;
 }

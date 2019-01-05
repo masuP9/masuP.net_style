@@ -9,7 +9,7 @@
 
 .Article__title {
   margin-top: 0;
-  font-size: 1.75rem;
+  font-size: var(--font-size__5);
   font-feature-settings: "palt" 1;
   font-weight: normal;
   line-height: var(--line-height__heading);
@@ -17,7 +17,7 @@
 
 @media (min-width: 768px) {
   .Article__title {
-    font-size: 2.5rem;
+    font-size: var(--font-size__6);
   }
 }
 

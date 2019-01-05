@@ -5,20 +5,8 @@
 html {
   color: var(--color-black);
   font-family: "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", "Meiryo", sans-serif;
-  font-size: 1em;
+  font-size: var(--font-size__root);
   line-height: var(--line-height);
-}
-
-@media (min-width: 375px) {
-  html {
-    font-size: 1.125em;
-  }
-}
-
-@media (min-width: 1280px) {
-  html {
-    font-size: 1.375em;
-  }
 }
 
 a {
@@ -44,7 +32,7 @@ em {
 }
 
 cite {
-  font-size: smaller;
+  font-size: var(--font-size__1);
   word-break: break-all;
 }
 
