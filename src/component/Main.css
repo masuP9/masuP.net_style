@@ -12,8 +12,8 @@
 
 .Main__title {
   margin: 0 0 4rem;
-  font-size: var(--font-size__6);
+  font-size: var(--font-size__5);
   font-feature-settings: "palt" 1;
-  font-weight: normal;
+  font-weight: bold;
   line-height: var(--line-height__heading);
 }
