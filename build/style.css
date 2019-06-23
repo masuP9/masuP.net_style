@@ -600,6 +600,10 @@ cite {
   font-size: var(--font-size__1);
 }
 
+.Article__infoList:not(:last-child) {
+  margin-right: 1.5em;
+}
+
 .Article__infoList dt {
   margin-right: 0.25em;
 }
