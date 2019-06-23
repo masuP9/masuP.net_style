@@ -674,11 +674,11 @@ cite {
 }
 
 .EditArea h2 {
-  margin-top: 4em;
+  margin-top: 5em;
 }
 
 .EditArea h3 {
-  margin-top: 2.5em;
+  margin-top: 4em;
 }
 
 .EditArea h2 + h3, .EditArea h3 + h4, .EditArea h4 + h5, .EditArea h5 + h6 {
@@ -776,7 +776,11 @@ cite {
   line-height: var(--line-height__narrow);
 }
 
-.EditArea figcaption + pre {
+.EditArea figcaption:first-child {
+  margin-bottom: 0.25em;
+}
+
+.EditArea figcaption + * {
   margin-top: 0;
 }
 
