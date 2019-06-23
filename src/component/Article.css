@@ -3,6 +3,10 @@
  * 記事ページ
  */
 
+.Article {
+  overflow-wrap: break-word;
+}
+
 .Article__header {
   margin: 0 0 4rem;
 }

@@ -567,6 +567,10 @@ cite {
  * 記事ページ
  */
 
+.Article {
+  word-wrap: break-word;
+}
+
 .Article__header {
   margin: 0 0 4rem;
 }
@@ -676,7 +680,6 @@ cite {
 
 .EditArea a {
   color: inherit;
-  word-break: break-all;
 }
 
 .EditArea h2 + p, .EditArea h3 + p, .EditArea h4 + p, .EditArea h5 + p, .EditArea h6 + p {
