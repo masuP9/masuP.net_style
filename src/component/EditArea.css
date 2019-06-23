@@ -126,6 +126,16 @@
   color: var(--color-red);
 }
 
+.EditArea kbd {
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0 0.4em;
+  border-radius: 4px;
+  background-color: var(--color-dark-gray);
+  color: white;
+  font-size: var(--font-size__2);
+}
+
 /*
  * HACK: レンダリング途中の <twitter-widgets> が .Article__body の
  * margin に影響を受けてはみ出してしまうため、位置を強制リセット。
