@@ -17,7 +17,7 @@
   font-feature-settings: "palt" 1;
   font-weight: bold;
   line-height: var(--line-height__heading);
-  letter-spacing: calc(1 / 14 * 1em); /* = 2px */
+  letter-spacing: calc(1 / 28 * 1em); /* = 1px */
 }
 
 .Article__info {
