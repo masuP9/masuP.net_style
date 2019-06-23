@@ -44,9 +44,9 @@
 }
 
 .EditArea hr {
-  margin: 3em;
+  margin: 4em 3em;
   border: 0;
-  border-top: 0.2em double var(--color-gray);
+  border-top: 3px double var(--color-light-gray);
 }
 
 .EditArea table {
