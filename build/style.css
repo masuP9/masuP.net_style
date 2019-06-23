@@ -584,13 +584,20 @@ cite {
   font-weight: bold;
   line-height: 1.333333;
   line-height: var(--line-height__heading);
+  letter-spacing: calc(1 / 14 * 1em); /* = 2px */
+}
+
+.Article__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Article__infoList {
   display: flex;
   margin: 0;
-  font-size: calc(16 / 18 * 1rem);
-  font-size: var(--font-size__2);
+  font-size: calc(14 / 18 * 1rem);
+  font-size: var(--font-size__1);
 }
 
 .Article__infoList dt {
@@ -609,8 +616,12 @@ cite {
   margin-left: 0.25em;
 }
 
+.Article__infoList dd time {
+  letter-spacing: 1px;
+}
+
 .Article__body {
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .Article__pager {
