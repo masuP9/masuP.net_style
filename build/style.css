@@ -785,8 +785,12 @@ cite {
 }
 
 .EditArea pre {
-  font-size: calc(16 / 18 * 1rem);
-  font-size: var(--font-size__2);
+  font-size: calc(14 / 18 * 1rem);
+  font-size: var(--font-size__1);
+}
+
+.EditArea code {
+  font-family: "Menlo", monospace;
 }
 
 .EditArea > pre > code,
@@ -796,8 +800,11 @@ cite {
 }
 
 .EditArea :not(pre) > code {
-  color: #DC0B0B;
-  color: var(--color-red);
+  padding: calc(3 / 16 * 1em);
+  background-color: #e0e0e0;
+  background-color: var(--color-light-gray);
+  font-size: calc(16 / 18 * 1rem);
+  font-size: var(--font-size__2);
 }
 
 .EditArea strong {

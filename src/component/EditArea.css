@@ -109,7 +109,11 @@
 }
 
 .EditArea pre {
-  font-size: var(--font-size__2);
+  font-size: var(--font-size__1);
+}
+
+.EditArea code {
+  font-family: "Menlo", monospace;
 }
 
 .EditArea > pre > code,
@@ -119,7 +123,9 @@
 }
 
 .EditArea :not(pre) > code {
-  color: var(--color-red);
+  padding: calc(3 / 16 * 1em);
+  background-color: var(--color-light-gray);
+  font-size: var(--font-size__2);
 }
 
 .EditArea strong {
