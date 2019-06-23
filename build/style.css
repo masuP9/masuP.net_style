@@ -14,6 +14,7 @@
   /* color */
   --color-black: #222222;
   --color-white: #FFFFFF;
+  --color-dark-gray: #585858;
   --color-gray: #999999;
   --color-light-gray: #e0e0e0;
   --color-red: #DC0B0B;
@@ -740,6 +741,10 @@ cite {
   padding-left: 1em;
   border-left: 3px solid #e0e0e0;
   border-left: 3px solid var(--color-light-gray);
+  font-size: calc(16 / 18 * 1rem);
+  font-size: var(--font-size__2);
+  color: #585858;
+  color: var(--color-dark-gray);
 }
 
 .EditArea blockquote > *:last-child {

@@ -84,6 +84,8 @@
   margin: 0 0 1em;
   padding-left: 1em;
   border-left: 3px solid var(--color-light-gray);
+  font-size: var(--font-size__2);
+  color: var(--color-dark-gray);
 }
 
 .EditArea blockquote > *:last-child {
