@@ -620,10 +620,6 @@ cite {
   margin-left: 0.25em;
 }
 
-.Article__infoList dd time {
-  letter-spacing: 1px;
-}
-
 .Article__body {
   margin-bottom: 120px;
 }
